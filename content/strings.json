@@ -1,0 +1,262 @@
+{
+  "skip": {
+    "en": "Skip to content",
+    "it": "Vai al contenuto",
+    "es": "Ir al contenido"
+  },
+  "menu": {
+    "en": "Menu",
+    "it": "Menu",
+    "es": "Menú"
+  },
+  "language": {
+    "en": "Language",
+    "it": "Lingua",
+    "es": "Idioma"
+  },
+  "nav_shop": {
+    "en": "Shop",
+    "it": "Negozio",
+    "es": "Tienda"
+  },
+  "nav_classes": {
+    "en": "Pasta classes",
+    "it": "Corsi di pasta",
+    "es": "Clases de pasta"
+  },
+  "nav_catering": {
+    "en": "Catering",
+    "it": "Catering",
+    "es": "Catering"
+  },
+  "nav_meal_kits": {
+    "en": "Meal kits",
+    "it": "Meal kit",
+    "es": "Kits de comida"
+  },
+  "nav_our_shop": {
+    "en": "Our shop",
+    "it": "Il nostro negozio",
+    "es": "Nuestra tienda"
+  },
+  "nav_about": {
+    "en": "About",
+    "it": "Chi siamo",
+    "es": "Nosotros"
+  },
+  "nav_contact": {
+    "en": "Contact",
+    "it": "Contatti",
+    "es": "Contacto"
+  },
+  "order": {
+    "en": "Order",
+    "it": "Ordina",
+    "es": "Pedir"
+  },
+  "footer_visit": {
+    "en": "Visit us",
+    "it": "Vieni a trovarci",
+    "es": "Visítanos"
+  },
+  "footer_hours": {
+    "en": "Store hours",
+    "it": "Orari del negozio",
+    "es": "Horario"
+  },
+  "footer_explore": {
+    "en": "Explore",
+    "it": "Esplora",
+    "es": "Explora"
+  },
+  "footer_follow": {
+    "en": "Follow",
+    "it": "Seguici",
+    "es": "Síguenos"
+  },
+  "day_mon": {
+    "en": "Monday",
+    "it": "Lunedì",
+    "es": "Lunes"
+  },
+  "day_tue": {
+    "en": "Tuesday",
+    "it": "Martedì",
+    "es": "Martes"
+  },
+  "day_wed": {
+    "en": "Wednesday",
+    "it": "Mercoledì",
+    "es": "Miércoles"
+  },
+  "day_thu": {
+    "en": "Thursday",
+    "it": "Giovedì",
+    "es": "Jueves"
+  },
+  "day_fri": {
+    "en": "Friday",
+    "it": "Venerdì",
+    "es": "Viernes"
+  },
+  "day_sat": {
+    "en": "Saturday",
+    "it": "Sabato",
+    "es": "Sábado"
+  },
+  "day_sun": {
+    "en": "Sunday",
+    "it": "Domenica",
+    "es": "Domingo"
+  },
+  "closed": {
+    "en": "Closed",
+    "it": "Chiuso",
+    "es": "Cerrado"
+  },
+  "price_from": {
+    "en": "From",
+    "it": "Da",
+    "es": "Desde"
+  },
+  "options": {
+    "en": "Options",
+    "it": "Opzioni",
+    "es": "Opciones"
+  },
+  "how_to_order_title": {
+    "en": "How to order:",
+    "it": "Come ordinare:",
+    "es": "Cómo pedir:"
+  },
+  "how_to_order_text": {
+    "en": "online checkout is paused. Call or email us and pick up at the shop in Basalt.",
+    "it": "gli acquisti online sono sospesi. Chiamateci o scriveteci e ritirate in negozio a Basalt.",
+    "es": "el pago en línea está en pausa. Llámanos o escríbenos y recoge tu pedido en la tienda de Basalt."
+  },
+  "order_by_email": {
+    "en": "Order by email",
+    "it": "Ordina via email",
+    "es": "Pedir por email"
+  },
+  "call": {
+    "en": "Call",
+    "it": "Chiama",
+    "es": "Llamar"
+  },
+  "order_subject": {
+    "en": "Order",
+    "it": "Ordine",
+    "es": "Pedido"
+  },
+  "order_body": {
+    "en": "Hello La Pastaiola,\n\nI would like to order: {item}\nQuantity:\nPick-up date:\nName:\nPhone:\n\nThank you!",
+    "it": "Buongiorno La Pastaiola,\n\nvorrei ordinare: {item}\nQuantità:\nData di ritiro:\nNome:\nTelefono:\n\nGrazie!",
+    "es": "Hola, La Pastaiola:\n\nMe gustaría pedir: {item}\nCantidad:\nFecha de recogida:\nNombre:\nTeléfono:\n\n¡Gracias!"
+  },
+  "order_list_placeholder": {
+    "en": "(list the items you want)",
+    "it": "(elencate i prodotti desiderati)",
+    "es": "(escribe los productos que quieres)"
+  },
+  "vegan_note": {
+    "en": "All pastas can be made vegan or with eggs. Tell us which when you order.",
+    "it": "Tutta la nostra pasta può essere preparata vegana o all'uovo. Indicatelo quando ordinate.",
+    "es": "Todas las pastas se pueden hacer veganas o con huevo. Indícanos cuál prefieres al hacer tu pedido."
+  },
+  "related": {
+    "en": "You may also like",
+    "it": "Potrebbe piacerti anche",
+    "es": "También te puede gustar"
+  },
+  "class_details": {
+    "en": "Class details and booking",
+    "it": "Dettagli e prenotazione del corso",
+    "es": "Detalles y reservas de clases"
+  },
+  "contact_call": {
+    "en": "Call",
+    "it": "Chiama",
+    "es": "Llama"
+  },
+  "contact_email": {
+    "en": "Email",
+    "it": "Email",
+    "es": "Email"
+  },
+  "contact_visit": {
+    "en": "Visit",
+    "it": "Vieni a trovarci",
+    "es": "Visítanos"
+  },
+  "contact_hours": {
+    "en": "Hours",
+    "it": "Orari",
+    "es": "Horario"
+  },
+  "open_maps": {
+    "en": "Open in Maps",
+    "it": "Apri in Mappe",
+    "es": "Abrir en Mapas"
+  },
+  "form_name": {
+    "en": "Name",
+    "it": "Nome",
+    "es": "Nombre"
+  },
+  "form_email": {
+    "en": "Email",
+    "it": "Email",
+    "es": "Email"
+  },
+  "form_phone": {
+    "en": "Phone",
+    "it": "Telefono",
+    "es": "Teléfono"
+  },
+  "form_date": {
+    "en": "Event date",
+    "it": "Data dell'evento",
+    "es": "Fecha del evento"
+  },
+  "form_guests": {
+    "en": "Guests",
+    "it": "Ospiti",
+    "es": "Invitados"
+  },
+  "form_message": {
+    "en": "Tell us about it",
+    "it": "Raccontaci",
+    "es": "Cuéntanos sobre tu evento"
+  },
+  "form_send": {
+    "en": "Send request",
+    "it": "Invia richiesta",
+    "es": "Enviar solicitud"
+  },
+  "form_hint": {
+    "en": "This opens your email app with the details filled in. You can also write to us or call.",
+    "it": "Si aprirà la vostra app di posta con i dettagli già compilati. Potete anche scriverci o chiamarci.",
+    "es": "Esto abre tu app de correo con los datos ya completados. También puedes escribirnos o llamarnos."
+  },
+  "form_from": {
+    "en": "from",
+    "it": "da",
+    "es": "de"
+  },
+  "more": {
+    "en": "More",
+    "it": "Altro",
+    "es": "Más"
+  },
+  "home": {
+    "en": "Home",
+    "it": "Home",
+    "es": "Inicio"
+  },
+  "redirecting": {
+    "en": "Continue",
+    "it": "Continua",
+    "es": "Continuar"
+  }
+}

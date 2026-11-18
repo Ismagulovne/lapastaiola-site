@@ -1,0 +1,66 @@
+{
+  "name": "La Pastaiola",
+  "legal_name": "Hospitality Adventure LLC",
+  "email": "info@lapastaiola.co",
+  "phone": "+1 (970) 975-0858",
+  "street": "72 Sunset Dr, Unit B",
+  "city": "Basalt",
+  "state": "CO",
+  "zip": "81623",
+  "instagram": "https://www.instagram.com/lapastaiola.co/",
+  "facebook": "https://www.facebook.com/profile.php?id=100089574455702",
+  "hours": [
+    {
+      "day": "mon",
+      "closed": true,
+      "open": "11:00",
+      "close": "18:00"
+    },
+    {
+      "day": "tue",
+      "closed": false,
+      "open": "11:00",
+      "close": "18:00"
+    },
+    {
+      "day": "wed",
+      "closed": false,
+      "open": "11:00",
+      "close": "18:00"
+    },
+    {
+      "day": "thu",
+      "closed": false,
+      "open": "11:00",
+      "close": "18:00"
+    },
+    {
+      "day": "fri",
+      "closed": false,
+      "open": "11:00",
+      "close": "18:00"
+    },
+    {
+      "day": "sat",
+      "closed": true,
+      "open": "11:00",
+      "close": "18:00"
+    },
+    {
+      "day": "sun",
+      "closed": true,
+      "open": "11:00",
+      "close": "18:00"
+    }
+  ],
+  "announcement": {
+    "en": "Order by phone or email · Pick up in Basalt",
+    "it": "Ordina per telefono o email · Ritiro a Basalt",
+    "es": "Pide por teléfono o email · Recoge en Basalt"
+  },
+  "languages": [
+    "en",
+    "it",
+    "es"
+  ]
+}

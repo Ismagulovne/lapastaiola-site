@@ -1,10 +1,10 @@
-// Checks that every internal link, image and stylesheet in website/site resolves to a file.
+// Checks that every internal link, image and stylesheet in website/dist resolves to a file.
 // Usage: node website/tools/check-links.mjs   Node stdlib only.
 import { readFileSync, readdirSync, statSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "site");
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "dist");
 const walk = d => readdirSync(d).flatMap(f => statSync(join(d, f)).isDirectory() ? walk(join(d, f)) : [join(d, f)]);
 const html = walk(ROOT).filter(f => f.endsWith(".html"));
 const bad = new Set(); let n = 0;

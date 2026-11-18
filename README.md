@@ -1,48 +1,60 @@
-# La Pastaiola website (static)
+# La Pastaiola website
 
-Free replacement for the closed Shopify store at `lapastaiola.co`. Rebuilt from the archived Shopify pages (Wayback Machine, 2024-12 to 2026-08) and the store's own photos from the Shopify CDN.
+Static, multilingual (English / Italian / Spanish) website for La Pastaiola, Basalt, Colorado, live at **https://lapastaiola.co**, with a bilingual (English / Russian) admin panel at **https://lapastaiola.co/admin/**.
 
-- **Cost:** $0. Hosted on GitHub Pages (free HTTPS). No server, database or paid form service.
-- **Ordering:** online checkout is replaced by "Order by email" / "Call" buttons; catering and meal-kit forms open the visitor's email app pre-filled to `info@lapastaiola.co`.
-- **URLs:** the old Shopify paths still work (`/products/<handle>/`, `/collections/<handle>/`, `/pages/<handle>/`); retired pages redirect.
+Rebuilt from the archived Shopify store (Wayback Machine, 2024-12 to 2026-08) after the Shopify store was closed. Cost: $0 (GitHub Pages, free HTTPS). No server, database or paid form service.
+
+## How it works
+
+```
+content/*.json  ──┐
+static/ (css, js, images, admin) ──┤  node tools/build.mjs  →  dist/  →  GitHub Pages
+                                    │  (runs in GitHub Actions on every push to main)
+admin panel ──(GitHub API, commits to content/ and static/img/p/)──┘
+```
+
+- **English** lives at the site root and keeps the old Shopify URLs (`/products/<handle>/`, `/collections/<handle>/`, `/pages/<handle>/`). **Italian** and **Spanish** are under `/it/` and `/es/`. A globe button in the header switches language and keeps the current page. Empty translations fall back to English.
+- **Ordering**: online checkout is replaced by "Order by email" / "Call" buttons; catering and meal-kit forms open the visitor's email app pre-filled to `info@lapastaiola.co`.
 
 ## Layout
 
 | Path | What |
 |---|---|
-| `data/catalog.json` | 44 products and 8 collections extracted from the archive |
-| `site/` | The published website (generated pages + `assets/` + `img/`) |
-| `tools/extract.mjs` | Archive HTML → `data/catalog.json` |
-| `tools/fetch-images.mjs` | Downloads the store's photos into `site/img/` |
-| `tools/build.mjs` | Generates every page into `site/` (texts, hours, contacts are at the top) |
+| `content/settings.json` | Business info, opening hours, announcement bar, site languages |
+| `content/catalog.json` | Products (title, description, price, options, photo, hidden) and collections (order, shown on Shop page) |
+| `content/pages.json` | Texts of every page |
+| `content/strings.json` | Buttons, menu and small labels |
+| `static/` | CSS, JS, photos (`static/img/p/` = product photos) and the admin panel (`static/admin/`) |
+| `tools/build.mjs` | Generates every page in every language into `dist/` |
 | `tools/check-links.mjs` | Fails if any internal link or image is missing |
-| `tools/serve.mjs` | Local preview, `node tools/serve.mjs 8130` |
-| `.github/workflows/pages.yml` | Deploys `site/` to GitHub Pages on push to `main` |
+| `tools/serve.mjs` | Local preview of `dist/`, `node tools/serve.mjs 8130` |
+| `tools/extract.mjs`, `tools/fetch-images.mjs` | One-off tools used to recover the catalog and photos from the archive |
+| `reference-data/` | Archive extract and the original machine translations, kept for reference |
+| `.github/workflows/pages.yml` | Builds and deploys on push to `main` |
 
 All tools use Node's standard library only (no `npm install`).
 
-## Update content
+## Admin panel
 
-1. Edit texts, hours or contacts in `tools/build.mjs` (object `BIZ` and the page sections), or products in `data/catalog.json`.
-2. `node tools/build.mjs && node tools/check-links.mjs`
-3. Commit and push; GitHub Actions publishes it.
+- Open `https://lapastaiola.co/admin/`, choose the interface language with the globe (EN / RU), and sign in with a GitHub personal access token of an account that has **write access** to this repository (instructions are on the sign-in page).
+- Sections: Overview (translation status, recent changes), Business info and hours, Products (add, edit, hide, delete, photos with automatic resize, options with prices), Collections (order of products), Page texts, Interface texts, Help.
+- Every content form has EN / IT / ES tabs; the English original is shown under Italian and Spanish fields, with a "copy English text" shortcut.
+- **Save and publish** commits the changed files in one commit (`Admin: update … (by <login>)`) and shows the build status until the site is live (about a minute). If someone else published content in the meantime, the save is refused instead of overwriting their work.
+- Security: the page talks only to `api.github.com` (enforced by its Content-Security-Policy), loads no third-party scripts, is excluded from search engines, and keeps the token only in the browser.
 
-## Go live (owner approval required for each step)
+**Giving someone access:** add their GitHub account as a collaborator with write access (repository Settings → Collaborators). Remove them there to revoke access.
 
-1. **GitHub:** create a public repository with the contents of this folder, push to `main`. Settings → Pages → Source: *GitHub Actions*. Settings → Pages → Custom domain: `lapastaiola.co` (the `site/CNAME` file sets it too).
-2. **GoDaddy DNS for lapastaiola.co** (do not touch MX, TXT, autodiscover, msoid, SIP/Lync records):
-   - Remove the applied **Shopify** template (it locks `A @` and `CNAME www`), or edit those two records.
-   - `A @` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` (four records, replacing `23.227.38.32`).
-   - `CNAME www` → `<github-user>.github.io`.
-3. Wait for DNS (minutes to an hour), then GitHub → Settings → Pages → tick **Enforce HTTPS**.
-4. **lapastaiola.com** already forwards (301) to `http://lapastaiola.co`; change the destination to `https://lapastaiola.co`.
-5. Verify: `https://lapastaiola.co`, `https://www.lapastaiola.co`, an old product URL, and that email to `info@lapastaiola.co` still arrives.
+## Edit without the admin
 
-**Rollback:** set `A @` back to `23.227.38.32` and `CNAME www` back to `@` (the Shopify values).
+1. Edit `content/*.json` (or `static/`).
+2. Optional local check: `node tools/build.mjs && node tools/check-links.mjs && node tools/serve.mjs 8130`.
+3. Commit and push to `main`; GitHub Actions publishes it.
 
-## Before going live, confirm with the owner
+## Domains and DNS
 
-- The shop is still open at **72 Sunset Dr, Unit B, Basalt** with hours **Tue–Fri 11 am–6 pm** (the newest archived page; an older one listed 355 Gold Rivers Court and 7-day hours).
-- Prices are as of the last archived snapshot.
-- Phone `+1 (970) 975-0858` and `info@lapastaiola.co` are current.
-- Classes, catering and meal kits are still offered.
+See `../reference/godaddy/dns-plan.md` in the project folder. `lapastaiola.co` points to GitHub Pages (`A @` 185.199.108–111.153, `CNAME www` → `ismagulovne.github.io`); `lapastaiola.com` forwards (301) to `https://lapastaiola.co`. Rollback to Shopify: `A @` → 23.227.38.32, `CNAME www` → `@`.
+
+## To confirm with the owner
+
+- Address and hours (72 Sunset Dr, Unit B, Basalt; Tue–Fri 11 am–6 pm), prices, and whether classes, catering and meal kits are still offered.
+- Italian and Spanish texts were machine-assisted; a native speaker should review them. Some archived English product descriptions contain errors (see the project's handover notes).

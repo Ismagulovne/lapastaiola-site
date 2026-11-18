@@ -1,11 +1,11 @@
-// Local preview server for website/site (behaves like GitHub Pages: folder/index.html, 404.html).
+// Local preview server for website/dist (behaves like GitHub Pages: folder/index.html, 404.html).
 // Usage: node website/tools/serve.mjs [port]   Node stdlib only.
 import { createServer } from "node:http";
 import { readFile, stat } from "node:fs/promises";
 import { join, extname, normalize, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "site");
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "dist");
 const PORT = +(process.argv[2] || 8130);
 const TYPES = { ".html": "text/html; charset=utf-8", ".css": "text/css", ".js": "text/javascript", ".png": "image/png",
   ".jpg": "image/jpeg", ".webp": "image/webp", ".xml": "application/xml", ".txt": "text/plain", ".svg": "image/svg+xml" };

@@ -1,5 +1,5 @@
 // Extracts products and collections from the archived Shopify pages into website/data/catalog.json.
-// Usage: node website/tools/extract.mjs <snapshot_html_dir> <out_json>
+// Usage: node tools/extract.mjs <snapshot_html_dir> <out_json>   (one-off; the live catalog is content/catalog.json)
 // Node stdlib only. Reads archived HTML as data; nothing is executed.
 import { readFileSync, readdirSync, writeFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";

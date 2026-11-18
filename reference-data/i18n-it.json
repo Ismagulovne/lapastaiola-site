@@ -1,0 +1,397 @@
+{
+  "products": {
+    "arrabbiata-spicy": {
+      "title": "Arrabbiata (piccante)",
+      "description_html": "<p>Pomodori pelati italiani interi, peperoncino napoletano, aglio, prezzemolo, basilico, olio extravergine d'oliva</p> <p><br>Formato: 16 oz</p>",
+      "variants": []
+    },
+    "artichokes-tapenade-7-oz": {
+      "title": "Paté di carciofi - 7 oz",
+      "description_html": "<p>Una crema di carciofi italiani del territorio pugliese, lavorata secondo ricette tradizionali, che grazie alla sua delicatezza si presta a tanti usi in cucina: dai primi ai secondi piatti, crostini e bruschette. </p> <p>Caratteristiche: </p> <p>7 Oz / 212ml </p> <ul> <li>Zona di produzione: Puglia, Italia </li> <li>Prodotto artigianale </li> <li>Conservato sott'olio d'oliva </li> <li>Preparato solo con verdure italiane</li> </ul>",
+      "variants": []
+    },
+    "bella-from-cerignola-olives-6-34-oz": {
+      "title": "Olive \"Bella di Cerignola\" - 6.34 oz",
+      "description_html": "<p>L'oliva più amata al mondo! La “Bella di Cerignola” è una varietà DOP (Denominazione di Origine Protetta), ed è impossibile resisterle. Polpose e leggermente croccanti, queste olive crescono in Puglia*, dove le raccogliamo a mano, fresche, apposta per voi. Servite queste grandi olive verdi come semplice antipasto o in un aperitivo all'italiana. Le olive “Bella di Cerignola” si abbinano benissimo anche a carne e pesce! Queste irresistibili gemme pugliesi sono perfette per quasi ogni tipo di piatto. Selezioniamo con cura e conserviamo al meglio tutte le nostre olive per preservarne i nutrienti essenziali. Gustate queste sfiziose prelibatezze da sole o aggiungetele alla vostra ricetta italiana preferita. </p> <p>Caratteristiche: </p> <p>Peso netto sgocciolato 6.34 Fl Oz / 180g </p> <p>Zona di produzione: Puglia, Italia </p> <p>Prodotto artigianale</p>",
+      "variants": []
+    },
+    "black-olives-tapenade-7-oz": {
+      "title": "Paté di olive nere - 7 oz",
+      "description_html": "<p>Un paté dal sapore intenso delle olive del nostro territorio, che esprime il gusto tipico della Puglia. Ideale per insalate, carne, pasta, crostini e bruschette. </p> <p>Caratteristiche: </p> <p>7 Oz / 212ml</p> <p> Zona di produzione: Puglia, Italia</p> <p> Prodotto artigianale </p> <p>Conservato sott'olio d'oliva </p> <p>Preparato solo con verdure italiane</p>",
+      "variants": []
+    },
+    "bolognese": {
+      "title": "Bolognese",
+      "description_html": "Macinato di black angus, pomodori pelati italiani interi, carote, sedano, cipolle, olio extravergine d'oliva<br><br>Formato: 16 oz",
+      "variants": []
+    },
+    "bucatini": {
+      "title": "Bucatini",
+      "description_html": "<p>14.1 oz (400gr)</p> <p>Ingredienti: semola di grano duro (vegan) + uova + acqua </p> <p>*Nota: tutta la nostra pasta può essere preparata vegana o all'uovo. Indicatelo nelle note dell'ordine*</p>",
+      "variants": []
+    },
+    "butternut-squash-ricotta-ravioli": {
+      "title": "Ravioli",
+      "description_html": "<p>Piccoli: 30 pezzi<br></p> <p>Grandi: 15 pezzi<br><br><strong>Ingredienti</strong>: semola di grano duro + uova</p> <p><strong>Ravioli ricotta e spinaci:</strong> ricotta, Parmigiano Reggiano, spinaci.</p> <p><strong>Cacio e Pepe</strong>: Pecorino Romano, ricotta, Parmigiano Reggiano, pepe nero.</p> <p><strong>Ravioli alla parmigiana di melanzane:</strong> melanzane arrostite, mozzarella, parmigiano, ricotta, provolone.</p> <p><strong>Carciofi e burrata</strong>: carciofi marinati, burrata, mozzarella.</p> <p><strong>Ricotta e funghi:</strong> ricotta, funghi misti, parmigiano.</p> <p><strong>Ravioli Caprese:</strong> mozzarella, ricotta, parmigiano, basilico.</p> <p><strong>Zucca e ricotta:</strong> zucca butternut arrostita al forno, ricotta, parmigiano.</p> <p>*Nota: tutta la nostra pasta può essere preparata vegana o all'uovo. Indicatelo nelle note dell'ordine*</p> <p>*Accogliamo volentieri richieste personalizzate e cerchiamo di soddisfarle tutte nei nostri cicli di produzione. Possiamo realizzare gusti e ripieni su misura. Gli ordini vanno ricevuti con 48 ore di anticipo e si possono effettuare via email oppure compilando il modulo d'ordine pasta sul nostro sito.</p>",
+      "variants": [
+        "Cacio e Pepe",
+        "Parmigiana di melanzane",
+        "Funghi e ricotta",
+        "Nerano",
+        "Caprese",
+        "Spinaci e ricotta",
+        "Zucca e ricotta",
+        "Carciofi e burrata"
+      ]
+    },
+    "cacio-e-pepe": {
+      "title": "Salsa Cacio e Pepe",
+      "description_html": "Pecorino Romano, Grana Padano,<br>latte, pepe nero.<br><br>Formato: 16 oz",
+      "variants": []
+    },
+    "cannoli": {
+      "title": "Cannoli",
+      "description_html": "<p>Assaporate il gusto della tradizione con i nostri cannoli classici, ripieni di ricotta dolce e di golosa ricotta al cioccolato. Questi iconici dolci italiani hanno una scorza fritta e croccante, in perfetto contrasto con la morbidezza cremosa del ripieno. Ogni cannolo è preparato con ingredienti di prima scelta, per un'esperienza autentica e deliziosa. Perfetti per ogni occasione, i nostri cannoli offrono un incantevole equilibrio di consistenze e sapori che a ogni morso vi porterà dritti in Italia.</p> <p>1 dozzina per ordine</p>",
+      "variants": []
+    },
+    "casarecce": {
+      "title": "Casarecce",
+      "description_html": "<p>Disponibile<br></p> <p>14.1 oz (400gr)</p> <p>Ingredienti: semola di grano duro (vegan) + acqua</p> <p>*Nota: tutta la nostra pasta può essere preparata vegana o all'uovo. Indicatelo nelle note dell'ordine*</p>",
+      "variants": []
+    },
+    "cavatelli": {
+      "title": "Cavatelli",
+      "description_html": "Semola di grano duro.<br><br>Disponibile<br><br>14.1 oz (400gr)",
+      "variants": []
+    },
+    "creste-di-gallo": {
+      "title": "Creste di Gallo",
+      "description_html": "<p>Le Creste di Gallo sono un formato di pasta tradizionale italiano che ricorda la cresta del gallo, da cui prendono il nome. Preparate con semola di grano duro, hanno una consistenza soda e un sapore leggermente nocciolato, perfette per accogliere sughi ricchi. Le rigature e la forma particolare trattengono più condimento, rendendole ideali per piatti sostanziosi come il ragù, il pesto o anche salse cremose.</p>",
+      "variants": []
+    },
+    "extra-virgin-olive-oil-igp-puglia-intense-16-9-fl-oz": {
+      "title": "Olio extravergine d'oliva IGP Puglia - Intenso 16.9 fl oz",
+      "description_html": "<p>Dalla Puglia con amore arriva questo olio extravergine d'oliva deciso e sorprendente. Il suo sapore e il suo profumo intensi ricordano l'erba appena tagliata, la mandorla bianca tannica e il carciofo dalle note terrose. Questo olio robusto mantiene un equilibrio perfetto tra amaro e piccante. Provatelo con arrosti cotti lentamente, selvaggina o zuppe invernali sostanziose. Siate creativi e versatene un filo su una pallina di gelato alla vaniglia! È un olio extravergine d'oliva nutraceutico. Profilo sensoriale: fruttato verde intenso ed erbaceo, con sentori di mandorla bianca e carciofo. Gusto: fluido, con piccante e amaro persistenti ed equilibrati. Caratteristiche: - 16,9 Fl Oz / 500ml - IGP (Indicazione Geografica Protetta) - Zona di produzione: Puglia centrale, Italia - Periodo di raccolta: ottobre/novembre - Estratto a freddo - Etichetta antimacchia</p>",
+      "variants": []
+    },
+    "extra-virgin-olive-oil-igp-sicilia-delicate": {
+      "title": "Olio extravergine d'oliva IGP Sicilia - Delicato",
+      "description_html": "<p>Benvenuti nella splendida isola di Sicilia! Il gusto leggermente piccante del nostro olio extravergine d'oliva IGP Sicilia sprigiona i profumi di quest'isola tanto amata. Con il suo sapore delicato di pomodoro appena colto, verdure fresche, carciofo ed erbe amare e piccanti, è l'abbinamento perfetto per il carpaccio di salmone, la pasta al pomodoro o il pesce alla griglia, ed è delizioso anche da solo, per intingerci il pane. Profilo sensoriale: fruttato delicato con sentori di pomodoro appena colto e verdure fresche, carciofo ed erbe. Gusto: pastoso, con amaro e piccante persistenti, entrambi equilibrati. Dalla Puglia con amore arriva questo olio extravergine d'oliva deciso e sorprendente.</p>",
+      "variants": []
+    },
+    "extra-virgin-olive-oil-igp-toscana-medium": {
+      "title": "Olio extravergine d'oliva IGP Toscana - Medio",
+      "description_html": "<p>Un olio extravergine d'oliva straordinariamente fruttato, con un tocco di carciofo, frutta matura e pomodoro fresco al palato. Dalle colline della Val d’Orcia e della Maremma toscana, questo olio è pulito, fresco e dolce all'attacco, leggermente amaro e piccante sul finale. È meravigliosamente versatile: si sposa bene con verdure sostanziose e vellutate, ma anche con insalate fresche, carne e pesce. È anche l'olio perfetto per vinaigrette e salse, ed è ottimo pure per friggere. Profilo sensoriale: fruttato medio, oliva pulita, con note erbacee di carciofo e frutta matura e, in misura minore, di pomodoro. Gusto: fresco e pulito, si apre con una leggera sensazione dolce seguita da una piacevole carica di amaro e piccante di media intensità, con una ricca persistenza di note vegetali dominate dalla sensazione erbacea del carciofo.</p>",
+      "variants": []
+    },
+    "fettuccine": {
+      "title": "Fettuccine",
+      "description_html": "<p>Disponibile<br><br>14.1 oz (400gr)</p> <p>Ingredienti: semola di grano duro (vegan) + uova + acqua </p> <p>*Nota: tutta la nostra pasta può essere preparata vegana o all'uovo. Indicatelo nelle note dell'ordine*</p>",
+      "variants": []
+    },
+    "fresh-pasta-making-class": {
+      "title": "Corso di pasta fresca",
+      "description_html": "<p>Unitevi a noi per un'esperienza culinaria indimenticabile al nostro corso di pasta fresca, al 72 Sunset Dr, Unit B, Basalt, CO. Imparate con Aina l'arte di preparare da zero un'autentica pasta fatta in casa.</p>",
+      "variants": []
+    },
+    "fusilli": {
+      "title": "Fusilli",
+      "description_html": "<p>I fusilli sono un formato di pasta a spirale, perfetto per trattenere il sugo grazie alle sue spire e rigature. Preparati con grano duro, hanno una consistenza soda e si abbinano a un'ampia varietà di condimenti, dai ricchi sughi al pomodoro a quelli più leggeri a base di olio d'oliva o pesto. La loro forma li rende ottimi anche per insalate di pasta, pasta al forno e sformati sostanziosi.</p>",
+      "variants": []
+    },
+    "gf-maccheroni": {
+      "title": "Maccheroni senza glutine",
+      "description_html": "<p>Miscela di farine senza glutine (fecola di patate, farina di miglio, farina di riso, farina di tapioca, arrowroot), gomma di xantano, fibra di agrumi, zucchero fermentato, sale, spezie.</p> <p>14.1 oz (400gr)</p>",
+      "variants": []
+    },
+    "giusti-aged-balsamic-vinegar-of-modena-6-yr": {
+      "title": "Giusti - Aceto Balsamico di Modena invecchiato 6 anni",
+      "description_html": "<p>Giusti - 1 Medaglia d'Argento, Aceto Balsamico di Modena italiano invecchiato (6 anni) - Cubica. Aceto Balsamico di Modena - Prodotto a Modena con mosto d'uva cotto e aceto di vino invecchiato, poi affinato per 8 anni in botti di rovere con aceto balsamico invecchiato estratto da botti secolari. Versatile - 1 Medaglia d'Argento, Medaglia d'Argento, ha un'acidità meravigliosamente rotonda che lo rende perfetto con insalate, verdure, stufati a lunga cottura, salse e molto altro. Certificato IGP - Aceto balsamico affinato alla perfezione, certificato dai produttori di Modena e Reggio Emilia, e chiamato così per la Medaglia d'Argento vinta alle Esposizioni Internazionali del XIX secolo. Design - La bottiglia riporta la prima etichetta, disegnata all'inizio del Novecento, che celebra tutti i riconoscimenti ottenuti da Giusti negli anni, in una bottiglia dal design cubico. Ingredienti: mosto d'uva cotto</p>",
+      "variants": []
+    },
+    "giusti-aged-balsamic-vinegar-of-modena-8-yr-2-gold-medals": {
+      "title": "Giusti Aceto Balsamico di Modena invecchiato 8 anni - 2 Medaglie d'Oro",
+      "description_html": "<p>Giusti - 2 Medaglie d'Oro, Aceto Balsamico di Modena italiano invecchiato (8 anni) - Cubica Mode Giusti - 2 Medaglie d'Oro, Aceto Balsamico di Modena italiano invecchiato (8 anni) - Cubica. </p> <p>NA Aceto balsamico prodotto a Modena con mosto d'uva cotto e aceto di vino invecchiato, poi affinato per 10 anni in botti di rovere con aceto balsamico invecchiato estratto da botti secolari. </p> <p>Versatile - 2 Medaglie d'Oro, Il Classico, ha un piacevole equilibrio tra dolce e acido, con sentori di frutta matura, liquirizia e pepe nero, e si abbina bene a pesce, carni bianche, formaggi e frutti di mare. I</p> <p>GP certificato - Aceto balsamico affinato alla perfezione, certificato dai produttori di Modena e Reggio Emilia, e chiamato così per la Medaglia d'Oro vinta alle Esposizioni Internazionali del XIX secolo. </p> <p>Design storico - La bottiglia riporta la prima etichetta, disegnata all'inizio del Novecento per celebrare i numerosi riconoscimenti ottenuti, nella bottiglia in stile Cubica, a forma di cubo. Ingredienti: mosto d'uva cotto</p>",
+      "variants": []
+    },
+    "giusti-historical-trio-balsamic-vinegar-gift-set": {
+      "title": "Giusti Trio Storico - Confezione regalo di aceti balsamici",
+      "description_html": "<p>Ogni aceto balsamico è prodotto con mosto d'uva cotto e aceto di vino invecchiato, e poi affinato alla perfezione in botti di rovere con l'aggiunta di aceto balsamico invecchiato estratto da botti secolari. </p> <p>Gli aceti balsamici prendono il nome dalle medaglie vinte alle Esposizioni Internazionali del XIX secolo. </p> <p>1 Medaglia d'Argento, nota anche come Medaglia d’Argento, è affinato in botti di rovere francese del primo Novecento con l'aggiunta di aceto balsamico invecchiato da botti secolari. È aromatico ed esalta con la sua intensità il sapore dei piatti. </p> <p>2 Medaglie d'Oro, Il Classico, è versatile e ben equilibrato tra dolce e acido, con sentori di frutta matura, liquirizia e pepe nero. È affinato in botti di rovere con l'aggiunta di aceto balsamico invecchiato da botti secolari. </p> <p>3 Medaglie d'Oro, Riccardo Giusti, nasce da uve dolci appassite al sole, che gli donano profumo e sapore di confettura di prugne e frutti rossi, intrecciati a note di miele e vaniglia. </p> <p>PRODOTTO A: MODENA, ITALIA</p>",
+      "variants": []
+    },
+    "giusti-italian-handmade-panettone-fruit-cake-w-balsamic": {
+      "title": "Giusti Panettone artigianale italiano - con aceto balsamico",
+      "description_html": "<p>FRESCO - Appena arrivato! Fresco dall'Italia per il Natale 2024, splendidamente confezionato in stile rustico: un regalo perfetto per chi vi ospita durante le feste. </p> <p>DOLCE TRADIZIONALE DELLE FESTE ITALIANE - Un autentico dolce natalizio con frutta candita importato dall'Italia, preparato secondo la nostra ricetta e i nostri criteri tradizionali. Realizzato con ingredienti tutti naturali, rigorosamente freschi e genuini. </p> <p>UN SAPORE UNICO - L'agrodolce dell'aceto balsamico è il complemento perfetto per la morbidezza profumata del panettone. </p> <p>ARRICCHITO CON ACETO BALSAMICO - L'Aceto Balsamico Giusti 3 Medaglie d'Oro viene aggiunto all'impasto, usato per ammollare l'uvetta e infine aggiunto sotto forma di crema di farcitura.</p> <p>Prodotto in Italia</p>",
+      "variants": []
+    },
+    "gnocchetti-sardi": {
+      "title": "Gnocchetti Sardi",
+      "description_html": "<p>14.1 oz (400gr)</p> <p>Ingredienti: semola di grano duro (vegan) + acqua</p> <p>*Nota: tutta la nostra pasta può essere preparata vegana o all'uovo. Indicatelo nelle note dell'ordine*</p>",
+      "variants": []
+    },
+    "gourmet-coarse-sicilian-herbs-salt-for-meat-and-fish": {
+      "title": "Sale grosso gourmet alle erbe siciliane per carne e pesce",
+      "description_html": "<p>Date un tocco in più alle vostre creazioni con il nostro sale marino siciliano. Perfetto per carne e pesce, questo sale aromatizzato unisce erbe aromatiche e spezie, tra cui origano, rosmarino, timo, scorza di limone essiccata e peperoncino. Che lo usiate per massaggiare la carne prima di grigliarla o saltarla in padella, o come tocco finale, questo sale trasformerà i vostri piatti in delizie gourmet. Scoprite i ricchi sapori della Sicilia in ogni pizzico! </p> <p>Frantoi Cutrera è noto per il suo olio extravergine d'oliva di alta qualità. Dal 1906 l'azienda coltiva uliveti e lavora olio e olive nella Sicilia sud-orientale. Offre anche un'ampia scelta di confetture, erbe e sali, tutti prodotti nella stessa zona. </p> <p>PRODOTTO IN: SICILIA, ITALIA</p>",
+      "variants": []
+    },
+    "gourmet-italian-capers-in-sea-salt-capers-non-pareil": {
+      "title": "Capperi italiani gourmet al sale marino - Capperi Non Pareil",
+      "description_html": "<p>NON-PAREIL - Sono i capperi più pregiati, per la loro consistenza soda e il sapore delicato. I nostri capperi arrivano freschi dalla Sicilia, dove crescono i migliori capperi del mondo. </p> <p>Tutti naturali, senza conservanti né additivi, vegani, non OGM; preparati solo con capperi e sale marino. Raccogliamo a mano i migliori capperi siciliani e li conserviamo in modo naturale sotto sale secondo la ricetta tradizionale di famiglia. Ogni vasetto racchiude uno scorcio della nostra terra, un segreto della nostra tradizione non ancora svelato. Da vera famiglia siciliana, desideriamo condividere i prodotti e le ricette più autentici di quest'isola. </p> <p>UN CONDIMENTO O UNA GUARNIZIONE DELIZIOSA - Consigliamo di dissalare i capperi prima dell'uso (lasciandoli in ammollo in acqua fino a 15 minuti). Aggiungono un tocco sapido unico e meraviglioso a sughi, frutti di mare, carne, pollame, pasta o insalate. Belli da vedere quanto buoni da gustare! </p> <p>UN SANO SOSTITUTO DEL SALE, PIENO DI GUSTO – Usate i capperi non pareil in ricette calde e fredde per aggiungere un sapore mediterraneo agro-salato.</p>",
+      "variants": []
+    },
+    "linguine": {
+      "title": "Linguine",
+      "description_html": "<p>14.1 oz (400gr)</p> <p>Ingredienti: semola di grano duro (vegan) + uova + acqua </p> <p>*Nota: tutta la nostra pasta può essere preparata vegana o all'uovo. Indicatelo nelle note dell'ordine*</p>",
+      "variants": []
+    },
+    "mafaldine": {
+      "title": "Mafaldine",
+      "description_html": "<p>14.1 oz (400gr)</p> <p>Ingredienti: semola di grano duro (vegan) + uova + acqua </p> <p>*Nota: tutta la nostra pasta può essere preparata vegana o all'uovo. Indicatelo nelle note dell'ordine*</p>",
+      "variants": []
+    },
+    "meat-agnolotti": {
+      "title": "Agnolotti di carne",
+      "description_html": "<p>Controfiletto di manzo, ricotta, parmigiano, uova crude, farina 00 e semola di grano duro</p> <p>14.1 oz</p>",
+      "variants": []
+    },
+    "mixed-spicy-veggie-tapenade-7-oz": {
+      "title": "Paté piccante di verdure miste - 7 oz",
+      "description_html": "<p>Dall'unione di peperoni, melanzane, carota rossa, peperoncino e altri ortaggi della tradizione nasce il paté piccante di verdure miste: una crema piccante dal gusto deciso, ideale per crostini, bruschette o per condire la pasta. </p> <p>Caratteristiche: </p> <p>7 Oz / 212ml </p> <ul> <li>Zona di produzione: Puglia, Italia </li> <li>Prodotto artigianale </li> <li>Conservato sott'olio d'oliva </li> <li>Preparato solo con verdure italiane</li> </ul>",
+      "variants": []
+    },
+    "mushroom-tapenade-7-oz": {
+      "title": "Paté di funghi - 7 oz",
+      "description_html": "<p>Crema di funghi dal gusto delicato, da usare con primi e secondi piatti, crostini e bruschette. </p> <p>Caratteristiche: </p> <p>7 Oz / 212ml </p> <p>Zona di produzione: Puglia, Italia </p> <ul> <li>Prodotto artigianale</li> <li>Conservato sott'olio d'oliva </li> <li>Preparato solo con verdure italiane</li> <li>Zona di produzione: Puglia, Italia</li> <li></li> </ul>",
+      "variants": []
+    },
+    "orecchiette": {
+      "title": "Orecchiette",
+      "description_html": "<p>14.1 oz (400gr)</p> <p>Ingredienti: semola di grano duro (vegan) + acqua</p> <p>*Nota: tutta la nostra pasta può essere preparata vegana o all'uovo. Indicatelo nelle note dell'ordine*</p>",
+      "variants": []
+    },
+    "organic-sun-dried-cherry-tomatoes-in-evoo-italian": {
+      "title": "Pomodorini secchi biologici in olio EVO - Italiani",
+      "description_html": "<p>Pomodori secchi - Hanno un profumo intenso di pomodoro e olio d'oliva e un colore rosso intenso. Il fruttato intenso della Tonda Iblea esalta il sapore dolce del pomodorino, leggermente aromatizzato con aglio e basilico. Pomodori Ciliegino Secco - Il vero segreto della Sicilia è il sole che bagna l'isola e regala i frutti migliori. Biologici - I pomodori biologici sono selezionati con cura e uniti ai nostri migliori oli biologici. Ingredienti naturali - Ci impegniamo costantemente a preservare le proprietà organolettiche di ogni prodotto. Versatili - I pomodori secchi sono ottimi per antipasti, bruschette e panini o per la pasta.</p>",
+      "variants": []
+    },
+    "pappardelle": {
+      "title": "Pappardelle",
+      "description_html": "<p>14.1 oz (400gr)</p> <p>Ingredienti: semola di grano duro (vegan) + uova + acqua </p> <p>*Nota: tutta la nostra pasta può essere preparata vegana o all'uovo. Indicatelo nelle note dell'ordine*</p>",
+      "variants": []
+    },
+    "peranzana-olives-6-34-oz": {
+      "title": "Olive \"Peranzana\" - 6.34 oz",
+      "description_html": "<p>Direttamente dalla Provenza con amore: queste olive scure, sode e leggermente piccanti, dal sapore unico, furono portate dalla Francia in Italia nell'VIII secolo. Ancora oggi sono tra le preferite degli italiani. Provate ad aggiungerle a un'insalata o a cuocerle in una focaccia fatta in casa. Queste olive franco-italiane sono ottime anche per i cocktail. Queste irresistibili gemme sono perfette per quasi ogni tipo di piatto. Selezioniamo con cura e conserviamo al meglio tutte le nostre olive per preservarne i nutrienti essenziali. Gustate queste sfiziose prelibatezze da sole o aggiungetele alla vostra ricetta italiana preferita. </p> <p>Caratteristiche: </p> <p>Peso netto sgocciolato 6.34 Fl Oz / 180g </p> <ul> <li>Zona di produzione: Puglia, Italia </li> <li>Prodotto artigianale</li> </ul>",
+      "variants": []
+    },
+    "pesto-alla-genovese": {
+      "title": "Pesto alla Genovese",
+      "description_html": "<p>Basilico biologico, aglio, pinoli, olio extravergine d'oliva</p> <p>Formato: 8 oz</p>",
+      "variants": []
+    },
+    "pomodoro": {
+      "title": "Pomodoro",
+      "description_html": "Pomodori San Marzano schiacciati, aglio, basilico, olio extravergine d'oliva<br>Formato: 16 oz",
+      "variants": []
+    },
+    "rigatoni": {
+      "title": "Rigatoni",
+      "description_html": "<p>14.1 oz (400gr)</p> <p>Ingredienti: semola di grano duro (vegan) + acqua</p> <p>*Nota: tutta la nostra pasta può essere preparata vegana o all'uovo. Indicatelo nelle note dell'ordine*</p>",
+      "variants": []
+    },
+    "semi-dried-cherry-tomatoes-in-evoo-product-of-italy": {
+      "title": "Pomodorini semisecchi in olio EVO - Prodotto in Italia",
+      "description_html": "<p>Hanno un profumo intenso di pomodoro e olio d'oliva e un colore rosso intenso. Il fruttato intenso della Tonda Iblea esalta il sapore dolce del pomodorino, leggermente aromatizzato con aglio e basilico. Il vero segreto della Sicilia è il sole che bagna l'isola e regala i frutti migliori. I pomodori sono selezionati con cura e uniti a oli d'oliva di prima qualità. Ci impegniamo costantemente a preservare le proprietà organolettiche di ogni prodotto. Ottimi per antipasti, bruschette e panini o per la pasta.</p>",
+      "variants": []
+    },
+    "spaghetti-alla-chittara": {
+      "title": "Spaghetti alla Chitarra",
+      "description_html": "<p>14.1 oz (400gr)</p> <p>Ingredienti: semola di grano duro (vegan) + uova + acqua </p> <p>*Nota: tutta la nostra pasta può essere preparata vegana o all'uovo. Indicatelo nelle note dell'ordine*</p>",
+      "variants": []
+    },
+    "spaghetti": {
+      "title": "Spaghetti",
+      "description_html": "<p>14.1 oz (400gr)</p> <p>Ingredienti: semola di grano duro (vegan) + uova + acqua </p> <p>*Nota: tutta la nostra pasta può essere preparata vegana o all'uovo. Indicatelo nelle note dell'ordine*</p>",
+      "variants": []
+    },
+    "tagliatelle": {
+      "title": "Tagliatelle",
+      "description_html": "Disponibili<br>Solo acquisto in negozio<br>14.1 oz (400gr)",
+      "variants": []
+    },
+    "tiramisu-16-servings": {
+      "title": "Tiramisù 16 porzioni",
+      "description_html": "<p>Concedetevi il piacere più goloso con il nostro invitante tiramisù. Questo classico dolce italiano alterna strati di soffice crema al mascarpone e delicati savoiardi inzuppati in un intenso espresso. Completato da una spolverata di cacao finissimo, offre a ogni cucchiaiata un perfetto equilibrio tra cremosità, dolcezza e aroma di caffè. Il nostro tiramisù è una delizia paradisiaca che si scioglie in bocca, una scelta irresistibile per ogni amante dei dolci. Gustate questo grande classico senza tempo, preparato con ingredienti di prima qualità e realizzato alla perfezione.</p>",
+      "variants": []
+    },
+    "tiramisu": {
+      "title": "Tiramisù, teglia da 10 porzioni",
+      "description_html": "<p>Concedetevi il piacere più goloso con il nostro invitante tiramisù. Questo classico dolce italiano alterna strati di soffice crema al mascarpone e delicati savoiardi inzuppati in un intenso espresso. Completato da una spolverata di cacao finissimo, offre a ogni cucchiaiata un perfetto equilibrio tra cremosità, dolcezza e aroma di caffè. Il nostro tiramisù è una delizia paradisiaca che si scioglie in bocca, una scelta irresistibile per ogni amante dei dolci. Gustate questo grande classico senza tempo, preparato con ingredienti di prima qualità e realizzato alla perfezione.</p>",
+      "variants": []
+    }
+  },
+  "collections": {
+    "raviolis-short-pasta": {
+      "title": "Ravioli e pasta corta",
+      "description_html": "<p> Tutta la nostra pasta può essere preparata vegana o all'uovo. Indicatelo nelle note dell'ordine!</p>"
+    },
+    "string-pastas": {
+      "title": "Pasta lunga",
+      "description_html": "<p>Tutta la nostra pasta lunga è preparata con semola di grano duro + uova + acqua</p> <p>Tutta la nostra pasta può essere preparata vegana o all'uovo. Indicatelo nelle note dell'ordine!</p>"
+    },
+    "sauces": {
+      "title": "Sughi",
+      "description_html": "I nostri sughi freschi, fatti a mano, sono preparati con i migliori ingredienti locali."
+    },
+    "i-nostri-dolci": {
+      "title": "I Nostri Dolci",
+      "description_html": "<p>Lasciatevi conquistare dai sapori squisiti dell'Italia con la nostra selezione di dolci italiani preparati su ordinazione. Ogni dolce è realizzato con ingredienti di prima scelta, per un gusto autentico che vi porta dritti in Italia. Dal ricco e cremoso tiramisù, con strati di mascarpone e savoiardi inzuppati nell'espresso, ai delicati e croccanti cannoli ripieni di ricotta dolce, la nostra selezione accontenta ogni goloso. Che si tratti di festeggiare un'occasione speciale o semplicemente di togliersi la voglia di Italia, i nostri dolci sono la scelta perfetta per ogni evento.</p>"
+    },
+    "mediterranean-delights": {
+      "title": "Delizie mediterranee",
+      "description_html": "<p>Benvenuti nelle <em>Delizie mediterranee di La Pastaiola</em>, dove potete scoprire una selezione curata di pregiati oli d'oliva italiani, aceti balsamici invecchiati e autentiche specialità mediterranee. Dagli oli extravergini spremuti a freddo ai ricchi e vivaci aceti balsamici, i nostri prodotti portano i sapori dell'Italia direttamente nella vostra cucina.</p> <p>I nostri prodotti gourmet per la dispensa provengono da piccoli produttori italiani, a garanzia della massima qualità e del miglior gusto. Che versiate un filo d'olio sulla pasta fresca, intingiate un pane artigianale o arricchiate le vostre insalate preferite, le nostre delizie mediterranee aggiungono un tocco di tradizione italiana a ogni pasto.</p> <p>Scoprite la nostra collezione esclusiva e date un tocco in più alle vostre creazioni con i migliori ingredienti dall'Italia e dal Mediterraneo.</p>"
+    },
+    "short-pastas": {
+      "title": "Pasta corta",
+      "description_html": "<p>Ingredienti: semola di grano duro (vegan) + acqua</p>"
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "Pasta fresca a Basalt, Colorado",
+      "description": "Pasta fresca artigianale, sughi e specialità italiane preparati a Basalt, Colorado. Corsi di pasta, catering e meal kit.",
+      "hero_title": "Il gusto dell'Italia in ogni boccone della nostra pasta fresca e dei nostri sughi artigianali",
+      "hero_button": "Scopri la pasta",
+      "hero_button_2": "Come ordinare",
+      "products_title": "I nostri prodotti, fatti con anima italiana",
+      "shop_all": "Vedi tutto",
+      "story_title": "La nostra storia",
+      "story_html": "<p>Aina e Marco Baghetti portano nella Roaring Fork Valley il tradizionale <em>mercato</em> italiano di La Pastaiola. Ogni giorno prepariamo la pasta fresca da zero con ingredienti di prima qualità e trafile tradizionali in bronzo, che le danno una superficie ruvida capace di trattenere il sugo.</p>",
+      "story_button": "Scopri di più",
+      "classes_title": "Corsi di pasta",
+      "classes_text": "Dall'impasto al sugo finale. Piccoli gruppi fino a 6 persone.",
+      "catering_title": "Catering su misura",
+      "catering_text": "Pasta fatta a mano, sughi ricchi e piatti italiani pensati per il vostro evento.",
+      "mealkits_title": "Meal kit",
+      "mealkits_text": "Menù completi di tre portate, già confezionati, per riunioni di famiglia e feste.",
+      "visit_title": "Venite a trovarci nel nostro pastificio",
+      "review_1": "I migliori prodotti italiani che abbia mai assaggiato, davvero.",
+      "review_2": "La loro selezione di aceti balsamici di Modena è semplicemente divina.",
+      "review_3": "Il servizio è eccezionale quanto la pasta. Aina e Marco sono cordialissimi, preparati e sempre disponibili."
+    },
+    "shop": {
+      "title": "Negozio",
+      "description": "Pasta fresca, ravioli, sughi, dolci italiani e specialità mediterranee per la dispensa da La Pastaiola a Basalt, Colorado."
+    },
+    "contact": {
+      "title": "Contatti e ordini",
+      "description": "Chiamate, scriveteci o venite a trovare La Pastaiola a Basalt, Colorado.",
+      "lead": "Per ora gli acquisti online sono sospesi. Per ordinare pasta fresca, sughi o dolci, chiamateci o scriveteci un'email indicando cosa vi serve e quando vorreste ritirarlo."
+    },
+    "about": {
+      "title": "Chi siamo",
+      "description": "Aina e Marco Baghetti, artigiani della pasta fresca nella Roaring Fork Valley.",
+      "heading": "Artigiani della pasta fresca nella Roaring Fork Valley",
+      "lead": "Aina e Marco Baghetti sono felici di portare nella Roaring Fork Valley la pasta fresca e i sughi artigianali italiani di La Pastaiola.",
+      "body_html": "<p>Marco è di Napoli. I suoi ricordi d'infanzia sono soprattutto in cucina con la nonna e la mamma: le guardava cucinare, discutere sugli ingredienti migliori e decidere il menù del giorno per la famiglia. I ricordi più belli sono quelli delle feste, con i piatti tradizionali napoletani del periodo. Ancora oggi, ogni Pasqua, Marco e sua madre cucinano insieme in videochiamata.</p><p>Aina è di Almaty, in Kazakistan, ed è cresciuta in una grande famiglia con sette figli, dove sperimentare in cucina per tutti era sempre un divertimento. Ha costruito la sua carriera nell'ospitalità e ha imparato l'arte della pasta in Italia, per creare un prodotto fatto con maestria, amore e tradizione.</p><p>Marco e Aina si sono conosciuti lavorando al ristorante Il Gattopardo a New York. Li unisce la passione per la cucina italiana e per un servizio eccezionale. Anni di esperienza tra cibo e vino, gestione di ristoranti e catering li hanno portati ad aprire un <em>pastificio</em> artigianale nella Roaring Fork Valley.</p><p>Hanno due figli, Matteo e Stefano, ai quali sperano di trasmettere la loro passione.</p>"
+    },
+    "our_shop": {
+      "title": "Il nostro negozio",
+      "description": "Un autentico pastificio a Basalt, Colorado: pasta fresca fatta ogni giorno, sughi della casa e prodotti importati dall'Italia.",
+      "heading": "Il nostro negozio",
+      "lead": "Per noi non è solo un negozio. È il nostro stile di vita, le nostre radici e ciò che abbiamo di più caro.",
+      "body_html": "<p>La cultura gastronomica italiana è condividere un pasto in famiglia. I piatti si preparano con attenzione, cura e orgoglio, usando solo ingredienti freschi e di qualità. Abbiamo portato con noi questa tradizione, insieme alla nostra esperienza nel settore, per creare un luogo dove amici e famiglie possano trovare la pasta più fresca e prodotti importati dall'Italia.</p><p>La Pastaiola è un autentico <em>pastificio</em>: prepariamo la pasta fresca da zero nel nostro laboratorio, con ingredienti di prima qualità e ricette tradizionali italiane. Le nostre trafile in bronzo danno alla pasta una superficie ruvida e porosa che assorbe il sugo quando mantecate il piatto.</p><p>In negozio troverete pasta fresca, sughi preparati da noi e prodotti artigianali made in Italy selezionati con cura. Realizziamo anche menù italiani personalizzati per il catering.</p>",
+      "button": "Scopri cosa c'è"
+    },
+    "classes": {
+      "title": "Corsi di pasta",
+      "description": "Corsi pratici di pasta fresca a Basalt, Colorado. Gruppi fino a 6 persone, 2–3 ore, ingredienti e attrezzatura inclusi.",
+      "heading": "Scoprite l'esperienza definitiva della pasta fatta a mano",
+      "lead": "Immergetevi nell'arte della vera pasta fatta in casa. I nostri corsi pratici vi portano nel cuore della cucina italiana, dove imparerete a preparare da zero una pasta squisita.",
+      "price_line": "a persona · circa 2–3 ore · fino a 6 partecipanti",
+      "button": "Richiedi un corso",
+      "body_html": "<h3>Perché sceglierci</h3><ul><li><strong>Autentica esperienza italiana.</strong> Imparate tecniche tramandate di generazione in generazione.</li><li><strong>Si impara facendo.</strong> Ogni passaggio, dall'impastare e stendere al formare e cuocere.</li><li><strong>Ingredienti freschi e di qualità.</strong> Tutti gli ingredienti e gli attrezzi sono inclusi.</li><li><strong>Divertente e accogliente.</strong> Adatto sia ai principianti assoluti sia ai cuochi più esperti.</li></ul><h3>Dettagli del corso</h3><ul><li>I corsi durano dalle 2 alle 3 ore e iniziano con qualche stuzzichino italiano. Bevande servite per tutta la durata.</li><li>Portate i vostri contenitori riutilizzabili per portare a casa la pasta.</li><li>Ogni corso è limitato a 6 partecipanti e ciascuno deve avere il proprio posto pagato.</li><li>Su richiesta, corsi privati a casa vostra con un costo aggiuntivo.</li><li>Possiamo venire incontro a esigenze alimentari particolari: segnalatecele al momento della prenotazione.</li></ul><h3>Tipi di corso</h3><ul><li><strong>Introduzione alla pasta fatta a mano:</strong> basi dell'impasto, formati tradizionali e sughi classici.</li><li><strong>Tecniche avanzate:</strong> formati elaborati e nuove ricette.</li><li><strong>Corsi privati su misura:</strong> per occasioni speciali ed eventi di gruppo.</li></ul>",
+      "kids_title": "Pasta per bambini",
+      "kids_html": "<p>Il nostro laboratorio è il posto ideale per far scoprire la cucina ai bambini. I bambini sotto i 6 anni partecipano gratis; dai 6 ai 14 anni è prevista una tariffa ridotta. Scriveteci per i dettagli.</p>",
+      "email_subject": "Prenotazione corso di pasta",
+      "email_body": "Buongiorno La Pastaiola,\n\nvorrei prenotare un corso di pasta.\nData/e preferita/e:\nNumero di partecipanti (ed età di eventuali bambini):\nEsigenze alimentari:\nNome:\nTelefono:\n"
+    },
+    "catering": {
+      "title": "Catering",
+      "description": "Catering italiano su misura di La Pastaiola: pasta fatta a mano, sughi e piatti tradizionali per il vostro evento.",
+      "heading": "Prenotate il vostro prossimo evento",
+      "lead": "Cercate un catering per il vostro prossimo evento? Saremo felici di portarvi il meglio dei piatti tradizionali italiani, preparati con passione e cura.",
+      "text": "Usiamo prodotti importati dall'Italia e amiamo sostenere agricoltori e produttori locali. In un paio d'ore vi faremo viaggiare tra le regioni d'Italia. Garantito!",
+      "form_title": "Richiedi un preventivo",
+      "form_subject": "Richiesta catering"
+    },
+    "meal_kits": {
+      "title": "Meal kit",
+      "description": "Meal kit italiani di tre portate, già confezionati, per ritrovi e feste.",
+      "heading": "Meal kit",
+      "lead": "State organizzando un ritrovo con famiglia e amici o vi serve una soluzione semplice per una festa? Prepariamo meal kit di tre portate, già confezionati, pensati per il vostro evento.",
+      "text": "Ogni kit comprende un antipasto o un'insalata, una pasta, carne o pesce a scelta e un dolce. Se avete in mente qualcosa di particolare, contattateci e lo realizzeremo.",
+      "form_title": "Richiedi un meal kit",
+      "form_subject": "Richiesta meal kit"
+    },
+    "not_found": {
+      "title": "Pagina non trovata",
+      "lead": "Questa pagina potrebbe essere stata spostata con l'aggiornamento del nostro sito."
+    }
+  },
+  "strings": {
+    "skip": "Vai al contenuto",
+    "menu": "Menu",
+    "language": "Lingua",
+    "nav_shop": "Negozio",
+    "nav_classes": "Corsi di pasta",
+    "nav_catering": "Catering",
+    "nav_meal_kits": "Meal kit",
+    "nav_our_shop": "Il nostro negozio",
+    "nav_about": "Chi siamo",
+    "nav_contact": "Contatti",
+    "order": "Ordina",
+    "footer_visit": "Vieni a trovarci",
+    "footer_hours": "Orari del negozio",
+    "footer_explore": "Esplora",
+    "footer_follow": "Seguici",
+    "day_mon": "Lunedì",
+    "day_tue": "Martedì",
+    "day_wed": "Mercoledì",
+    "day_thu": "Giovedì",
+    "day_fri": "Venerdì",
+    "day_sat": "Sabato",
+    "day_sun": "Domenica",
+    "closed": "Chiuso",
+    "price_from": "Da",
+    "options": "Opzioni",
+    "how_to_order_title": "Come ordinare:",
+    "how_to_order_text": "gli acquisti online sono sospesi. Chiamateci o scriveteci e ritirate in negozio a Basalt.",
+    "order_by_email": "Ordina via email",
+    "call": "Chiama",
+    "order_subject": "Ordine",
+    "order_body": "Buongiorno La Pastaiola,\n\nvorrei ordinare: {item}\nQuantità:\nData di ritiro:\nNome:\nTelefono:\n\nGrazie!",
+    "order_list_placeholder": "(elencate i prodotti desiderati)",
+    "vegan_note": "Tutta la nostra pasta può essere preparata vegana o all'uovo. Indicatelo quando ordinate.",
+    "related": "Potrebbe piacerti anche",
+    "class_details": "Dettagli e prenotazione del corso",
+    "contact_call": "Chiama",
+    "contact_email": "Email",
+    "contact_visit": "Vieni a trovarci",
+    "contact_hours": "Orari",
+    "open_maps": "Apri in Mappe",
+    "form_name": "Nome",
+    "form_email": "Email",
+    "form_phone": "Telefono",
+    "form_date": "Data dell'evento",
+    "form_guests": "Ospiti",
+    "form_message": "Raccontaci",
+    "form_send": "Invia richiesta",
+    "form_hint": "Si aprirà la vostra app di posta con i dettagli già compilati. Potete anche scriverci o chiamarci.",
+    "form_from": "da",
+    "more": "Altro",
+    "home": "Home",
+    "redirecting": "Continua"
+  },
+  "announcement": "Ordina per telefono o email · Ritiro a Basalt"
+}

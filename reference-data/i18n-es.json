@@ -1,0 +1,397 @@
+{
+  "products": {
+    "arrabbiata-spicy": {
+      "title": "Arrabbiata (picante)",
+      "description_html": "<p>Tomates enteros pelados italianos, chile napolitano, ajo, perejil, albahaca, aceite de oliva extra virgen</p> <p><br>Tamaño: 16 oz</p>",
+      "variants": []
+    },
+    "artichokes-tapenade-7-oz": {
+      "title": "Tapenade de alcachofas - 7 oz",
+      "description_html": "<p>Una crema de alcachofas italianas de la región de Apulia, elaborada según recetas tradicionales, que por su delicadeza se presta a distintos usos en la cocina: desde primeros y segundos platos hasta crostini y bruschetta. </p> <p>Características: </p> <p>7 Oz / 212ml </p> <ul> <li>Zona de producción: Puglia, Italia </li> <li>Producto artesanal </li> <li>Conservado en aceite de oliva </li> <li>Elaborado solo con verduras italianas</li> </ul>",
+      "variants": []
+    },
+    "bella-from-cerignola-olives-6-34-oz": {
+      "title": "Aceitunas \"Bella di Cerignola\" - 6.34 oz",
+      "description_html": "<p>¡La aceituna favorita del mundo! La “Bella di Cerignola” es una variedad DOP (Denominación de Origen Protegida) y es imposible resistirse a ella. Carnosas y ligeramente crujientes, estas aceitunas crecen en la región de Apulia* en Italia, donde las recogemos frescas a mano especialmente para ti. Sirve estas grandes aceitunas verdes como un aperitivo sencillo o como parte de un aperitivo al estilo italiano. ¡Las aceitunas “Bella di Cerignola” también combinan de maravilla con carne o pescado! Estas joyas de Apulia, que hacen agua la boca, son ideales para casi cualquier tipo de plato. Seleccionamos con cuidado y almacenamos de forma óptima todas nuestras aceitunas para conservar sus nutrientes esenciales. Disfruta estas delicias sabrosas solas o agrégalas a tu receta italiana favorita. </p> <p>Características: </p> <p>Peso neto escurrido 6.34 Fl Oz / 180g </p> <p>Zona de producción: Puglia, Italia </p> <p>Producto artesanal</p>",
+      "variants": []
+    },
+    "black-olives-tapenade-7-oz": {
+      "title": "Tapenade de aceitunas negras - 7 oz",
+      "description_html": "<p>Un paté con el sabor intenso de las aceitunas de nuestra tierra, que expresa un sabor típico de Apulia. Ideal para ensaladas, carnes, pasta, crostini y bruschetta. </p> <p>Características: </p> <p>7 Oz / 212ml</p> <p> Zona de producción: Puglia, Italia</p> <p> Producto artesanal </p> <p>Conservado en aceite de oliva </p> <p>Elaborado solo con verduras italianas</p>",
+      "variants": []
+    },
+    "bolognese": {
+      "title": "Bolognese",
+      "description_html": "Carne molida de black angus, tomates enteros pelados italianos, zanahorias, apio, cebollas, aceite de oliva extra virgen<br><br>Tamaño: 16 oz",
+      "variants": []
+    },
+    "bucatini": {
+      "title": "Bucatini",
+      "description_html": "<p>14.1 oz (400gr)</p> <p>Ingredientes: Vegana/harina de trigo duro + huevos + agua </p> <p>*Nota: Todas las pastas se pueden hacer veganas o con huevo. Indícalo en las notas de tu pedido*</p>",
+      "variants": []
+    },
+    "butternut-squash-ricotta-ravioli": {
+      "title": "Ravioli",
+      "description_html": "<p>Chico: 30 piezas<br></p> <p>Grande: 15 piezas<br><br><strong>Ingredientes</strong>: Harina de trigo duro + huevos</p> <p><strong>Ravioli de ricotta y espinaca:</strong> Queso ricotta, Parmigiano Reggiano, espinaca.</p> <p><strong>Cacio e Pepe</strong>: Pecorino Romano, ricotta, Parmigiano Reggiano, pimienta negra.</p> <p><strong>Ravioli de berenjena a la parmigiana:</strong> Berenjena asada, mozzarella, Parmigiano, ricotta, provolone.</p> <p><strong>Alcachofas y burrata</strong>: Alcachofas marinadas, burrata, mozzarella.</p> <p><strong>Ricotta y hongos:</strong> Ricotta, hongos variados, Parmigiano.</p> <p><strong>Ravioli Caprese:</strong> Mozzarella, ricotta, Parmigiano, albahaca.</p> <p><strong>Calabaza butternut y ricotta:</strong> Calabaza butternut asada al horno, ricotta, Parmigiano.</p> <p>*Nota: Todas las pastas se pueden hacer veganas o con huevo. Indícalo en las notas de tu pedido*</p> <p>*Con gusto recibimos pedidos personalizados y tratamos de atenderlos todos dentro de nuestras tandas de producción. Podemos preparar sabores y rellenos a tu medida. Los pedidos deben recibirse con 48 horas de anticipación. Puedes hacerlos por email o llenando la hoja de pedido de pasta en nuestro sitio web.</p>",
+      "variants": [
+        "Cacio e Pepe",
+        "Berenjena a la parmigiana",
+        "Hongos y ricotta",
+        "Nerano",
+        "Caprese",
+        "Espinaca y queso ricotta",
+        "Calabaza butternut y ricotta",
+        "Alcachofas y burrata"
+      ]
+    },
+    "cacio-e-pepe": {
+      "title": "Salsa Cacio e Pepe",
+      "description_html": "Pecorino Romano, Grana Padano,<br>leche, pimienta negra.<br><br>Tamaño: 16 oz",
+      "variants": []
+    },
+    "cannoli": {
+      "title": "Cannoli",
+      "description_html": "<p>Saborea la tradición con nuestros cannoli clásicos, rellenos de ricotta endulzada y de una rica ricotta con chocolate. Estos icónicos dulces italianos tienen conchas fritas y crujientes que hacen el contraste perfecto con sus rellenos suaves y cremosos. Cada cannolo se prepara con los mejores ingredientes, para una experiencia auténtica y deliciosa. Ideales para cualquier ocasión, nuestros cannoli ofrecen una encantadora mezcla de texturas y sabores que te llevarán directo a Italia en cada bocado.</p> <p>1 docena por pedido</p>",
+      "variants": []
+    },
+    "casarecce": {
+      "title": "Casarecce",
+      "description_html": "<p>Disponible<br></p> <p>14.1 oz (400gr)</p> <p>Ingredientes: Vegana/harina de trigo duro + agua</p> <p>*Nota: Todas las pastas se pueden hacer veganas o con huevo. Indícalo en las notas de tu pedido*</p>",
+      "variants": []
+    },
+    "cavatelli": {
+      "title": "Cavatelli",
+      "description_html": "Harina de trigo duro.<br><br>Disponible<br><br>14.1 oz (400gr)",
+      "variants": []
+    },
+    "creste-di-gallo": {
+      "title": "Creste di Gallo",
+      "description_html": "<p>Creste di Gallo es una forma tradicional de pasta italiana que se parece a la cresta de un gallo, de ahí su nombre. Hecha con harina de trigo duro, tiene una textura firme y un sabor ligeramente a nuez, perfecta para sostener salsas intensas. Sus estrías y su forma única atrapan más salsa, por lo que es ideal para platos contundentes como ragù, pesto o incluso salsas cremosas.</p>",
+      "variants": []
+    },
+    "extra-virgin-olive-oil-igp-puglia-intense-16-9-fl-oz": {
+      "title": "Aceite de oliva extra virgen IGP Puglia - Intenso 16.9 fl oz",
+      "description_html": "<p>Desde Apulia con amor llega este aceite de oliva extra virgen audaz y emocionante. Su sabor y aroma intensos te recordarán el pasto recién cortado, las almendras blancas taninas y las alcachofas terrosas. Este aceite robusto mantiene el equilibrio perfecto entre amargor y picor. Pruébalo con carnes asadas a fuego lento, carnes de caza o sopas invernales contundentes. ¡Sé creativo y ponle un chorrito a una bola de helado de vainilla! Este es un aceite de oliva extra virgen nutracéutico. Perfil sensorial: Frutado verde intenso, herbáceo, con notas de almendra blanca y alcachofa. Sabor: Fluido, con picor y amargor persistentes y equilibrados. Características: - 16,9 Fl Oz / 500ml - IGP (Indicación Geográfica Protegida) - Zona de producción: Puglia central, Italia - Periodo de cosecha: octubre/noviembre - Extracción en frío - Etiqueta antigrasa</p>",
+      "variants": []
+    },
+    "extra-virgin-olive-oil-igp-sicilia-delicate": {
+      "title": "Aceite de oliva extra virgen IGP Sicilia - Delicado",
+      "description_html": "<p>¡Bienvenido a la hermosa isla de Sicilia! El sabor ligeramente picante de nuestro aceite de oliva extra virgen siciliano IGP desprende los aromas de esta famosa isla italiana. Con su delicado sabor a tomates recién cosechados, verduras frescas, alcachofas y hierbas amargas y picantes, este aceite es el compañero perfecto para el carpaccio de salmón, la pasta con salsa de tomate o el pescado a la parrilla, y es delicioso solo para mojar pan. Perfil sensorial: Frutado delicado con notas de tomate recién cosechado y verduras frescas, alcachofa y hierbas. Sabor: Untuoso, con amargor y picor persistentes, ambos equilibrados. Desde Apulia con amor llega este aceite de oliva extra virgen audaz y emocionante.</p>",
+      "variants": []
+    },
+    "extra-virgin-olive-oil-igp-toscana-medium": {
+      "title": "Aceite de oliva extra virgen IGP Toscana - Medio",
+      "description_html": "<p>Un aceite de oliva extra virgen increíblemente frutado, con apenas un toque de alcachofa, fruta madura y tomate fresco en el paladar. De las colinas del Val d’Orcia y la Maremma toscana, este aceite es limpio, fresco y dulce al inicio, y ligeramente amargo y picante al final. Es maravillosamente versátil: combina bien con verduras contundentes y cremas de verduras, así como con ensaladas frescas, carnes y pescados. También es el aceite perfecto para vinagretas y salsas. Y es excelente para freír. Perfil sensorial: Frutado medio, aceituna limpia, con notas herbáceas de alcachofa y fruta madura y, en menor medida, tomate. Sabor: Fresco y limpio, abre con una ligera sensación dulce seguida de un agradable amargor y picor de intensidad media, con rica persistencia de notas vegetales, dominadas por la sensación herbácea de la alcachofa.</p>",
+      "variants": []
+    },
+    "fettuccine": {
+      "title": "Fettuccine",
+      "description_html": "<p>Disponible<br><br>14.1 oz (400gr)</p> <p>Ingredientes: Vegana/harina de trigo duro + huevos + agua </p> <p>*Nota: Todas las pastas se pueden hacer veganas o con huevo. Indícalo en las notas de tu pedido*</p>",
+      "variants": []
+    },
+    "fresh-pasta-making-class": {
+      "title": "Clase de pasta fresca",
+      "description_html": "<p>Acompáñanos a vivir una experiencia culinaria inolvidable en nuestra clase de pasta fresca, en 72 Sunset Dr, Unit B, Basalt, CO. Aprende con Aina el arte de preparar pasta casera auténtica desde cero.</p>",
+      "variants": []
+    },
+    "fusilli": {
+      "title": "Fusilli",
+      "description_html": "<p>Los fusilli son una pasta en forma de espiral, perfecta para retener la salsa gracias a sus vueltas y estrías. Hechos con trigo duro, tienen una textura firme y combinan bien con una gran variedad de salsas, desde las intensas a base de tomate hasta aderezos más ligeros con aceite de oliva o pesto. Su forma también los hace ideales para ensaladas de pasta, platos al horno y cazuelas contundentes.</p>",
+      "variants": []
+    },
+    "gf-maccheroni": {
+      "title": "Maccheroni sin gluten",
+      "description_html": "<p>Mezcla de harinas sin gluten (fécula de papa, harina de mijo, harina de arroz, harina de tapioca, arrurruz), goma xantana, fibra de cítricos, azúcar fermentada, sal, especias.</p> <p>14.1 oz (400gr)</p>",
+      "variants": []
+    },
+    "giusti-aged-balsamic-vinegar-of-modena-6-yr": {
+      "title": "Giusti - Vinagre balsámico añejo de Módena 6 años",
+      "description_html": "<p>Giusti - 1 Medalla de Plata, vinagre balsámico de Módena añejado (6 años) - Cubica. Vinagre balsámico de Módena - Elaborado en Módena con mosto de uva cocido y vinagre de vino añejo, y luego añejado durante 8 años en barricas de roble con vinagre balsámico añejo extraído de barriles centenarios. Versátil - 1 Medalla de Plata, Medaglia d'Argento, tiene una acidez maravillosamente redonda que lo hace perfecto para acompañar ensaladas, verduras, guisos cocinados a fuego lento, salsas y más. Certificado IGP - Vinagre balsámico añejado a la perfección, certificado por los viticultores de Módena y Reggio Emilia, y nombrado por la Medalla de Plata obtenida en ferias internacionales del siglo XIX. Diseño - La botella, de diseño cúbico, lleva la primera etiqueta, diseñada a principios del siglo XX, que muestra todos los premios que Giusti ha ganado a lo largo de los años. Ingredientes: Mosto de uva cocido</p>",
+      "variants": []
+    },
+    "giusti-aged-balsamic-vinegar-of-modena-8-yr-2-gold-medals": {
+      "title": "Giusti Vinagre balsámico añejo de Módena 8 años - 2 Medallas de Oro",
+      "description_html": "<p>Giusti - 2 Medallas de Oro, vinagre balsámico de Módena añejado (8 años) - Cubica. </p> <p>Vinagre balsámico elaborado en Módena con mosto de uva cocido y vinagre de vino añejo, y luego añejado durante 10 años en barricas de roble con vinagre balsámico añejo extraído de barriles centenarios. </p> <p>Versátil - 2 Medallas de Oro, Il Classico, tiene un buen equilibrio entre lo dulce y lo ácido, con notas de frutas maduras, regaliz y pimienta negra, y combina bien con pescado, carnes blancas, quesos y mariscos. </p> <p>Certificado IGP - Vinagre balsámico añejado a la perfección, certificado por los viticultores de Módena y Reggio Emilia, y nombrado por la Medalla de Oro obtenida en ferias internacionales del siglo XIX. </p> <p>Diseño histórico - La botella lleva la primera etiqueta, diseñada a principios del siglo XX para mostrar los numerosos premios obtenidos, y tiene el estilo Cubica, en forma de cubo. Ingredientes: Mosto de uva cocido</p>",
+      "variants": []
+    },
+    "giusti-historical-trio-balsamic-vinegar-gift-set": {
+      "title": "Set de regalo Giusti Trío Histórico de vinagres balsámicos",
+      "description_html": "<p>Cada balsámico se elabora con mosto de uva cocido y vinagre de vino añejo, y luego se añeja a la perfección en barricas de roble, con la adición de vinagre balsámico añejo extraído de barriles centenarios. </p> <p>Los vinagres balsámicos llevan el nombre de las medallas que obtuvieron en ferias internacionales del siglo XIX. </p> <p>1 Medalla de Plata, también conocido como Medaglia d’Argento, se añeja en barricas de roble francés de principios del siglo XX con la adición de vinagre balsámico añejo de barriles centenarios. Es aromático y realza el sabor de los platos con su intensidad. </p> <p>2 Medallas de Oro, Il Classico, es versátil y tiene un buen equilibrio entre lo dulce y lo ácido, con notas de frutas maduras, regaliz y pimienta negra. Se añeja en barricas de roble, con la adición de vinagre balsámico añejo de barriles centenarios. </p> <p>3 Medallas de Oro, Riccardo Giusti, se elabora con uvas dulces secadas al sol, lo que le da un aroma y sabor a mermelada de ciruela y frutos rojos, entrelazados con toques de miel y vainilla. </p> <p>HECHO EN: MÓDENA, ITALIA</p>",
+      "variants": []
+    },
+    "giusti-italian-handmade-panettone-fruit-cake-w-balsamic": {
+      "title": "Panettone artesanal italiano Giusti - Pan dulce con balsámico",
+      "description_html": "<p>FRESCO - ¡Recién llegado! Fresco de Italia para la temporada navideña 2024, bellamente envuelto en estilo rústico: un regalo maravilloso para los anfitriones en las fiestas. </p> <p>DULCE NAVIDEÑO ITALIANO TRADICIONAL - Un auténtico pan dulce navideño importado de Italia, elaborado según nuestra receta y criterios tradicionales. Hecho con ingredientes totalmente naturales, estrictamente frescos y genuinos. </p> <p>SABOR ÚNICO - El agridulce del vinagre balsámico complementa a la perfección la suavidad aromática del panettone. </p> <p>CON BALSÁMICO - El vinagre balsámico Giusti 3 Medallas de Oro se agrega a la masa, se usa para remojar las pasas y, por último, se añade en forma de relleno de crema.</p> <p>Hecho en Italia</p>",
+      "variants": []
+    },
+    "gnocchetti-sardi": {
+      "title": "Gnocchetti Sardi",
+      "description_html": "<p>14.1 oz (400gr)</p> <p>Ingredientes: Vegana/harina de trigo duro + agua</p> <p>*Nota: Todas las pastas se pueden hacer veganas o con huevo. Indícalo en las notas de tu pedido*</p>",
+      "variants": []
+    },
+    "gourmet-coarse-sicilian-herbs-salt-for-meat-and-fish": {
+      "title": "Sal gruesa gourmet con hierbas sicilianas para carne y pescado",
+      "description_html": "<p>Lleva tus creaciones culinarias a otro nivel con nuestra sal de mar siciliana. Perfecta para carne y pescado, esta sal de mar saborizada tiene una mezcla de hierbas y especias aromáticas, como orégano, romero, tomillo, cáscara de limón seca y chile. Ya sea para frotar la carne antes de asarla o saltearla, o como toque final, esta sal convertirá tus platos en delicias gourmet. ¡Descubre los ricos sabores de Sicilia en cada pizca! </p> <p>Frantoi Cutrera es conocida por su aceite de oliva extra virgen de alta calidad. Desde 1906, la finca cultiva olivares y procesa aceite y aceitunas en el sureste de Sicilia. También ofrece una gran variedad de mermeladas, hierbas y sales, todas cultivadas en la misma región. </p> <p>HECHO EN: SICILIA, ITALIA</p>",
+      "variants": []
+    },
+    "gourmet-italian-capers-in-sea-salt-capers-non-pareil": {
+      "title": "Alcaparras italianas gourmet en sal de mar - Alcaparras Non Pareil",
+      "description_html": "<p>NON-PAREIL - Son las alcaparras más apreciadas por su textura firme y su sabor delicado. Nuestras alcaparras llegan frescas de Sicilia, donde se cultivan las mejores alcaparras del mundo. </p> <p>Totalmente naturales, sin conservadores ni aditivos, veganas, sin OGM; hechas solo con alcaparras y sal de mar. Seleccionamos a mano las mejores alcaparras sicilianas y las conservamos de forma natural en sal con nuestra receta familiar tradicional. Cada frasco guarda un pedacito de nuestra tierra, un secreto de nuestra tradición aún no revelado. Como verdadera familia siciliana, queremos compartir los productos y las recetas más auténticos de esta isla. </p> <p>UN CONDIMENTO O ADORNO DELICIOSO - Te sugerimos desalar las alcaparras antes de usarlas (remojándolas en agua hasta 15 minutos). Dale un toque ácido maravilloso y único a tus salsas, mariscos, carnes, aves, pastas o ensaladas. ¡Tan atractivas a la vista como deliciosas! </p> <p>UN SUSTITUTO SALUDABLE DE LA SAL, LLENO DE SABOR – Usa las alcaparras non-pareil en recetas frías y calientes para añadir un sabor mediterráneo agrio y salado.</p>",
+      "variants": []
+    },
+    "linguine": {
+      "title": "Linguine",
+      "description_html": "<p>14.1 oz (400gr)</p> <p>Ingredientes: Vegana/harina de trigo duro + huevos + agua </p> <p>*Nota: Todas las pastas se pueden hacer veganas o con huevo. Indícalo en las notas de tu pedido*</p>",
+      "variants": []
+    },
+    "mafaldine": {
+      "title": "Mafaldine",
+      "description_html": "<p>14.1 oz (400gr)</p> <p>Ingredientes: Vegana/harina de trigo duro + huevos + agua </p> <p>*Nota: Todas las pastas se pueden hacer veganas o con huevo. Indícalo en las notas de tu pedido*</p>",
+      "variants": []
+    },
+    "meat-agnolotti": {
+      "title": "Agnolotti de carne",
+      "description_html": "<p>Solomillo de res, ricotta, parmigiano, huevos crudos, harina 00 y harina de trigo duro</p> <p>14.1 oz</p>",
+      "variants": []
+    },
+    "mixed-spicy-veggie-tapenade-7-oz": {
+      "title": "Tapenade picante de verduras mixtas - 7 oz",
+      "description_html": "<p>De la unión de pimientos, berenjena, zanahoria roja, chile y otras verduras tradicionales nace el Tapenade picante de verduras mixtas: una crema picante de sabor intenso, ideal para crostini, bruschetta o para aderezar platos de pasta. </p> <p>Características: </p> <p>7 Oz / 212ml </p> <ul> <li>Zona de producción: Puglia, Italia </li> <li>Producto artesanal </li> <li>Conservado en aceite de oliva </li> <li>Elaborado solo con verduras italianas</li> </ul>",
+      "variants": []
+    },
+    "mushroom-tapenade-7-oz": {
+      "title": "Tapenade de hongos - 7 oz",
+      "description_html": "<p>Crema de hongos de sabor delicado, para usar en primeros y segundos platos, crostini y bruschetta. </p> <p>Características: </p> <p>7 Oz / 212ml </p> <p>Zona de producción: Puglia, Italia </p> <ul> <li>Producto artesanal</li> <li>Conservado en aceite de oliva </li> <li>Elaborado solo con verduras italianas</li> <li>Zona de producción: Puglia, Italia</li> <li></li> </ul>",
+      "variants": []
+    },
+    "orecchiette": {
+      "title": "Orecchiette",
+      "description_html": "<p>14.1 oz (400gr)</p> <p>Ingredientes: Vegana/harina de trigo duro + agua</p> <p>*Nota: Todas las pastas se pueden hacer veganas o con huevo. Indícalo en las notas de tu pedido*</p>",
+      "variants": []
+    },
+    "organic-sun-dried-cherry-tomatoes-in-evoo-italian": {
+      "title": "Tomates cherry orgánicos secados al sol en AOVE - Italianos",
+      "description_html": "<p>Tomates secos - Tienen un aroma intenso a tomate y aceite de oliva, y un color rojo intenso. El intenso afrutado de la Tonda Iblea realza el sabor dulce del tomate cherry, ligeramente aromatizado con ajo y albahaca. Pomodori Ciliegino Secco - El verdadero secreto de Sicilia es el sol que baña la isla y le regala las mejores frutas. Orgánicos - Los tomates orgánicos se seleccionan con cuidado y se combinan con nuestros mejores aceites de oliva orgánicos. Ingredientes naturales - Nos esforzamos constantemente por conservar las propiedades organolépticas de cada producto. Versátiles - Los tomates secados al sol son excelentes para entradas, bruschetta, sándwiches o pasta.</p>",
+      "variants": []
+    },
+    "pappardelle": {
+      "title": "Pappardelle",
+      "description_html": "<p>14.1 oz (400gr)</p> <p>Ingredientes: Vegana/harina de trigo duro + huevos + agua </p> <p>*Nota: Todas las pastas se pueden hacer veganas o con huevo. Indícalo en las notas de tu pedido*</p>",
+      "variants": []
+    },
+    "peranzana-olives-6-34-oz": {
+      "title": "Aceitunas \"Peranzana\" - 6.34 oz",
+      "description_html": "<p>Directo de Provenza con amor, estas aceitunas oscuras, firmes y ligeramente picantes, de sabor único, llegaron de Francia a Italia en el siglo VIII. Hoy siguen siendo unas de las favoritas en Italia. Pruébalas en una ensalada u horneadas en una focaccia casera. Estas aceitunas franco-italianas también son ideales para cócteles. Estas joyas, que hacen agua la boca, son ideales para casi cualquier tipo de plato. Seleccionamos con cuidado y almacenamos de forma óptima todas nuestras aceitunas para conservar sus nutrientes esenciales. Disfruta estas delicias sabrosas solas o agrégalas a tu receta italiana favorita. </p> <p>Características: </p> <p>Peso neto escurrido 6.34 Fl Oz / 180g </p> <ul> <li>Zona de producción: Puglia, Italia </li> <li>Producto artesanal</li> </ul>",
+      "variants": []
+    },
+    "pesto-alla-genovese": {
+      "title": "Pesto alla Genovese",
+      "description_html": "<p>Albahaca orgánica, ajo, piñones, aceite de oliva extra virgen</p> <p>Tamaño: 8 oz</p>",
+      "variants": []
+    },
+    "pomodoro": {
+      "title": "Pomodoro",
+      "description_html": "Tomates San Marzano triturados, ajo, albahaca, aceite de oliva extra virgen<br>Tamaño: 16 oz",
+      "variants": []
+    },
+    "rigatoni": {
+      "title": "Rigatoni",
+      "description_html": "<p>14.1 oz (400gr)</p> <p>Ingredientes: Vegana/harina de trigo duro + agua</p> <p>*Nota: Todas las pastas se pueden hacer veganas o con huevo. Indícalo en las notas de tu pedido*</p>",
+      "variants": []
+    },
+    "semi-dried-cherry-tomatoes-in-evoo-product-of-italy": {
+      "title": "Tomates cherry semisecos en AOVE - Producto de Italia",
+      "description_html": "<p>Tienen un aroma intenso a tomate y aceite de oliva, y un color rojo intenso. El intenso afrutado de la Tonda Iblea realza el sabor dulce del tomate cherry, ligeramente aromatizado con ajo y albahaca. El verdadero secreto de Sicilia es el sol que baña la isla y le regala las mejores frutas. Los tomates se seleccionan con cuidado y se combinan con los mejores aceites de oliva. Nos esforzamos constantemente por conservar las propiedades organolépticas de cada producto. Excelentes para entradas, bruschetta, sándwiches o pasta.</p>",
+      "variants": []
+    },
+    "spaghetti-alla-chittara": {
+      "title": "Spaghetti alla Chitarra",
+      "description_html": "<p>14.1 oz (400gr)</p> <p>Ingredientes: Vegana/harina de trigo duro + huevos + agua </p> <p>*Nota: Todas las pastas se pueden hacer veganas o con huevo. Indícalo en las notas de tu pedido*</p>",
+      "variants": []
+    },
+    "spaghetti": {
+      "title": "Spaghetti",
+      "description_html": "<p>14.1 oz (400gr)</p> <p>Ingredientes: Vegana/harina de trigo duro + huevos + agua </p> <p>*Nota: Todas las pastas se pueden hacer veganas o con huevo. Indícalo en las notas de tu pedido*</p>",
+      "variants": []
+    },
+    "tagliatelle": {
+      "title": "Tagliatelle",
+      "description_html": "Disponible<br>Solo compras en tienda<br>14.1 oz (400gr)",
+      "variants": []
+    },
+    "tiramisu-16-servings": {
+      "title": "Tiramisú 16 porciones",
+      "description_html": "<p>Date el gusto máximo con nuestro irresistible tiramisú. Este clásico postre italiano tiene capas de esponjoso queso mascarpone y delicados bizcochos de soletilla (ladyfingers) empapados en intenso espresso. Cubierto con una fina capa de cacao en polvo, cada bocado ofrece el equilibrio perfecto entre lo cremoso, lo dulce y el sabor a café. Nuestro tiramisú es una delicia celestial que se deshace en la boca, una opción irresistible para cualquier amante de los postres. Disfruta este favorito de siempre, hecho con ingredientes de primera y preparado a la perfección.</p>",
+      "variants": []
+    },
+    "tiramisu": {
+      "title": "Tiramisú, charola de 10 porciones",
+      "description_html": "<p>Date el gusto máximo con nuestro irresistible tiramisú. Este clásico postre italiano tiene capas de esponjoso queso mascarpone y delicados bizcochos de soletilla (ladyfingers) empapados en intenso espresso. Cubierto con una fina capa de cacao en polvo, cada bocado ofrece el equilibrio perfecto entre lo cremoso, lo dulce y el sabor a café. Nuestro tiramisú es una delicia celestial que se deshace en la boca, una opción irresistible para cualquier amante de los postres. Disfruta este favorito de siempre, hecho con ingredientes de primera y preparado a la perfección.</p>",
+      "variants": []
+    }
+  },
+  "collections": {
+    "raviolis-short-pasta": {
+      "title": "Ravioli y pasta corta",
+      "description_html": "<p> Todas las pastas se pueden hacer veganas o con huevo. ¡Indícalo en las notas de tu pedido!</p>"
+    },
+    "string-pastas": {
+      "title": "Pastas largas",
+      "description_html": "<p>Todas nuestras pastas largas se hacen con harina de trigo duro + huevos + agua</p> <p>Todas las pastas se pueden hacer veganas o con huevo. ¡Indícalo en las notas de tu pedido!</p>"
+    },
+    "sauces": {
+      "title": "Salsas",
+      "description_html": "Nuestras salsas frescas artesanales se preparan con los mejores ingredientes locales."
+    },
+    "i-nostri-dolci": {
+      "title": "I Nostri Dolci",
+      "description_html": "<p>Déjate consentir con los exquisitos sabores de Italia en nuestra colección selecta de postres italianos hechos por encargo. Cada postre se prepara con los mejores ingredientes, para una experiencia de sabor auténtica que te lleva directo a Italia. Desde el rico y cremoso tiramisú, con capas de mascarpone y bizcochos de soletilla empapados en espresso, hasta los delicados y crujientes cannoli rellenos de ricotta dulce, nuestra selección conquista a cualquier goloso. Ya sea que celebres una ocasión especial o simplemente se te antoje un sabor de Italia, nuestros postres son la elección perfecta para cualquier evento.</p>"
+    },
+    "mediterranean-delights": {
+      "title": "Delicias mediterráneas",
+      "description_html": "<p>Bienvenido a las <em>Delicias mediterráneas de La Pastaiola</em>, donde puedes explorar una selección cuidada de aceites de oliva italianos premium, vinagres balsámicos añejos y auténticos productos mediterráneos. Desde aceites de oliva extra virgen prensados en frío hasta intensos y ácidos vinagres balsámicos, nuestros productos llevan los sabores de Italia directo a tu cocina.</p> <p>Nuestros básicos gourmet para la despensa provienen de pequeños productores italianos, lo que garantiza la mejor calidad y sabor. Ya sea que pongas un chorrito de aceite de oliva sobre pasta fresca, mojes pan artesanal o realces tus ensaladas favoritas, nuestras delicias mediterráneas le dan un toque de tradición italiana a cada comida.</p> <p>Compra en nuestra colección exclusiva y lleva tus creaciones culinarias a otro nivel con los mejores ingredientes de Italia y el Mediterráneo.</p>"
+    },
+    "short-pastas": {
+      "title": "Pastas cortas",
+      "description_html": "<p>Ingredientes: Vegana/harina de trigo duro + agua</p>"
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "Pasta fresca en Basalt, Colorado",
+      "description": "Pasta fresca artesanal, salsas y especialidades italianas hechas en Basalt, Colorado. Clases de pasta, catering y kits de comida.",
+      "hero_title": "Vive el sabor de Italia en cada bocado de nuestra pasta fresca y nuestras salsas artesanales",
+      "hero_button": "Ver nuestra pasta",
+      "hero_button_2": "Cómo pedir",
+      "products_title": "Nuestros productos, hechos con alma italiana",
+      "shop_all": "Ver todo",
+      "story_title": "Nuestra historia",
+      "story_html": "<p>Aina y Marco Baghetti traen al Roaring Fork Valley el tradicional <em>mercato</em> italiano de La Pastaiola. Hacemos pasta fresca desde cero todos los días, con ingredientes de primera y moldes tradicionales de bronce que le dan a la pasta una textura rugosa que retiene la salsa.</p>",
+      "story_button": "Leer más",
+      "classes_title": "Clases de pasta",
+      "classes_text": "Desde amasar la masa hasta terminar la salsa. Grupos pequeños de hasta 6 personas.",
+      "catering_title": "Catering boutique",
+      "catering_text": "Pasta artesanal, salsas sabrosas y platos italianos a la medida de tu evento.",
+      "mealkits_title": "Kits de comida",
+      "mealkits_text": "Comidas de tres tiempos listas para reuniones familiares y fiestas.",
+      "visit_title": "Visita nuestra tienda de pasta",
+      "review_1": "Los mejores productos italianos que he probado en mi vida.",
+      "review_2": "Su selección de balsámicos de Módena es simplemente divina.",
+      "review_3": "El servicio es tan excepcional como la pasta. Aina y Marco son muy amables, saben muchísimo y siempre están dispuestos a ayudar."
+    },
+    "shop": {
+      "title": "Tienda",
+      "description": "Pasta fresca, ravioli, salsas, postres italianos y productos mediterráneos para la despensa de La Pastaiola en Basalt, Colorado."
+    },
+    "contact": {
+      "title": "Contacto y pedidos",
+      "description": "Llama, escribe o visita La Pastaiola en Basalt, Colorado.",
+      "lead": "Por ahora el pago en línea está en pausa. Para pedir pasta fresca, salsas o postres, llámanos o escríbenos con lo que necesitas y cuándo te gustaría recogerlo."
+    },
+    "about": {
+      "title": "Quiénes somos",
+      "description": "Aina y Marco Baghetti, artesanos de la pasta fresca en el Roaring Fork Valley.",
+      "heading": "Artesanos de la pasta fresca en el Roaring Fork Valley",
+      "lead": "Aina y Marco Baghetti están felices de traer al Roaring Fork Valley la pasta fresca y las salsas artesanales italianas de La Pastaiola.",
+      "body_html": "<p>Marco es de Nápoles, Italia. Sus recuerdos de infancia son, sobre todo, en la cocina con su nonna y su mamá: verlas cocinar, discutir cuáles eran los mejores ingredientes y decidir el menú del día para la familia. Las fiestas son sus mejores recuerdos, con la comida napolitana tradicional de la temporada. Cada Pascua, Marco y su mamá todavía cocinan juntos por videollamada.</p><p>Aina es de Almaty, Kazajistán, y creció en una familia numerosa de siete hijos donde experimentar con las comidas familiares siempre era divertido. Hizo carrera en la hospitalidad y dominó el arte de hacer pasta en Italia, para crear un producto hecho con destreza, amor y tradición.</p><p>Marco y Aina se conocieron trabajando en el restaurante Il Gattopardo en la ciudad de Nueva York. Comparten la pasión por la comida italiana y por un servicio excepcional. Años de experiencia en comida y vino, administración de restaurantes y catering los llevaron a abrir un <em>pastificio</em> artesanal en el Roaring Fork Valley.</p><p>Tienen dos hijos, Matteo y Stefano, a quienes esperan transmitirles su pasión.</p>"
+    },
+    "our_shop": {
+      "title": "Nuestra tienda",
+      "description": "Un auténtico pastificio en Basalt, Colorado: pasta fresca hecha a diario, salsas de la casa e importaciones italianas.",
+      "heading": "Nuestra tienda",
+      "lead": "Para nosotros no es solo una tienda. Es nuestro estilo de vida, de donde venimos y lo que más valoramos.",
+      "body_html": "<p>La cultura gastronómica italiana gira en torno a compartir la mesa en familia. Las comidas se preparan con atención, cariño y orgullo, usando solo ingredientes frescos y de calidad. Tomamos esa tradición, junto con nuestra experiencia en el sector, para crear un lugar donde amigos y familias puedan comprar la pasta más fresca y productos importados de Italia.</p><p>En La Pastaiola somos un auténtico <em>pastificio</em>: hacemos pasta fresca desde cero en nuestra cocina, con ingredientes de primera y recetas italianas tradicionales. Nuestros moldes de extrusión de bronce le dan a la pasta una textura rugosa y porosa que absorbe la salsa al terminar el plato.</p><p>En la tienda encontrarás pasta fresca, salsas hechas en casa y productos artesanales cuidadosamente seleccionados, hechos en Italia. También creamos menús italianos personalizados para catering.</p>",
+      "button": "Ver qué hay disponible"
+    },
+    "classes": {
+      "title": "Clases de pasta",
+      "description": "Clases prácticas de pasta fresca en Basalt, Colorado. Grupos de hasta 6 personas, de 2 a 3 horas, con todos los ingredientes y utensilios incluidos.",
+      "heading": "Descubre la mejor experiencia para aprender a hacer pasta",
+      "lead": "Sumérgete en el arte de la auténtica pasta hecha a mano. Nuestras clases prácticas te llevan al corazón de la cocina italiana, donde aprenderás a preparar una pasta exquisita desde cero.",
+      "price_line": "por persona · unas 2–3 horas · hasta 6 personas",
+      "button": "Solicitar una clase",
+      "body_html": "<h3>Por qué elegirnos</h3><ul><li><strong>Auténtica experiencia italiana.</strong> Aprende técnicas transmitidas de generación en generación.</li><li><strong>Aprendizaje práctico.</strong> Cada paso, desde amasar y estirar hasta dar forma y cocinar.</li><li><strong>Ingredientes frescos y de alta calidad.</strong> Todos los ingredientes y utensilios están incluidos.</li><li><strong>Divertido y ameno.</strong> Ideal tanto para principiantes como para cocineros con experiencia.</li></ul><h3>Detalles de la clase</h3><ul><li>Las clases duran de 2 a 3 horas y empiezan con bocadillos italianos. Se sirven bebidas durante toda la clase.</li><li>Trae tus propios recipientes reutilizables para llevarte la pasta a casa.</li><li>Cada clase tiene un máximo de 6 participantes, y cada persona necesita su propio lugar pagado.</li><li>Ofrecemos clases privadas en tu casa con un costo adicional.</li><li>Podemos adaptarnos a necesidades alimentarias; avísanos al reservar.</li></ul><h3>Opciones de clase</h3><ul><li><strong>Introducción a la pasta:</strong> bases de la masa, formas tradicionales y salsas clásicas.</li><li><strong>Técnicas avanzadas de pasta:</strong> formas elaboradas y recetas nuevas.</li><li><strong>Clases privadas a tu medida:</strong> para ocasiones especiales y eventos en grupo.</li></ul>",
+      "kids_title": "Pasta divertida para niños",
+      "kids_html": "<p>Nuestro salón de pasta es un lugar ideal para que los niños descubran la cocina. Los menores de 6 años participan gratis; los niños de 6 a 14 años tienen tarifa con descuento. Escríbenos para más detalles.</p>",
+      "email_subject": "Reserva de clase de pasta",
+      "email_body": "Hola, La Pastaiola:\n\nMe gustaría reservar una clase de pasta.\nFecha(s) preferida(s):\nNúmero de personas (y edades de los niños, si van):\nNecesidades alimentarias:\nNombre:\nTeléfono:\n"
+    },
+    "catering": {
+      "title": "Catering",
+      "description": "Catering italiano boutique de La Pastaiola: pasta artesanal, salsas y platos tradicionales para tu evento.",
+      "heading": "Reserva tu próximo evento",
+      "lead": "¿Buscas catering para tu próximo evento? Nos encantaría ofrecerte lo mejor de los platos tradicionales de Italia, hechos con pasión y cuidado.",
+      "text": "Usamos productos importados de Italia y nos encanta apoyar a los agricultores y productores locales. En un par de horas te llevaremos por las regiones de Italia. ¡Garantizado!",
+      "form_title": "Pide una cotización",
+      "form_subject": "Solicitud de catering"
+    },
+    "meal_kits": {
+      "title": "Kits de comida",
+      "description": "Kits de comida italiana de tres tiempos, listos para reuniones y fiestas.",
+      "heading": "Kits de comida",
+      "lead": "¿Estás planeando una reunión con familia y amigos o necesitas una solución fácil para tu fiesta? Preparamos kits de comida de tres tiempos, listos y pensados para tu evento.",
+      "text": "Cada kit incluye una entrada o ensalada, la pasta, carne o mariscos que elijas, y un postre. Si tienes algo específico en mente, escríbenos y lo hacemos realidad.",
+      "form_title": "Solicitar un kit de comida",
+      "form_subject": "Solicitud de kit de comida"
+    },
+    "not_found": {
+      "title": "Página no encontrada",
+      "lead": "Es posible que esta página haya cambiado de lugar al actualizar nuestro sitio web."
+    }
+  },
+  "strings": {
+    "skip": "Ir al contenido",
+    "menu": "Menú",
+    "language": "Idioma",
+    "nav_shop": "Tienda",
+    "nav_classes": "Clases de pasta",
+    "nav_catering": "Catering",
+    "nav_meal_kits": "Kits de comida",
+    "nav_our_shop": "Nuestra tienda",
+    "nav_about": "Nosotros",
+    "nav_contact": "Contacto",
+    "order": "Pedir",
+    "footer_visit": "Visítanos",
+    "footer_hours": "Horario",
+    "footer_explore": "Explora",
+    "footer_follow": "Síguenos",
+    "day_mon": "Lunes",
+    "day_tue": "Martes",
+    "day_wed": "Miércoles",
+    "day_thu": "Jueves",
+    "day_fri": "Viernes",
+    "day_sat": "Sábado",
+    "day_sun": "Domingo",
+    "closed": "Cerrado",
+    "price_from": "Desde",
+    "options": "Opciones",
+    "how_to_order_title": "Cómo pedir:",
+    "how_to_order_text": "el pago en línea está en pausa. Llámanos o escríbenos y recoge tu pedido en la tienda de Basalt.",
+    "order_by_email": "Pedir por email",
+    "call": "Llamar",
+    "order_subject": "Pedido",
+    "order_body": "Hola, La Pastaiola:\n\nMe gustaría pedir: {item}\nCantidad:\nFecha de recogida:\nNombre:\nTeléfono:\n\n¡Gracias!",
+    "order_list_placeholder": "(escribe los productos que quieres)",
+    "vegan_note": "Todas las pastas se pueden hacer veganas o con huevo. Indícanos cuál prefieres al hacer tu pedido.",
+    "related": "También te puede gustar",
+    "class_details": "Detalles y reservas de clases",
+    "contact_call": "Llama",
+    "contact_email": "Email",
+    "contact_visit": "Visítanos",
+    "contact_hours": "Horario",
+    "open_maps": "Abrir en Mapas",
+    "form_name": "Nombre",
+    "form_email": "Email",
+    "form_phone": "Teléfono",
+    "form_date": "Fecha del evento",
+    "form_guests": "Invitados",
+    "form_message": "Cuéntanos sobre tu evento",
+    "form_send": "Enviar solicitud",
+    "form_hint": "Esto abre tu app de correo con los datos ya completados. También puedes escribirnos o llamarnos.",
+    "form_from": "de",
+    "more": "Más",
+    "home": "Inicio",
+    "redirecting": "Continuar"
+  },
+  "announcement": "Pide por teléfono o email · Recoge en Basalt"
+}

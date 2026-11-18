@@ -1,5 +1,5 @@
-# Publishes ./site to GitHub Pages on every push to main.
-# The site is prebuilt (node tools/build.mjs) and committed, so CI only uploads it.
+# Builds the site from content/*.json + static/ and publishes it to GitHub Pages
+# on every push to main (including saves from the admin panel at /admin/).
 name: Deploy website
 
 on:
@@ -14,7 +14,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -24,11 +24,16 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build
+        run: node tools/build.mjs
       - name: Check internal links
         run: node tools/check-links.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: dist
       - id: deployment
         uses: actions/deploy-pages@v4

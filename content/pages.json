@@ -1,0 +1,338 @@
+{
+  "home": {
+    "title": {
+      "en": "Fresh pasta in Basalt, Colorado",
+      "it": "Pasta fresca a Basalt, Colorado",
+      "es": "Pasta fresca en Basalt, Colorado"
+    },
+    "description": {
+      "en": "Artisanal fresh pasta, sauces and Italian specialties made in Basalt, Colorado. Pasta classes, catering and meal kits.",
+      "it": "Pasta fresca artigianale, sughi e specialità italiane preparati a Basalt, Colorado. Corsi di pasta, catering e meal kit.",
+      "es": "Pasta fresca artesanal, salsas y especialidades italianas hechas en Basalt, Colorado. Clases de pasta, catering y kits de comida."
+    },
+    "hero_title": {
+      "en": "Experience the taste of Italy with every bite of our artisanal fresh pasta and sauces",
+      "it": "Il gusto dell'Italia in ogni boccone della nostra pasta fresca e dei nostri sughi artigianali",
+      "es": "Vive el sabor de Italia en cada bocado de nuestra pasta fresca y nuestras salsas artesanales"
+    },
+    "hero_button": {
+      "en": "See our pasta",
+      "it": "Scopri la pasta",
+      "es": "Ver nuestra pasta"
+    },
+    "hero_button_2": {
+      "en": "How to order",
+      "it": "Come ordinare",
+      "es": "Cómo pedir"
+    },
+    "products_title": {
+      "en": "Our products, made with Italian soul",
+      "it": "I nostri prodotti, fatti con anima italiana",
+      "es": "Nuestros productos, hechos con alma italiana"
+    },
+    "shop_all": {
+      "en": "Shop all",
+      "it": "Vedi tutto",
+      "es": "Ver todo"
+    },
+    "story_title": {
+      "en": "Our story",
+      "it": "La nostra storia",
+      "es": "Nuestra historia"
+    },
+    "story_html": {
+      "en": "<p>Aina and Marco Baghetti bring La Pastaiola's traditional Italian <em>mercato</em> to the Roaring Fork Valley. We make fresh pasta from scratch every day using premium ingredients and traditional bronze dies, which give the pasta a rough texture that holds the sauce.</p>",
+      "it": "<p>Aina e Marco Baghetti portano nella Roaring Fork Valley il tradizionale <em>mercato</em> italiano di La Pastaiola. Ogni giorno prepariamo la pasta fresca da zero con ingredienti di prima qualità e trafile tradizionali in bronzo, che le danno una superficie ruvida capace di trattenere il sugo.</p>",
+      "es": "<p>Aina y Marco Baghetti traen al Roaring Fork Valley el tradicional <em>mercato</em> italiano de La Pastaiola. Hacemos pasta fresca desde cero todos los días, con ingredientes de primera y moldes tradicionales de bronce que le dan a la pasta una textura rugosa que retiene la salsa.</p>"
+    },
+    "story_button": {
+      "en": "Read more",
+      "it": "Scopri di più",
+      "es": "Leer más"
+    },
+    "classes_title": {
+      "en": "Pasta-making classes",
+      "it": "Corsi di pasta",
+      "es": "Clases de pasta"
+    },
+    "classes_text": {
+      "en": "From kneading dough to finishing the sauce. Small groups of up to 6.",
+      "it": "Dall'impasto al sugo finale. Piccoli gruppi fino a 6 persone.",
+      "es": "Desde amasar la masa hasta terminar la salsa. Grupos pequeños de hasta 6 personas."
+    },
+    "catering_title": {
+      "en": "Boutique catering",
+      "it": "Catering su misura",
+      "es": "Catering boutique"
+    },
+    "catering_text": {
+      "en": "Handcrafted pasta, rich sauces and Italian dishes tailored to your event.",
+      "it": "Pasta fatta a mano, sughi ricchi e piatti italiani pensati per il vostro evento.",
+      "es": "Pasta artesanal, salsas sabrosas y platos italianos a la medida de tu evento."
+    },
+    "mealkits_title": {
+      "en": "Meal kits",
+      "it": "Meal kit",
+      "es": "Kits de comida"
+    },
+    "mealkits_text": {
+      "en": "Pre-packaged three-course meals for family gatherings and parties.",
+      "it": "Menù completi di tre portate, già confezionati, per riunioni di famiglia e feste.",
+      "es": "Comidas de tres tiempos listas para reuniones familiares y fiestas."
+    },
+    "visit_title": {
+      "en": "Visit our pasta shop",
+      "it": "Venite a trovarci nel nostro pastificio",
+      "es": "Visita nuestra tienda de pasta"
+    },
+    "review_1": {
+      "en": "The best Italian products I've truly ever tasted.",
+      "it": "I migliori prodotti italiani che abbia mai assaggiato, davvero.",
+      "es": "Los mejores productos italianos que he probado en mi vida."
+    },
+    "review_1_author": "Michael M.",
+    "review_2": {
+      "en": "Their balsamic selection from Modena is simply divine.",
+      "it": "La loro selezione di aceti balsamici di Modena è semplicemente divina.",
+      "es": "Su selección de balsámicos de Módena es simplemente divina."
+    },
+    "review_2_author": "David R.",
+    "review_3": {
+      "en": "The service here is as exceptional as the pasta. Aina and Marco are so friendly, knowledgeable and very helpful.",
+      "it": "Il servizio è eccezionale quanto la pasta. Aina e Marco sono cordialissimi, preparati e sempre disponibili.",
+      "es": "El servicio es tan excepcional como la pasta. Aina y Marco son muy amables, saben muchísimo y siempre están dispuestos a ayudar."
+    },
+    "review_3_author": "Olivia T."
+  },
+  "shop": {
+    "title": {
+      "en": "Shop",
+      "it": "Negozio",
+      "es": "Tienda"
+    },
+    "description": {
+      "en": "Fresh pasta, ravioli, sauces, Italian desserts and Mediterranean pantry items from La Pastaiola in Basalt, Colorado.",
+      "it": "Pasta fresca, ravioli, sughi, dolci italiani e specialità mediterranee per la dispensa da La Pastaiola a Basalt, Colorado.",
+      "es": "Pasta fresca, ravioli, salsas, postres italianos y productos mediterráneos para la despensa de La Pastaiola en Basalt, Colorado."
+    }
+  },
+  "contact": {
+    "title": {
+      "en": "Contact & ordering",
+      "it": "Contatti e ordini",
+      "es": "Contacto y pedidos"
+    },
+    "description": {
+      "en": "Call, email or visit La Pastaiola in Basalt, Colorado.",
+      "it": "Chiamate, scriveteci o venite a trovare La Pastaiola a Basalt, Colorado.",
+      "es": "Llama, escribe o visita La Pastaiola en Basalt, Colorado."
+    },
+    "lead": {
+      "en": "Online checkout is paused for now. To order fresh pasta, sauces or desserts, call or email us with what you need and when you'd like to pick it up.",
+      "it": "Per ora gli acquisti online sono sospesi. Per ordinare pasta fresca, sughi o dolci, chiamateci o scriveteci un'email indicando cosa vi serve e quando vorreste ritirarlo.",
+      "es": "Por ahora el pago en línea está en pausa. Para pedir pasta fresca, salsas o postres, llámanos o escríbenos con lo que necesitas y cuándo te gustaría recogerlo."
+    }
+  },
+  "about": {
+    "title": {
+      "en": "About us",
+      "it": "Chi siamo",
+      "es": "Quiénes somos"
+    },
+    "description": {
+      "en": "Aina and Marco Baghetti, fresh pasta artisans in the Roaring Fork Valley.",
+      "it": "Aina e Marco Baghetti, artigiani della pasta fresca nella Roaring Fork Valley.",
+      "es": "Aina y Marco Baghetti, artesanos de la pasta fresca en el Roaring Fork Valley."
+    },
+    "heading": {
+      "en": "Fresh pasta artisans in the Roaring Fork Valley",
+      "it": "Artigiani della pasta fresca nella Roaring Fork Valley",
+      "es": "Artesanos de la pasta fresca en el Roaring Fork Valley"
+    },
+    "lead": {
+      "en": "Aina and Marco Baghetti are excited to bring La Pastaiola's artisanal Italian fresh pasta and sauces to the Roaring Fork Valley.",
+      "it": "Aina e Marco Baghetti sono felici di portare nella Roaring Fork Valley la pasta fresca e i sughi artigianali italiani di La Pastaiola.",
+      "es": "Aina y Marco Baghetti están felices de traer al Roaring Fork Valley la pasta fresca y las salsas artesanales italianas de La Pastaiola."
+    },
+    "body_html": {
+      "en": "<p>Marco is from Naples, Italy. His childhood memories are mostly of being in the kitchen with his nonna and mother, watching them cook, debating the best ingredients and deciding the day's menu for the family. Holidays are his best memories, with the traditional Neapolitan food of the festive season. Every Easter, Marco and his mom still cook together over video call.</p><p>Aina is from Almaty, Kazakhstan, and grew up in a large family of seven children where experimenting with family meals was always fun. She built a career in hospitality and mastered the art of pasta making in Italy, to create a product made with skill, love and tradition.</p><p>Marco and Aina met while working at Il Gattopardo restaurant in New York City. They share a passion for Italian food and exceptional service. Years of experience in food and wine, restaurant management and catering led them to open an artisanal <em>pastificio</em> in the Roaring Fork Valley.</p><p>They have two sons, Matteo and Stefano, to whom they hope to pass on their passion.</p>",
+      "it": "<p>Marco è di Napoli. I suoi ricordi d'infanzia sono soprattutto in cucina con la nonna e la mamma: le guardava cucinare, discutere sugli ingredienti migliori e decidere il menù del giorno per la famiglia. I ricordi più belli sono quelli delle feste, con i piatti tradizionali napoletani del periodo. Ancora oggi, ogni Pasqua, Marco e sua madre cucinano insieme in videochiamata.</p><p>Aina è di Almaty, in Kazakistan, ed è cresciuta in una grande famiglia con sette figli, dove sperimentare in cucina per tutti era sempre un divertimento. Ha costruito la sua carriera nell'ospitalità e ha imparato l'arte della pasta in Italia, per creare un prodotto fatto con maestria, amore e tradizione.</p><p>Marco e Aina si sono conosciuti lavorando al ristorante Il Gattopardo a New York. Li unisce la passione per la cucina italiana e per un servizio eccezionale. Anni di esperienza tra cibo e vino, gestione di ristoranti e catering li hanno portati ad aprire un <em>pastificio</em> artigianale nella Roaring Fork Valley.</p><p>Hanno due figli, Matteo e Stefano, ai quali sperano di trasmettere la loro passione.</p>",
+      "es": "<p>Marco es de Nápoles, Italia. Sus recuerdos de infancia son, sobre todo, en la cocina con su nonna y su mamá: verlas cocinar, discutir cuáles eran los mejores ingredientes y decidir el menú del día para la familia. Las fiestas son sus mejores recuerdos, con la comida napolitana tradicional de la temporada. Cada Pascua, Marco y su mamá todavía cocinan juntos por videollamada.</p><p>Aina es de Almaty, Kazajistán, y creció en una familia numerosa de siete hijos donde experimentar con las comidas familiares siempre era divertido. Hizo carrera en la hospitalidad y dominó el arte de hacer pasta en Italia, para crear un producto hecho con destreza, amor y tradición.</p><p>Marco y Aina se conocieron trabajando en el restaurante Il Gattopardo en la ciudad de Nueva York. Comparten la pasión por la comida italiana y por un servicio excepcional. Años de experiencia en comida y vino, administración de restaurantes y catering los llevaron a abrir un <em>pastificio</em> artesanal en el Roaring Fork Valley.</p><p>Tienen dos hijos, Matteo y Stefano, a quienes esperan transmitirles su pasión.</p>"
+    }
+  },
+  "our_shop": {
+    "title": {
+      "en": "Our shop",
+      "it": "Il nostro negozio",
+      "es": "Nuestra tienda"
+    },
+    "description": {
+      "en": "An authentic pastificio in Basalt, Colorado: fresh pasta made daily, in-house sauces and Italian imports.",
+      "it": "Un autentico pastificio a Basalt, Colorado: pasta fresca fatta ogni giorno, sughi della casa e prodotti importati dall'Italia.",
+      "es": "Un auténtico pastificio en Basalt, Colorado: pasta fresca hecha a diario, salsas de la casa e importaciones italianas."
+    },
+    "heading": {
+      "en": "Our shop",
+      "it": "Il nostro negozio",
+      "es": "Nuestra tienda"
+    },
+    "lead": {
+      "en": "It's not just a store to us. It is our lifestyle, where we come from, and what we hold most important.",
+      "it": "Per noi non è solo un negozio. È il nostro stile di vita, le nostre radici e ciò che abbiamo di più caro.",
+      "es": "Para nosotros no es solo una tienda. Es nuestro estilo de vida, de donde venimos y lo que más valoramos."
+    },
+    "body_html": {
+      "en": "<p>Italian food culture is about sharing a meal with family. Meals are made with attention, care and pride, using only fresh, quality ingredients. We have taken that tradition, along with our experience in the industry, to create a place where friends and family can shop for the freshest pasta and Italian imported goods.</p><p>At La Pastaiola we are an authentic <em>pastificio</em>, making fresh pasta from scratch in our kitchen with premium ingredients and traditional Italian recipes. Our bronze extruding dies give the pasta a rough, porous texture that absorbs the sauce when you finish the dish.</p><p>In the shop you'll find fresh pasta, sauces made in-house and carefully selected artisanal products made in Italy. We also create custom Italian menus for catering.</p>",
+      "it": "<p>La cultura gastronomica italiana è condividere un pasto in famiglia. I piatti si preparano con attenzione, cura e orgoglio, usando solo ingredienti freschi e di qualità. Abbiamo portato con noi questa tradizione, insieme alla nostra esperienza nel settore, per creare un luogo dove amici e famiglie possano trovare la pasta più fresca e prodotti importati dall'Italia.</p><p>La Pastaiola è un autentico <em>pastificio</em>: prepariamo la pasta fresca da zero nel nostro laboratorio, con ingredienti di prima qualità e ricette tradizionali italiane. Le nostre trafile in bronzo danno alla pasta una superficie ruvida e porosa che assorbe il sugo quando mantecate il piatto.</p><p>In negozio troverete pasta fresca, sughi preparati da noi e prodotti artigianali made in Italy selezionati con cura. Realizziamo anche menù italiani personalizzati per il catering.</p>",
+      "es": "<p>La cultura gastronómica italiana gira en torno a compartir la mesa en familia. Las comidas se preparan con atención, cariño y orgullo, usando solo ingredientes frescos y de calidad. Tomamos esa tradición, junto con nuestra experiencia en el sector, para crear un lugar donde amigos y familias puedan comprar la pasta más fresca y productos importados de Italia.</p><p>En La Pastaiola somos un auténtico <em>pastificio</em>: hacemos pasta fresca desde cero en nuestra cocina, con ingredientes de primera y recetas italianas tradicionales. Nuestros moldes de extrusión de bronce le dan a la pasta una textura rugosa y porosa que absorbe la salsa al terminar el plato.</p><p>En la tienda encontrarás pasta fresca, salsas hechas en casa y productos artesanales cuidadosamente seleccionados, hechos en Italia. También creamos menús italianos personalizados para catering.</p>"
+    },
+    "button": {
+      "en": "See what's available",
+      "it": "Scopri cosa c'è",
+      "es": "Ver qué hay disponible"
+    }
+  },
+  "classes": {
+    "title": {
+      "en": "Pasta-making classes",
+      "it": "Corsi di pasta",
+      "es": "Clases de pasta"
+    },
+    "description": {
+      "en": "Hands-on fresh pasta classes in Basalt, Colorado. Groups of up to 6, 2–3 hours, all ingredients and tools provided.",
+      "it": "Corsi pratici di pasta fresca a Basalt, Colorado. Gruppi fino a 6 persone, 2–3 ore, ingredienti e attrezzatura inclusi.",
+      "es": "Clases prácticas de pasta fresca en Basalt, Colorado. Grupos de hasta 6 personas, de 2 a 3 horas, con todos los ingredientes y utensilios incluidos."
+    },
+    "heading": {
+      "en": "Discover the ultimate pasta-making experience",
+      "it": "Scoprite l'esperienza definitiva della pasta fatta a mano",
+      "es": "Descubre la mejor experiencia para aprender a hacer pasta"
+    },
+    "lead": {
+      "en": "Dive into the art of authentic pasta making. Our hands-on classes take you through the heart of Italian cuisine, where you'll learn to make exquisite pasta from scratch.",
+      "it": "Immergetevi nell'arte della vera pasta fatta in casa. I nostri corsi pratici vi portano nel cuore della cucina italiana, dove imparerete a preparare da zero una pasta squisita.",
+      "es": "Sumérgete en el arte de la auténtica pasta hecha a mano. Nuestras clases prácticas te llevan al corazón de la cocina italiana, donde aprenderás a preparar una pasta exquisita desde cero."
+    },
+    "price_line": {
+      "en": "per person · about 2–3 hours · up to 6 guests",
+      "it": "a persona · circa 2–3 ore · fino a 6 partecipanti",
+      "es": "por persona · unas 2–3 horas · hasta 6 personas"
+    },
+    "button": {
+      "en": "Request a class",
+      "it": "Richiedi un corso",
+      "es": "Solicitar una clase"
+    },
+    "body_html": {
+      "en": "<h3>Why choose us</h3><ul><li><strong>Authentic Italian expertise.</strong> Learn techniques passed down through generations.</li><li><strong>Hands-on learning.</strong> Every step, from kneading and rolling to shaping and cooking.</li><li><strong>Fresh, high-quality ingredients.</strong> All ingredients and tools are provided.</li><li><strong>Fun and friendly.</strong> Welcoming for complete beginners and experienced cooks alike.</li></ul><h3>Class details</h3><ul><li>Classes last 2 to 3 hours and start with Italian finger foods. Refreshments are served throughout.</li><li>Please bring your own reusable containers to take your pasta home.</li><li>Each class is limited to 6 attendees, and everyone needs their own paid spot.</li><li>Private classes at your home are available at an additional cost.</li><li>We can accommodate dietary requirements; tell us when you book.</li></ul><h3>Class options</h3><ul><li><strong>Introduction to pasta making:</strong> dough basics, traditional shapes and classic sauces.</li><li><strong>Advanced pasta techniques:</strong> intricate shapes and new recipes.</li><li><strong>Custom private classes:</strong> for special occasions and group events.</li></ul>",
+      "it": "<h3>Perché sceglierci</h3><ul><li><strong>Autentica esperienza italiana.</strong> Imparate tecniche tramandate di generazione in generazione.</li><li><strong>Si impara facendo.</strong> Ogni passaggio, dall'impastare e stendere al formare e cuocere.</li><li><strong>Ingredienti freschi e di qualità.</strong> Tutti gli ingredienti e gli attrezzi sono inclusi.</li><li><strong>Divertente e accogliente.</strong> Adatto sia ai principianti assoluti sia ai cuochi più esperti.</li></ul><h3>Dettagli del corso</h3><ul><li>I corsi durano dalle 2 alle 3 ore e iniziano con qualche stuzzichino italiano. Bevande servite per tutta la durata.</li><li>Portate i vostri contenitori riutilizzabili per portare a casa la pasta.</li><li>Ogni corso è limitato a 6 partecipanti e ciascuno deve avere il proprio posto pagato.</li><li>Su richiesta, corsi privati a casa vostra con un costo aggiuntivo.</li><li>Possiamo venire incontro a esigenze alimentari particolari: segnalatecele al momento della prenotazione.</li></ul><h3>Tipi di corso</h3><ul><li><strong>Introduzione alla pasta fatta a mano:</strong> basi dell'impasto, formati tradizionali e sughi classici.</li><li><strong>Tecniche avanzate:</strong> formati elaborati e nuove ricette.</li><li><strong>Corsi privati su misura:</strong> per occasioni speciali ed eventi di gruppo.</li></ul>",
+      "es": "<h3>Por qué elegirnos</h3><ul><li><strong>Auténtica experiencia italiana.</strong> Aprende técnicas transmitidas de generación en generación.</li><li><strong>Aprendizaje práctico.</strong> Cada paso, desde amasar y estirar hasta dar forma y cocinar.</li><li><strong>Ingredientes frescos y de alta calidad.</strong> Todos los ingredientes y utensilios están incluidos.</li><li><strong>Divertido y ameno.</strong> Ideal tanto para principiantes como para cocineros con experiencia.</li></ul><h3>Detalles de la clase</h3><ul><li>Las clases duran de 2 a 3 horas y empiezan con bocadillos italianos. Se sirven bebidas durante toda la clase.</li><li>Trae tus propios recipientes reutilizables para llevarte la pasta a casa.</li><li>Cada clase tiene un máximo de 6 participantes, y cada persona necesita su propio lugar pagado.</li><li>Ofrecemos clases privadas en tu casa con un costo adicional.</li><li>Podemos adaptarnos a necesidades alimentarias; avísanos al reservar.</li></ul><h3>Opciones de clase</h3><ul><li><strong>Introducción a la pasta:</strong> bases de la masa, formas tradicionales y salsas clásicas.</li><li><strong>Técnicas avanzadas de pasta:</strong> formas elaboradas y recetas nuevas.</li><li><strong>Clases privadas a tu medida:</strong> para ocasiones especiales y eventos en grupo.</li></ul>"
+    },
+    "kids_title": {
+      "en": "Kids' pasta fun",
+      "it": "Pasta per bambini",
+      "es": "Pasta divertida para niños"
+    },
+    "kids_html": {
+      "en": "<p>Our pasta room is a great place for children to discover cooking. Children under 6 join for free; kids aged 6 to 14 get a discounted rate. Email us for details.</p>",
+      "it": "<p>Il nostro laboratorio è il posto ideale per far scoprire la cucina ai bambini. I bambini sotto i 6 anni partecipano gratis; dai 6 ai 14 anni è prevista una tariffa ridotta. Scriveteci per i dettagli.</p>",
+      "es": "<p>Nuestro salón de pasta es un lugar ideal para que los niños descubran la cocina. Los menores de 6 años participan gratis; los niños de 6 a 14 años tienen tarifa con descuento. Escríbenos para más detalles.</p>"
+    },
+    "email_subject": {
+      "en": "Pasta class booking",
+      "it": "Prenotazione corso di pasta",
+      "es": "Reserva de clase de pasta"
+    },
+    "email_body": {
+      "en": "Hello La Pastaiola,\n\nI would like to book a pasta-making class.\nPreferred date(s):\nNumber of guests (and ages of any children):\nDietary requirements:\nName:\nPhone:\n",
+      "it": "Buongiorno La Pastaiola,\n\nvorrei prenotare un corso di pasta.\nData/e preferita/e:\nNumero di partecipanti (ed età di eventuali bambini):\nEsigenze alimentari:\nNome:\nTelefono:\n",
+      "es": "Hola, La Pastaiola:\n\nMe gustaría reservar una clase de pasta.\nFecha(s) preferida(s):\nNúmero de personas (y edades de los niños, si van):\nNecesidades alimentarias:\nNombre:\nTeléfono:\n"
+    }
+  },
+  "catering": {
+    "title": {
+      "en": "Catering",
+      "it": "Catering",
+      "es": "Catering"
+    },
+    "description": {
+      "en": "Boutique Italian catering from La Pastaiola: handcrafted pasta, sauces and traditional dishes for your event.",
+      "it": "Catering italiano su misura di La Pastaiola: pasta fatta a mano, sughi e piatti tradizionali per il vostro evento.",
+      "es": "Catering italiano boutique de La Pastaiola: pasta artesanal, salsas y platos tradicionales para tu evento."
+    },
+    "heading": {
+      "en": "Book your next event",
+      "it": "Prenotate il vostro prossimo evento",
+      "es": "Reserva tu próximo evento"
+    },
+    "lead": {
+      "en": "Looking to cater your next event? We'd love to bring you the best of Italy's traditional dishes, made with passion and care.",
+      "it": "Cercate un catering per il vostro prossimo evento? Saremo felici di portarvi il meglio dei piatti tradizionali italiani, preparati con passione e cura.",
+      "es": "¿Buscas catering para tu próximo evento? Nos encantaría ofrecerte lo mejor de los platos tradicionales de Italia, hechos con pasión y cuidado."
+    },
+    "text": {
+      "en": "We use imported Italian goods and love to support local farmers and growers. We'll take you through the regions of Italy in a couple of hours. Guaranteed!",
+      "it": "Usiamo prodotti importati dall'Italia e amiamo sostenere agricoltori e produttori locali. In un paio d'ore vi faremo viaggiare tra le regioni d'Italia. Garantito!",
+      "es": "Usamos productos importados de Italia y nos encanta apoyar a los agricultores y productores locales. En un par de horas te llevaremos por las regiones de Italia. ¡Garantizado!"
+    },
+    "form_title": {
+      "en": "Request a quote",
+      "it": "Richiedi un preventivo",
+      "es": "Pide una cotización"
+    },
+    "form_subject": {
+      "en": "Catering request",
+      "it": "Richiesta catering",
+      "es": "Solicitud de catering"
+    }
+  },
+  "meal_kits": {
+    "title": {
+      "en": "Meal kits",
+      "it": "Meal kit",
+      "es": "Kits de comida"
+    },
+    "description": {
+      "en": "Pre-packaged three-course Italian meal kits for gatherings and parties.",
+      "it": "Meal kit italiani di tre portate, già confezionati, per ritrovi e feste.",
+      "es": "Kits de comida italiana de tres tiempos, listos para reuniones y fiestas."
+    },
+    "heading": {
+      "en": "Meal kits",
+      "it": "Meal kit",
+      "es": "Kits de comida"
+    },
+    "lead": {
+      "en": "Planning a gathering with family and friends, or need an easy party solution? We prepare pre-packaged three-course meal kits made for your event.",
+      "it": "State organizzando un ritrovo con famiglia e amici o vi serve una soluzione semplice per una festa? Prepariamo meal kit di tre portate, già confezionati, pensati per il vostro evento.",
+      "es": "¿Estás planeando una reunión con familia y amigos o necesitas una solución fácil para tu fiesta? Preparamos kits de comida de tres tiempos, listos y pensados para tu evento."
+    },
+    "text": {
+      "en": "Each kit includes an appetizer or salad, your choice of pasta, meat or seafood, and a dessert. If you have something specific in mind, get in touch and we'll make it happen.",
+      "it": "Ogni kit comprende un antipasto o un'insalata, una pasta, carne o pesce a scelta e un dolce. Se avete in mente qualcosa di particolare, contattateci e lo realizzeremo.",
+      "es": "Cada kit incluye una entrada o ensalada, la pasta, carne o mariscos que elijas, y un postre. Si tienes algo específico en mente, escríbenos y lo hacemos realidad."
+    },
+    "form_title": {
+      "en": "Request a meal kit",
+      "it": "Richiedi un meal kit",
+      "es": "Solicitar un kit de comida"
+    },
+    "form_subject": {
+      "en": "Meal kit request",
+      "it": "Richiesta meal kit",
+      "es": "Solicitud de kit de comida"
+    }
+  },
+  "not_found": {
+    "title": {
+      "en": "Page not found",
+      "it": "Pagina non trovata",
+      "es": "Página no encontrada"
+    },
+    "lead": {
+      "en": "This page may have moved when our website was updated.",
+      "it": "Questa pagina potrebbe essere stata spostata con l'aggiornamento del nostro sito.",
+      "es": "Es posible que esta página haya cambiado de lugar al actualizar nuestro sitio web."
+    }
+  }
+}
