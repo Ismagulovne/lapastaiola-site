@@ -1,0 +1,792 @@
+{
+  "source": "Wayback Machine snapshot of lapastaiola.co (2024-12..2026-08)",
+  "products": [
+    {
+      "handle": "arrabbiata-spicy",
+      "title": "Arrabbiata (Spicy)",
+      "images": [
+        "IMG_37602.jpg"
+      ],
+      "price": 16,
+      "variants": [],
+      "descriptionHtml": "<p>Italian peeled whole tomatoes, Neapolitan chilli, garlic, parsley, basil, extra virgin olive oil</p> <p><br>Size: 16 oz</p>",
+      "collections": [
+        "sauces"
+      ]
+    },
+    {
+      "handle": "artichokes-tapenade-7-oz",
+      "title": "Artichokes Tapenade - 7 oz",
+      "images": [
+        "WhatsAppImage2024-10-02at12.34.59.jpg"
+      ],
+      "price": 15,
+      "variants": [],
+      "descriptionHtml": "<p>A cream of Italian artichokes from the Apulian territory processed according to traditional recipes, which is lends itself to different uses in the kitchen for its delicacy: from first courses to main courses, croutons and bruschetta. </p> <p>Features: </p> <p>7 Oz / 212ml </p> <ul> <li>Production Area: Puglia, Italy </li> <li>Artisanal Product </li> <li>Preserved with Olive Oil </li> <li>Made only with Italian Vegetables</li> </ul>",
+      "collections": [
+        "mediterranean-delights"
+      ]
+    },
+    {
+      "handle": "bella-from-cerignola-olives-6-34-oz",
+      "title": "\"Bella from Cerignola\" Olives - 6.34 oz",
+      "images": [
+        "WhatsAppImage2024-10-02at12.56.03.jpg"
+      ],
+      "price": 12,
+      "variants": [],
+      "descriptionHtml": "<p>The world’s favorite olive! “Bella di Cerignola” is a PDO (Protected Designation of Origin) variety, and they are impossible to resist. Pulpy and slightly crunchy, these olives grow in the Apulia* region of Italy where we hand pick them fresh just for you. Serve these large green olives as a simple starter or as part of an Italian-style aperitif. “Bella di Cerignola” olives are also an excellent pairing for meat or fish! These mouth-watering Apulian gems are ideal for just about any kind of dish. We carefully select and optimally store all of our olives in order to preserve their core nutrients. Enjoy these piquant delicacies on their own or add them to your favorite Italian recipe. </p> <p>Features: </p> <p>Drained Net Weight 6.34 Fl Oz / 180g </p> <p>Production Area: Puglia, Italy </p> <p>Artisanal Product</p>",
+      "collections": [
+        "mediterranean-delights"
+      ]
+    },
+    {
+      "handle": "black-olives-tapenade-7-oz",
+      "title": "Black Olives Tapenade - 7 oz",
+      "images": [
+        "WhatsAppImage2024-10-02at12.34.59_1.jpg"
+      ],
+      "price": 15,
+      "variants": [],
+      "descriptionHtml": "<p>A paté with the intense flavor of the olives of our territory, which expresses a typical Apulian flavor. Ideal for salads, meat, pasta, croutons and bruschetta. </p> <p>Features: </p> <p>7 Oz / 212ml</p> <p> Production Area: Puglia, Italy</p> <p> Artisanal Product </p> <p>Preserved with Olive Oil </p> <p>Made only with Italian Vegetables</p>",
+      "collections": [
+        "mediterranean-delights"
+      ]
+    },
+    {
+      "handle": "bolognese",
+      "title": "Bolognese",
+      "images": [
+        "IMG_37622.jpg"
+      ],
+      "price": 22,
+      "variants": [],
+      "descriptionHtml": "Ground black angus, Italian peeled whole tomatoes, carrots, celery, onions, extra virgin olive oil<br><br>Size: 16 oz",
+      "collections": [
+        "sauces"
+      ]
+    },
+    {
+      "handle": "bucatini",
+      "title": "Bucatini",
+      "images": [
+        "jrj1781.jpg"
+      ],
+      "price": 16,
+      "variants": [],
+      "descriptionHtml": "<p>14.1 oz (400gr)</p> <p>Ingredients: Vegan/durum wheat flour + eggs + water </p> <p>*Note: All pastas can be made Vegan or with eggs. Please specify in your order notes*</p>",
+      "collections": [
+        "string-pastas"
+      ]
+    },
+    {
+      "handle": "butternut-squash-ricotta-ravioli",
+      "title": "Ravioli",
+      "images": [
+        "68C8C734-4404-4D4F-BD38-77E6E7000B32.jpg"
+      ],
+      "price": 25,
+      "variants": [
+        {
+          "name": "Cacio e Pepe",
+          "price": 25,
+          "available": true
+        },
+        {
+          "name": "Eggplant Parmigiana",
+          "price": 25,
+          "available": true
+        },
+        {
+          "name": "Mushroom & Ricotta",
+          "price": 28,
+          "available": true
+        },
+        {
+          "name": "Nerano",
+          "price": 25,
+          "available": true
+        },
+        {
+          "name": "Caprese",
+          "price": 28,
+          "available": true
+        },
+        {
+          "name": "Spinach & Ricotta Cheese",
+          "price": 25,
+          "available": true
+        },
+        {
+          "name": "Butternut Squash and Ricotta",
+          "price": 28,
+          "available": true
+        },
+        {
+          "name": "Artichokes & Burrata",
+          "price": 28,
+          "available": true
+        }
+      ],
+      "descriptionHtml": "<p>Small: 30 pieces<br></p> <p>Large: 15 pieces<br><br><strong>Ingredients</strong>: Durum wheat flour + eggs</p> <p><strong>Ricotta &amp; Spinach Ravioli:</strong> Ricotta Cheese, Parmigiano Reggiano, Spinach.</p> <p><strong>Cacio e Pepe</strong>: Pecorino Romano, Ricotta, Parmigiano Reggiano, Black Pepper.</p> <p><strong>Eggplant Parmigiana Ravioli:</strong> Roasted eggplant, Mozzarella, Parmigiano Ricotta, Provolone.</p> <p><strong>Artichokes &amp; Burrata</strong>: Marinated Artichokes, Burrata, Mozzarella.</p> <p><strong>Ricotta &amp; Mushrooms:</strong> Ricotta, Mixed Mushrooms, Parmigiano.</p> <p><strong>Ravioli Caprese:</strong> Mozzarella, Ricotta, Parmigiano, Basil.</p> <p><strong>Butternut Squash &amp; Ricotta:</strong> Oven Roasted Butternut Squash, Ricotta, Parmigiano.</p> <p>*Note: All pastas can be made Vegan or with eggs. Please specify in your order notes*</p> <p>*We welcome custom order requests and try to meet them all within our production runs. We can accommodate requests for custom flavors and fillings. Orders must be received 48 hours in advance. They can be placed by email or by filling out Pasta Order sheet on our website.</p>",
+      "collections": [
+        "raviolis-short-pasta"
+      ]
+    },
+    {
+      "handle": "cacio-e-pepe",
+      "title": "Cacio e Pepe Sauce",
+      "images": [],
+      "price": 21,
+      "variants": [],
+      "descriptionHtml": "Pecorino Romano, Grana Padano,<br>milk, black pepper.<br><br>Size: 16 oz",
+      "collections": [
+        "sauces"
+      ]
+    },
+    {
+      "handle": "cannoli",
+      "title": "Cannoli",
+      "images": [
+        "Cannoli.jpg"
+      ],
+      "price": 30,
+      "variants": [],
+      "descriptionHtml": "<p>Savor the taste of tradition with our classic cannoli, filled with sweetened ricotta and rich chocolate ricotta. These iconic Italian pastries feature crispy, fried shells that provide the perfect contrast to the smooth, creamy fillings. Each cannolo is made with the finest ingredients, ensuring an authentic and delectable experience. Ideal for any occasion, our cannoli offer a delightful blend of textures and flavors that will transport you straight to Italy with every bite.</p> <p>1 Dozen per order</p>",
+      "collections": [
+        "i-nostri-dolci"
+      ]
+    },
+    {
+      "handle": "casarecce",
+      "title": "Casarecce",
+      "images": [
+        "jrj2166.jpg"
+      ],
+      "price": 16,
+      "variants": [],
+      "descriptionHtml": "<p>Available<br></p> <p>14.1 oz (400gr)</p> <p>Ingredients: Vegan/durum wheat flour + water</p> <p>*Note: All pastas can be made Vegan or with eggs. Please specify in your order notes*</p>",
+      "collections": [
+        "raviolis-short-pasta",
+        "short-pastas"
+      ]
+    },
+    {
+      "handle": "cavatelli",
+      "title": "Cavatelli",
+      "images": [
+        "HomemadeCavatelliPasta.jpg"
+      ],
+      "price": 16,
+      "variants": [],
+      "descriptionHtml": "Durum wheat flour.<br><br>Available<br><br>14.1 oz (400gr)",
+      "collections": []
+    },
+    {
+      "handle": "creste-di-gallo",
+      "title": "Creste Di Gallo",
+      "images": [
+        "WhatsAppImage2024-10-08at12.34.58.jpg"
+      ],
+      "price": 16,
+      "variants": [],
+      "descriptionHtml": "<p>Creste di Gallo is a traditional Italian pasta shape resembling a rooster’s crest, hence its name. Made with durum wheat flour, it results in a firm texture and a slightly nutty flavor, perfect for holding rich sauces. The ridges and unique shape allow it to capture more sauce, making it ideal for hearty dishes like ragù, pesto, or even creamy sauces.</p>",
+      "collections": [
+        "raviolis-short-pasta",
+        "short-pastas"
+      ]
+    },
+    {
+      "handle": "extra-virgin-olive-oil-igp-puglia-intense-16-9-fl-oz",
+      "title": "Extra Virgin Olive Oil IGP Puglia - Intense 16.9 fl oz",
+      "images": [
+        "WhatsAppImage2024-10-02at11.38.37.jpg"
+      ],
+      "price": 40,
+      "variants": [],
+      "descriptionHtml": "<p>From Apulia with love comes this bold and exciting Extra Virgin Olive Oil. Its intense flavor and aroma will remind you of freshly-cut grass, tannic white almonds, and earthy artichokes. This robust olive oil maintains the perfect balance between bitter and spicy. Try it with slow roasted meats, game meats, or hearty winter soups. Be creative and drizzle a little on a scoop of vanilla ice cream! This is a Nutraceutical Extra Virgin Olive Oil Sensory: Green fruity intense herbaceous with hints of white almond and artichoke Flavor: Fluid with persistent and balanced spicy and bitterness Features: - 16,9 Fl Oz / 500ml - PGI (Protected Geographical Indication) - Production Area: Central Puglia, Italy - Harvest Period: October/November - Cold-Extracted - Greaseproof Label</p>",
+      "collections": [
+        "mediterranean-delights"
+      ]
+    },
+    {
+      "handle": "extra-virgin-olive-oil-igp-sicilia-delicate",
+      "title": "Extra Virgin Olive Oil IGP Sicilia - Delicate",
+      "images": [
+        "WhatsAppImage2024-10-02at11.38.38.jpg"
+      ],
+      "price": 40,
+      "variants": [],
+      "descriptionHtml": "<p>Welcome to the beautiful island of Sicily! The slightly spicy flavor of our PGI Sicilian Extra-Virgin Olive Oil exudes the aromas of this well-known Italian island. With its delicate flavor of freshly picked tomatoes, fresh vegetables, artichokes, and bitter and spicy herbs, this olive oil is the perfect match for salmon carpaccio, pasta with tomato sauce, or grilled fish, and it’s delicious on its own as a bread dipper. Sensory: Fruity delicate with a hint of freshly picked tomatoes and fresh vegetables, artichoke and herbs Flavor: Pasty with persistent bitterness and spiciness, both balanced From Apulia with love comes this bold and exciting Extra Virgin Olive Oil.</p>",
+      "collections": [
+        "mediterranean-delights"
+      ]
+    },
+    {
+      "handle": "extra-virgin-olive-oil-igp-toscana-medium",
+      "title": "Extra Virgin Olive Oil IGP Toscana - Medium",
+      "images": [
+        "WhatsAppImage2024-10-02at11.38.39.jpg"
+      ],
+      "price": 40,
+      "variants": [],
+      "descriptionHtml": "<p>An amazingly fruity Extra Virgin Olive Oil with just a hint of artichoke, ripe fruit, and fresh tomato on the palate. From the hills of Val d’Orcia and the Tuscan Maremma, this olive oil is clean, fresh, and sweet up front and slightly bitter and spicy on the finish. It’s delightfully versatile, pairing well with hearty vegetables and pureed soups as well as fresh salads, meats and fish. This is also the perfect olive oil for vinaigrettes and sauces. It’s great for deep frying, too. Sensory: Medium fruity, clean olive, with herbaceous notes of artichoke and ripe fruit and, to a lesser extent, tomato. Flavor: Fresh and clean, it opens with a slight sweet sensation followed by a pleasant bitter and spicy charge of medium intensity, rich persistence in vegetal notes, dominated by the herbaceous sensation of artichoke.</p>",
+      "collections": [
+        "mediterranean-delights"
+      ]
+    },
+    {
+      "handle": "fettuccine",
+      "title": "Fettuccine",
+      "images": [
+        "jrj2550.jpg"
+      ],
+      "price": 16,
+      "variants": [],
+      "descriptionHtml": "<p>Available<br><br>14.1 oz (400gr)</p> <p>Ingredients: Vegan/durum wheat flour + eggs + water </p> <p>*Note: All pastas can be made Vegan or with eggs. Please specify in your order notes*</p>",
+      "collections": [
+        "string-pastas"
+      ]
+    },
+    {
+      "handle": "fresh-pasta-making-class",
+      "title": "Fresh Pasta Making Class",
+      "images": [
+        "PastaClass.jpg"
+      ],
+      "price": 150,
+      "variants": [
+        {
+          "name": "2 hours",
+          "price": 150,
+          "available": true
+        }
+      ],
+      "descriptionHtml": "<p>Join us for an unforgettable culinary experience at our Fresh Pasta Making Class, located at 72 Sunset Dr, Unit B, Basalt, CO. Learn the art of crafting authentic, homemade pasta from scratch with Aina.</p>",
+      "collections": []
+    },
+    {
+      "handle": "fusilli",
+      "title": "Fusilli",
+      "images": [
+        "WhatsAppImage2024-10-08at12.32.20.jpg"
+      ],
+      "price": 16,
+      "variants": [],
+      "descriptionHtml": "<p>Fusilli pasta is a spiral-shaped variety that’s perfect for holding onto sauces, thanks to its twists and ridges. Made from durum wheat, fusilli has a firm texture and pairs well with a wide range of sauces, from rich tomato-based ones to lighter olive oil or pesto-based dressings. Its shape also makes it great for pasta salads, baked dishes, and hearty casseroles.</p>",
+      "collections": [
+        "raviolis-short-pasta",
+        "short-pastas"
+      ]
+    },
+    {
+      "handle": "gf-maccheroni",
+      "title": "Gluten Free Maccheroni",
+      "images": [
+        "WhatsAppImage2024-10-08at13.14.59.jpg"
+      ],
+      "price": 22,
+      "variants": [],
+      "descriptionHtml": "<p>Gluten free flour blend (potato starch, millet flour, rice flour, tapioca flour, arrowroot) xanthan gum, citrus fiber, cultured sugar, salt, spices.</p> <p>14.1 oz (400gr)</p>",
+      "collections": [
+        "raviolis-short-pasta",
+        "short-pastas"
+      ]
+    },
+    {
+      "handle": "giusti-aged-balsamic-vinegar-of-modena-6-yr",
+      "title": "Giusti - Aged Balsamic Vinegar of Modena 6 Yr",
+      "images": [
+        "WhatsAppImage2024-10-02at12.09.09.jpg"
+      ],
+      "price": 29,
+      "variants": [],
+      "descriptionHtml": "<p>Giusti - 1 Silver Medal Italian Aged (6 years) Balsamic Vinegar of Modena - Cubica. Modena Balsamic Vinegar - Created in Modena with the must of cooked grapes and aged wine vinegar, then aged in oak barrels for 8 years with aged balsamic vinegar extracted from centuries-old casks. Versatile - 1 Silver Medal, Medaglia d'Argento, has a wonderfully rounded acidity, making it perfect to pair with foods such as salads, vegetables, slow-cooked stews, sauces, and more. IGP Certified - Balsamic vinegar aged to perfection, certified by the vintners of Modena and Reggio Emilia, and named for the 1 Silver Medal earned at International Fairs in the 19th century. Design - The bottle features the first label, designed in the early 1900s that showcases all of the awards that Giusti has earned over the years, and is in a cubic design bottle. Ingredients: Cooked Grape Must</p>",
+      "collections": [
+        "mediterranean-delights"
+      ]
+    },
+    {
+      "handle": "giusti-aged-balsamic-vinegar-of-modena-8-yr-2-gold-medals",
+      "title": "Giusti Aged Balsamic Vinegar of Modena 8 Yr - 2 Gold Medals",
+      "images": [
+        "WhatsAppImage2024-10-02at12.09.10.jpg"
+      ],
+      "price": 38,
+      "variants": [],
+      "descriptionHtml": "<p>Giusti - 2 Gold Medals Italian Aged (8 years) Balsamic Vinegar of Modena - Cubica Mode Giusti - 2 Gold Medals Italian Aged (8 years) Balsamic Vinegar of Modena - Cubica. </p> <p>NA Balsamic Vinegar Created in Modena with the must of cooked grapes and aged wine vinegar, then aged for 10 years in oak barrels with aged balsamic vinegar extracted from centuries-old casks. </p> <p>Versatile- 2 Gold Medals, Il Classico, is nicely balanced between the sweet and sour, with overtones of mature fruits, licorice, and black pepper, pairing well with fish, white meat, cheese, and seafood. I</p> <p>GP Certifies- Balsamic vinegar aged to perfection, certified by the vintners of Modena and Reggio Emilia, and named for the 1 Gold Medal earned at International Fairs in the 19th century. </p> <p>Historical Design - The bottle features the first label, designed in the early 1900s to show the many awards earned, and the bottle is in the Cubica or cube style bottle. Ingredients: Must of cooked grapes</p>",
+      "collections": [
+        "mediterranean-delights"
+      ]
+    },
+    {
+      "handle": "giusti-historical-trio-balsamic-vinegar-gift-set",
+      "title": "Giusti Historical Trio Balsamic Vinegar Gift Set",
+      "images": [
+        "WhatsAppImage2024-10-02at12.18.35.jpg"
+      ],
+      "price": 70,
+      "variants": [],
+      "descriptionHtml": "<p>Each balsamic is created with the must of cooked grapes and aged wine vinegar and then aged to perfection in oak barrels with the addition of aged balsamic vinegar extracted from centuries-old casks. </p> <p>The balsamic vinegars are named after the medals they earned at International Fairs in the 19th century. </p> <p>1 Silver Medal, also known as Medaglia d’Argento, is aged in French oak barrels from the 1900s with the addition of aged balsamic vinegar from centuries-old casks. It is aromatic and enhances the flavors of dishes with its intensity. </p> <p>2 Gold Medals, Il Classico, is versatile and nicely balanced between the sweet and sour, with overtones of mature fruits, licorice, and black pepper. It is aged in oak barrels, with the addition of aged balsamic vinegar from centuries-old casks. </p> <p>3 Gold Medals, Riccardo Giusti, is created from sweet, sundried grapes which creates an aroma and flavor of plum jam and red fruits intertwined with hints of honey and vanilla. </p> <p>MADE IN: MODENA, ITALY</p>",
+      "collections": [
+        "mediterranean-delights"
+      ]
+    },
+    {
+      "handle": "giusti-italian-handmade-panettone-fruit-cake-w-balsamic",
+      "title": "Giusti Italian Handmade Panettone - Fruit Cake w/ Balsamic",
+      "images": [
+        "WhatsAppImage2024-10-02at12.18.37_1.jpg"
+      ],
+      "price": 50,
+      "variants": [],
+      "descriptionHtml": "<p>FRESH - Just Arrived! Fresh from Italy for the 2024 Christmas season, Beautifully wrapped with rustic style - Makes a wonderful hostess gift during the holidays. </p> <p>TRADITIONAL ITALIAN HOLIDAY TREAT - An authentic holiday fruit cake imported from Italy, made according to our traditional recipe and criteria. Made from all natural ingredients - strictly fresh and genuine. </p> <p>UNIQUE FLAVOR - The sweet and sour of the balsamic vinegar is a perfect complement to the fragrant softness of the panettone. </p> <p>INFUSED WITH BALSAMIC - Balsamic vinegar Giusti 3 Gold Medals is added to the dough, used to soak the raisins, and finally added in the form of cream filling.</p> <p>Made in Italy</p>",
+      "collections": [
+        "mediterranean-delights"
+      ]
+    },
+    {
+      "handle": "gnocchetti-sardi",
+      "title": "Gnocchetti Sardi",
+      "images": [
+        "jrj2767.jpg"
+      ],
+      "price": 16,
+      "variants": [],
+      "descriptionHtml": "<p>14.1 oz (400gr)</p> <p>Ingredients: Vegan/durum wheat flour + water</p> <p>*Note: All pastas can be made Vegan or with eggs. Please specify in your order notes*</p>",
+      "collections": [
+        "raviolis-short-pasta",
+        "short-pastas"
+      ]
+    },
+    {
+      "handle": "gourmet-coarse-sicilian-herbs-salt-for-meat-and-fish",
+      "title": "Gourmet Coarse Sicilian Herbs Salt For Meat and Fish",
+      "images": [
+        "WhatsAppImage2024-10-02at13.04.35.jpg"
+      ],
+      "price": 10,
+      "variants": [],
+      "descriptionHtml": "<p>Elevate your culinary creations with our Sicilian Sea Salt. Perfect for meat and fish, this flavored sea salt boasts a blend of aromatic herbs and spices, including oregano, rosemary, thyme, dried lemon peel, and chili pepper. Whether you're dry rubbing before grilling or sautéing, or using it as a finishing touch, this salt will transform your dishes into gourmet delights. Discover the rich flavors of Sicily in every sprinkle! </p> <p>Frantoi Cutrera is known for its high-quality extra virgin olive oil. The farm has been operating olive groves and processing oil and olives since 1906 in South Eastern Sicily. They also offer a wide variety of jams, herbs, and salts all grown in the same region. </p> <p>MADE IN: SICILY, ITALY</p>",
+      "collections": [
+        "mediterranean-delights"
+      ]
+    },
+    {
+      "handle": "gourmet-italian-capers-in-sea-salt-capers-non-pareil",
+      "title": "Gourmet Italian Capers in Sea Salt - Capers Non Pareil",
+      "images": [
+        "WhatsAppImage2024-10-02at13.08.30.jpg"
+      ],
+      "price": 10,
+      "variants": [],
+      "descriptionHtml": "<p>NON-PAREIL - These are the most prized capers because of their firm texture and delicate flavor. Our capers are fresh from Sicaly where the world’s finest capers are grown. </p> <p>All natural, no preservatives or additives, vegan, Non-GMO; Made with only capers and sea salt. We hand-pick the best Sicilian capers and naturally preserve them in salt using our traditional family recipe. Every jar contains a glimpse of our land, a secret of our tradition not yet revealed. Being a real Sicilian family, we wish to share the most authentic products and recipes of this island. </p> <p>A DELICIOUS SEASONING OR GARNISH - We suggest to unsalt capers before use (by soaking in water for up to 15 minutes). Add a wounderful unique tang to your sauces, seafood, meat, poultry, pasta or salads. As visually appealing as they are tasty! </p> <p>HEALTHY SALT SUBSTITUTE FULL OF FLAVOR – Use capers non-pareil in both hot and cold recipes to add a sour-salty Mediterranean flavor.</p>",
+      "collections": [
+        "mediterranean-delights"
+      ]
+    },
+    {
+      "handle": "linguine",
+      "title": "Linguine",
+      "images": [
+        "jrj2556_05a8300e-c34d-4701-b811-de29c4c6e985.jpg"
+      ],
+      "price": 16,
+      "variants": [],
+      "descriptionHtml": "<p>14.1 oz (400gr)</p> <p>Ingredients: Vegan/durum wheat flour + eggs + water </p> <p>*Note: All pastas can be made Vegan or with eggs. Please specify in your order notes*</p>",
+      "collections": [
+        "string-pastas"
+      ]
+    },
+    {
+      "handle": "mafaldine",
+      "title": "Mafaldine",
+      "images": [
+        "jrj2373.jpg"
+      ],
+      "price": 16,
+      "variants": [],
+      "descriptionHtml": "<p>14.1 oz (400gr)</p> <p>Ingredients: Vegan/durum wheat flour + eggs + water </p> <p>*Note: All pastas can be made Vegan or with eggs. Please specify in your order notes*</p>",
+      "collections": [
+        "string-pastas"
+      ]
+    },
+    {
+      "handle": "meat-agnolotti",
+      "title": "Meat Agnolotti",
+      "images": [
+        "AgnolottidelPlinRecipe.jpg"
+      ],
+      "price": 35,
+      "variants": [],
+      "descriptionHtml": "<p>Beef sirloin, ricotta, parmigiano, raw eggs, 00 flour, &amp; durum flour</p> <p>14.1 oz</p>",
+      "collections": [
+        "raviolis-short-pasta",
+        "short-pastas"
+      ]
+    },
+    {
+      "handle": "mixed-spicy-veggie-tapenade-7-oz",
+      "title": "Mixed Spicy Veggie Tapenade - 7 oz",
+      "images": [
+        "WhatsAppImage2024-10-02at12.35.00.jpg"
+      ],
+      "price": 15,
+      "variants": [],
+      "descriptionHtml": "<p>Union of peppers, eggplant, red carrot, chili pepper, and other traditional vegetables, from which Mixed Spicy Veggie Tapenade is born; a spicy cream, with a strong taste ideal for croutons, bread bruschetta or to dress pasta dishes. </p> <p>Features: </p> <p>7 Oz / 212ml </p> <ul> <li>Production Area: Puglia, Italy </li> <li>Artisanal Product </li> <li>Preserved with Olive Oil </li> <li>Made only with Italian Vegetables</li> </ul>",
+      "collections": [
+        "mediterranean-delights"
+      ]
+    },
+    {
+      "handle": "mushroom-tapenade-7-oz",
+      "title": "Mushroom Tapenade - 7 oz",
+      "images": [
+        "WhatsAppImage2024-10-02at12.35.00_1.jpg"
+      ],
+      "price": 15,
+      "variants": [],
+      "descriptionHtml": "<p>Mushroom cream with a delicate taste, to be used with first and second courses, croutons and bruschetta. </p> <p>Features: </p> <p>7 Oz / 212ml </p> <p>Production Area: Puglia, Italy </p> <ul> <li>Artisanal Product</li> <li>Preserved with Olive Oil </li> <li>Made only with Italian Vegetables</li> <li>Production Area: Puglia, Italy</li> <li></li> </ul>",
+      "collections": [
+        "mediterranean-delights"
+      ]
+    },
+    {
+      "handle": "orecchiette",
+      "title": "Orecchiette",
+      "images": [
+        "jrj2678.jpg"
+      ],
+      "price": 16,
+      "variants": [],
+      "descriptionHtml": "<p>14.1 oz (400gr)</p> <p>Ingredients: Vegan/durum wheat flour + water</p> <p>*Note: All pastas can be made Vegan or with eggs. Please specify in your order notes*</p>",
+      "collections": [
+        "raviolis-short-pasta",
+        "short-pastas"
+      ]
+    },
+    {
+      "handle": "organic-sun-dried-cherry-tomatoes-in-evoo-italian",
+      "title": "Organic Sun Dried Cherry Tomatoes in Evoo - Italian",
+      "images": [
+        "WhatsAppImage2024-10-02at13.10.52.jpg"
+      ],
+      "price": 16,
+      "variants": [],
+      "descriptionHtml": "<p>Dried Tomatoes - It has an intense scent of tomato and olive oil, and intense red color. The Tonda Iblea intense fruitiness enhances the sweet taste of the cherry tomato, slightly flavored with garlic and basil. Pomodori Ciliegino Secco - The real Secret of Sicily is the sun that bathes the island, offering up the best fruits. Organic - Organic tomatoes are selected with care, and combined with our top organic olive oils. Natural Ingredients - We are constantly striving to preserve the organoleptic properties of each product. Versatile - Sun dried tomatoes are great for starters, bruschetta and sandwiches or pasta.</p>",
+      "collections": [
+        "mediterranean-delights"
+      ]
+    },
+    {
+      "handle": "pappardelle",
+      "title": "Pappardelle",
+      "images": [
+        "jrj1942.jpg"
+      ],
+      "price": 16,
+      "variants": [],
+      "descriptionHtml": "<p>14.1 oz (400gr)</p> <p>Ingredients: Vegan/durum wheat flour + eggs + water </p> <p>*Note: All pastas can be made Vegan or with eggs. Please specify in your order notes*</p>",
+      "collections": [
+        "string-pastas"
+      ]
+    },
+    {
+      "handle": "peranzana-olives-6-34-oz",
+      "title": "\"Peranzana\" Olives - 6.34 oz",
+      "images": [
+        "WhatsAppImage2024-10-02at12.35.01.jpg"
+      ],
+      "price": 12,
+      "variants": [],
+      "descriptionHtml": "<p>Straight from Provence with love, these dark, firm and slightly spicy olives with a unique flavor were brought from France to Italy during the 8th Century. Today, these unique tasting olives are still an Italian favorite. Try tossing these olives into a salad or baking them into a homemade focaccia. These French-Italian olives are also great for cocktails. These mouth-watering gems are ideal for just about any kind of dish. We carefully select and optimally store all of our olives in order to preserve their core nutrients. Enjoy these piquant delicacies on their own or add them to your favorite Italian recipe. </p> <p>Features: </p> <p>Drained Net Weight 6.34 Fl Oz / 180g </p> <ul> <li>Production Area: Puglia, Italy </li> <li>Artisanal Product</li> </ul>",
+      "collections": [
+        "mediterranean-delights"
+      ]
+    },
+    {
+      "handle": "pesto-alla-genovese",
+      "title": "Pesto Alla Genovese",
+      "images": [
+        "IMG_3763.jpg"
+      ],
+      "price": 20,
+      "variants": [],
+      "descriptionHtml": "<p>Organic basil, garlic, pine nuts, extra virgin olive oil</p> <p>Size: 8 oz</p>",
+      "collections": [
+        "sauces"
+      ]
+    },
+    {
+      "handle": "pomodoro",
+      "title": "Pomodoro",
+      "images": [
+        "IMG_37612.jpg"
+      ],
+      "price": 15,
+      "variants": [],
+      "descriptionHtml": "Crushed San Marzano tomatoes, garlic, basil, extra virgin olive oil<br>Size: 16 oz",
+      "collections": [
+        "sauces"
+      ]
+    },
+    {
+      "handle": "rigatoni",
+      "title": "Rigatoni",
+      "images": [
+        "jrj2904.jpg"
+      ],
+      "price": 16,
+      "variants": [],
+      "descriptionHtml": "<p>14.1 oz (400gr)</p> <p>Ingredients: Vegan/durum wheat flour + water</p> <p>*Note: All pastas can be made Vegan or with eggs. Please specify in your order notes*</p>",
+      "collections": [
+        "raviolis-short-pasta",
+        "short-pastas"
+      ]
+    },
+    {
+      "handle": "semi-dried-cherry-tomatoes-in-evoo-product-of-italy",
+      "title": "Semi-Dried Cherry Tomatoes in Evoo - Product of Italy",
+      "images": [
+        "WhatsAppImage2024-10-02at13.14.44.jpg"
+      ],
+      "price": 15,
+      "variants": [],
+      "descriptionHtml": "<p>It has an intense scent of tomato and olive oil, and intense red color. The Tonda Iblea intense fruitiness enhances the sweet taste of the cherry tomato, slightly flavored with garlic and basil. The real Secret of Sicily is the sun that bathes the island, offering up the best fruits. Tomatoes are selected with care, and combined with top olive oils. We are constantly striving to preserve the organoleptic properties of each product. Great for starters, bruschetta and sandwiches or pasta.</p>",
+      "collections": [
+        "mediterranean-delights"
+      ]
+    },
+    {
+      "handle": "spaghetti-alla-chittara",
+      "title": "Spaghetti alla Chitarra",
+      "images": [
+        "jrj3080.jpg"
+      ],
+      "price": 16,
+      "variants": [],
+      "descriptionHtml": "<p>14.1 oz (400gr)</p> <p>Ingredients: Vegan/durum wheat flour + eggs + water </p> <p>*Note: All pastas can be made Vegan or with eggs. Please specify in your order notes*</p>",
+      "collections": [
+        "string-pastas"
+      ]
+    },
+    {
+      "handle": "spaghetti",
+      "title": "Spaghetti",
+      "images": [
+        "jrj2067.jpg"
+      ],
+      "price": 16,
+      "variants": [],
+      "descriptionHtml": "<p>14.1 oz (400gr)</p> <p>Ingredients: Vegan/durum wheat flour + eggs + water </p> <p>*Note: All pastas can be made Vegan or with eggs. Please specify in your order notes*</p>",
+      "collections": [
+        "string-pastas"
+      ]
+    },
+    {
+      "handle": "tagliatelle",
+      "title": "Tagliatelle",
+      "images": [
+        "IMG_3757_e3ccac92-60d6-41ff-90e9-54bacf1d8c71.jpg"
+      ],
+      "price": 16,
+      "variants": [],
+      "descriptionHtml": "Available<br>Only In-store purchases<br>14.1 oz (400gr)",
+      "collections": [
+        "string-pastas"
+      ]
+    },
+    {
+      "handle": "tiramisu-16-servings",
+      "title": "Tiramisu 16 servings",
+      "images": [
+        "Tiramisu_5240d6b7-8f57-4a0a-8175-1014e4c76c4c.jpg"
+      ],
+      "price": 150,
+      "variants": [
+        {
+          "name": "150",
+          "price": 150,
+          "available": true
+        }
+      ],
+      "descriptionHtml": "<p>Experience the ultimate indulgence with our appetizing tiramisu. This classic Italian dessert features layers of fluffy mascarpone cheese and delicate ladyfingers soaked in rich espresso. Topped with a dusting of fine cocoa powder, every bite offers a perfect balance of creamy, sweet, and coffee flavors. Our tiramisu is a heavenly treat that melts in your mouth, making it an irresistible choice for any dessert lover. Enjoy this timeless favorite made with premium ingredients and crafted to perfection.</p>",
+      "collections": [
+        "i-nostri-dolci"
+      ]
+    },
+    {
+      "handle": "tiramisu",
+      "title": "Tiramisu 10 servings tray",
+      "images": [
+        "Tiramisu.jpg"
+      ],
+      "price": 100,
+      "variants": [
+        {
+          "name": "1",
+          "price": 100,
+          "available": true
+        }
+      ],
+      "descriptionHtml": "<p>Experience the ultimate indulgence with our appetizing tiramisu. This classic Italian dessert features layers of fluffy mascarpone cheese and delicate ladyfingers soaked in rich espresso. Topped with a dusting of fine cocoa powder, every bite offers a perfect balance of creamy, sweet, and coffee flavors. Our tiramisu is a heavenly treat that melts in your mouth, making it an irresistible choice for any dessert lover. Enjoy this timeless favorite made with premium ingredients and crafted to perfection.</p>",
+      "collections": [
+        "i-nostri-dolci"
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "handle": "all",
+      "title": "Products",
+      "descriptionHtml": "",
+      "products": [
+        "bella-from-cerignola-olives-6-34-oz",
+        "peranzana-olives-6-34-oz",
+        "arrabbiata-spicy",
+        "artichokes-tapenade-7-oz",
+        "black-olives-tapenade-7-oz",
+        "bolognese",
+        "bucatini",
+        "cacio-e-pepe",
+        "cannoli",
+        "casarecce",
+        "cavatelli",
+        "creste-di-gallo",
+        "extra-virgin-olive-oil-igp-puglia-intense-16-9-fl-oz",
+        "extra-virgin-olive-oil-igp-sicilia-delicate",
+        "extra-virgin-olive-oil-igp-toscana-medium",
+        "fettuccine",
+        "fresh-pasta-making-class",
+        "fusilli",
+        "giusti-aged-balsamic-vinegar-of-modena-6-yr",
+        "giusti-aged-balsamic-vinegar-of-modena-8-yr-2-gold-medals",
+        "giusti-historical-trio-balsamic-vinegar-gift-set",
+        "giusti-italian-handmade-panettone-fruit-cake-w-balsamic",
+        "gf-maccheroni",
+        "gnocchetti-sardi"
+      ]
+    },
+    {
+      "handle": "frontpage",
+      "title": "Home page",
+      "descriptionHtml": "",
+      "products": [
+        "butternut-squash-ricotta-ravioli",
+        "pesto-alla-genovese",
+        "bolognese",
+        "pomodoro",
+        "spaghetti",
+        "meat-agnolotti",
+        "arrabbiata-spicy",
+        "casarecce",
+        "rigatoni",
+        "fresh-pasta-making-class",
+        "orecchiette",
+        "gnocchetti-sardi",
+        "tagliatelle",
+        "fettuccine",
+        "pappardelle",
+        "cavatelli",
+        "fusilli",
+        "gf-maccheroni",
+        "bucatini",
+        "cacio-e-pepe",
+        "linguine",
+        "spaghetti-alla-chittara"
+      ]
+    },
+    {
+      "handle": "i-nostri-dolci",
+      "title": "I Nostri Dolci",
+      "descriptionHtml": "<p>Indulge in the exquisite flavors of Italy with our premium collection of Italian desserts made to order. Each dessert is crafted with the finest ingredients, ensuring an authentic taste experience that transports you straight to Italy. From the rich and creamy tiramisu layered with mascarpone and espresso-soaked ladyfingers to the delicate and flaky cannoli filled with sweet ricotta, our selection caters to every sweet tooth. Whether you're celebrating a special occasion or simply craving a taste of Italy, our desserts are the perfect choice for any event.</p>",
+      "products": [
+        "cannoli",
+        "tiramisu-16-servings",
+        "tiramisu"
+      ]
+    },
+    {
+      "handle": "mediterranean-delights",
+      "title": "Mediterranean Delights",
+      "descriptionHtml": "<p>Welcome to <em>La Pastaiola's Mediterranean Delights</em>, where you can explore a curated selection of premium Italian olive oils, aged balsamic vinegars, and authentic Mediterranean provisions. From cold-pressed extra virgin olive oils to rich, tangy balsamic vinegars, our products bring the flavors of Italy right to your kitchen.</p> <p>Our gourmet pantry staples are sourced from small Italian producers, ensuring the finest quality and taste. Whether you're drizzling olive oil over fresh pasta, dipping artisanal bread, or enhancing your favorite salads, our Mediterranean delights add a touch of Italian tradition to every meal.</p> <p>Shop our exclusive collection and elevate your culinary creations with the best ingredients from Italy and the Mediterranean.</p>",
+      "products": [
+        "bella-from-cerignola-olives-6-34-oz",
+        "peranzana-olives-6-34-oz",
+        "artichokes-tapenade-7-oz",
+        "black-olives-tapenade-7-oz",
+        "extra-virgin-olive-oil-igp-puglia-intense-16-9-fl-oz",
+        "extra-virgin-olive-oil-igp-sicilia-delicate",
+        "extra-virgin-olive-oil-igp-toscana-medium",
+        "giusti-aged-balsamic-vinegar-of-modena-6-yr",
+        "giusti-aged-balsamic-vinegar-of-modena-8-yr-2-gold-medals",
+        "giusti-historical-trio-balsamic-vinegar-gift-set",
+        "giusti-italian-handmade-panettone-fruit-cake-w-balsamic",
+        "gourmet-coarse-sicilian-herbs-salt-for-meat-and-fish",
+        "gourmet-italian-capers-in-sea-salt-capers-non-pareil",
+        "mixed-spicy-veggie-tapenade-7-oz",
+        "mushroom-tapenade-7-oz",
+        "organic-sun-dried-cherry-tomatoes-in-evoo-italian",
+        "semi-dried-cherry-tomatoes-in-evoo-product-of-italy"
+      ]
+    },
+    {
+      "handle": "raviolis-short-pasta",
+      "title": "Raviolis & Short Pasta",
+      "descriptionHtml": "<p> All pastas can be made Vegan or with eggs. Please specify in your order notes!</p>",
+      "products": [
+        "butternut-squash-ricotta-ravioli",
+        "meat-agnolotti",
+        "casarecce",
+        "rigatoni",
+        "orecchiette",
+        "creste-di-gallo",
+        "gnocchetti-sardi",
+        "fusilli",
+        "gf-maccheroni"
+      ]
+    },
+    {
+      "handle": "sauces",
+      "title": "Sauces",
+      "descriptionHtml": "Our fresh handcrafted sauces are made with the best local ingredients.",
+      "products": [
+        "pesto-alla-genovese",
+        "bolognese",
+        "pomodoro",
+        "arrabbiata-spicy",
+        "cacio-e-pepe"
+      ]
+    },
+    {
+      "handle": "short-pastas",
+      "title": "Short Pastas",
+      "descriptionHtml": "<p>Ingredients: Vegan/durum wheat flour + water</p>",
+      "products": [
+        "fusilli",
+        "creste-di-gallo",
+        "rigatoni",
+        "gf-maccheroni",
+        "gnocchetti-sardi",
+        "casarecce",
+        "orecchiette",
+        "meat-agnolotti"
+      ]
+    },
+    {
+      "handle": "string-pastas",
+      "title": "String Pastas",
+      "descriptionHtml": "<p>Each of our string pastas are made with durum wheat flour + eggs + water</p> <p>All pastas can be made Vegan or with eggs. Please specify in your order notes!</p>",
+      "products": [
+        "spaghetti",
+        "tagliatelle",
+        "pappardelle",
+        "mafaldine",
+        "fettuccine",
+        "bucatini",
+        "spaghetti-alla-chittara",
+        "linguine"
+      ]
+    }
+  ]
+}
