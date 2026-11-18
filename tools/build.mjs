@@ -205,7 +205,7 @@ const orgLd = {
 add("/", {
   title: BIZ.name, jsonld: orgLd,
   body: `
-<section class="hero" style="--img:url('/img/hero.jpg')">
+<section class="hero" style="background-image:linear-gradient(rgba(14,27,77,.35),rgba(14,27,77,.55)),url('/img/hero.jpg')">
   <div class="hero-inner">
     <h1>Experience the taste of Italy with every bite of our artisanal fresh pasta and sauces</h1>
     <div class="actions"><a class="pill pill-light" href="/collections/all/">See our pasta</a><a class="pill pill-ghost" href="/pages/contact-us/">How to order</a></div>
@@ -375,7 +375,7 @@ add("/pages/our-shop/", {
 const classProduct = prod("fresh-pasta-making-class");
 add("/pages/book-master-class-1/", {
   title: "Pasta-making classes", description: "Hands-on fresh pasta classes in Basalt, Colorado. Groups of up to 6, 2–3 hours, all ingredients and tools provided.", image: "/img/pasta-room.jpg",
-  body: `<section class="hero hero-sm" style="--img:url('/img/pasta-room.jpg')"><div class="hero-inner"><h1>Discover the ultimate pasta-making experience</h1></div></section>
+  body: `<section class="hero hero-sm" style="background-image:linear-gradient(rgba(14,27,77,.35),rgba(14,27,77,.55)),url('/img/pasta-room.jpg')"><div class="hero-inner"><h1>Discover the ultimate pasta-making experience</h1></div></section>
 <section class="section"><div class="wrap narrow">
   <p class="lead">Dive into the art of authentic pasta making. Our hands-on classes take you through the heart of Italian cuisine, where you'll learn to make exquisite pasta from scratch.</p>
   <div class="order-box">

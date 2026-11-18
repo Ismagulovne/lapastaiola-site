@@ -63,7 +63,7 @@ p { margin: 0 0 1em; }
 .actions.center { justify-content: center; }
 
 /* hero */
-.hero { background: linear-gradient(rgba(14,27,77,.35), rgba(14,27,77,.55)), var(--img) center/cover no-repeat; color: #fff; min-height: min(78vh, 640px); display: grid; align-items: end; }
+.hero { background-color: var(--navy); background-position: center; background-size: cover; background-repeat: no-repeat; color: #fff; min-height: min(78vh, 640px); display: grid; align-items: end; }
 .hero-sm { min-height: 340px; }
 .hero-inner { max-width: 1200px; margin: 0 auto; width: 100%; padding: 48px 20px; }
 .hero h1 { max-width: 760px; color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.25); }
