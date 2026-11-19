@@ -340,16 +340,16 @@
     {
       "handle": "fresh-pasta-making-class",
       "title": {
-        "en": "Fresh Pasta Making Class",
-        "it": "Corso di pasta fresca",
-        "es": "Clase de pasta fresca"
+        "en": "Pasta Masterclass",
+        "it": "Masterclass di pasta",
+        "es": "Masterclass de pasta"
       },
       "price": 150,
       "variants": [],
       "description_html": {
-        "en": "<p>Join us for an unforgettable culinary experience at our Fresh Pasta Making Class, located at 72 Sunset Dr, Unit B, Basalt, CO. Learn the art of crafting authentic, homemade pasta from scratch with Aina.</p>",
-        "it": "<p>Unitevi a noi per un'esperienza culinaria indimenticabile al nostro corso di pasta fresca, al 72 Sunset Dr, Unit B, Basalt, CO. Imparate con Aina l'arte di preparare da zero un'autentica pasta fatta in casa.</p>",
-        "es": "<p>Acompáñanos a vivir una experiencia culinaria inolvidable en nuestra clase de pasta fresca, en 72 Sunset Dr, Unit B, Basalt, CO. Aprende con Aina el arte de preparar pasta casera auténtica desde cero.</p>"
+        "en": "<p>Join us for an unforgettable culinary experience at our Pasta Masterclass, located at 355 Gold Rivers Court, Ste 2, Basalt, CO. Learn the art of crafting authentic, homemade pasta from scratch with Aina.</p>",
+        "it": "<p>Unitevi a noi per un'esperienza culinaria indimenticabile alla nostra Masterclass di pasta, al 355 Gold Rivers Court, Ste 2, Basalt, CO. Imparate con Aina l'arte di preparare da zero un'autentica pasta fatta in casa.</p>",
+        "es": "<p>Acompáñanos a vivir una experiencia culinaria inolvidable en nuestra Masterclass de pasta, en 355 Gold Rivers Court, Ste 2, Basalt, CO. Aprende con Aina el arte de preparar pasta casera auténtica desde cero.</p>"
       },
       "image": "fresh-pasta-making-class.jpg",
       "hidden": false
