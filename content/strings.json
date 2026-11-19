@@ -258,5 +258,25 @@
     "en": "Continue",
     "it": "Continua",
     "es": "Continuar"
+  },
+  "seo_place": {
+    "en": "Fresh Pasta in Basalt, CO",
+    "it": "Pasta fresca a Basalt, CO",
+    "es": "Pasta fresca en Basalt, CO"
+  },
+  "seo_product": {
+    "en": "made fresh by La Pastaiola in Basalt, Colorado. Order by phone or email and pick up at our shop.",
+    "it": "preparato fresco da La Pastaiola a Basalt, Colorado. Ordinate per telefono o email e ritirate in negozio.",
+    "es": "hecho fresco por La Pastaiola en Basalt, Colorado. Pide por teléfono o email y recoge en nuestra tienda."
+  },
+  "seo_collection": {
+    "en": "handmade Italian pasta, sauces and specialties from La Pastaiola in Basalt, Colorado.",
+    "it": "pasta, sughi e specialità italiane fatti a mano da La Pastaiola a Basalt, Colorado.",
+    "es": "pasta, salsas y especialidades italianas hechas a mano por La Pastaiola en Basalt, Colorado."
+  },
+  "seo_class": {
+    "en": "a hands-on fresh pasta class in Basalt, Colorado, for up to 6 guests.",
+    "it": "un corso pratico di pasta fresca a Basalt, Colorado, fino a 6 persone.",
+    "es": "una clase práctica de pasta fresca en Basalt, Colorado, para hasta 6 personas."
   }
 }

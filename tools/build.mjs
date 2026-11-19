@@ -46,6 +46,15 @@ const priceLabel = (p, lang) => {
   const lo = Math.min(...prices), hi = Math.max(...prices);
   return lo === hi ? money(lo) : `${S("price_from", lang)} ${money(lo)}`;
 };
+// Search snippet: trimmed at a word boundary to about 155 characters.
+const clip = (text, max = 155) => {
+  const t = plain(text);
+  if (t.length <= max) return t;
+  const cut = t.slice(0, max - 1);
+  return cut.slice(0, cut.lastIndexOf(" ") > 80 ? cut.lastIndexOf(" ") : cut.length).replace(/[,.;:\s–-]+$/, "") + "…";
+};
+// Product/collection snippets lead with the name and the local context, then the product's own text.
+const seoDesc = (name, text, lang, key = "seo_product") => clip(`${name}: ${S(key, lang)} ${plain(text)}`);
 const mailto = (subject, body = "") =>
   `mailto:${settings.email}?subject=${encodeURIComponent(subject)}${body ? "&body=" + encodeURIComponent(body) : ""}`;
 
@@ -74,11 +83,11 @@ function relativize(html, path) {
     .replace(/url\('\/(?!\/)/g, `url('${pre}`)
     .replace(/(content="0; url=)\/(?!\/)/g, `$1${pre}`);
 }
-function write(path, html, { sitemap = true } = {}) {
+function write(path, html, { sitemap = true, base = null } = {}) {
   const file = /\.[a-z]+$/.test(path) ? join(OUT, path) : join(OUT, path, "index.html");
   mkdirSync(dirname(file), { recursive: true });
   writeFileSync(file, relativize(html, path));
-  if (sitemap) written.push(path);
+  if (sitemap) written.push({ path, base });
 }
 const redirect = (path, to) => write(path,
   `<!doctype html><meta charset="utf-8"><title>Redirecting…</title><meta name="robots" content="noindex"><link rel="canonical" href="${SITE_URL}${to}"><meta http-equiv="refresh" content="0; url=${to}"><a href="${to}">Continue</a>`,
@@ -102,9 +111,10 @@ function langSwitcher(lang, path) {
 </details>`;
 }
 
-function layout({ lang, path, title, description, body, image = "/img/og.jpg", jsonld, home = false }) {
+function layout({ lang, path, title, description, body, image = "/img/og.jpg", jsonld, home = false, ogType = "website", preload = null, noindex = false }) {
   const full = home ? `${settings.name} · ${title}` : `${title} · ${settings.name}`;
-  const desc = description || P("home", "description", lang);
+  const desc = clip(description || P("home", "description", lang));
+  const ld = [].concat(jsonld || []);
   const nav = NAV.map(([h, k]) => `<a href="${L(lang, h)}"${path.startsWith(h) ? ' aria-current="page"' : ""}>${esc(S(k, lang))}</a>`).join("");
   const alternates = LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${SITE_URL}${L(l, path)}">`).join("\n") +
     `\n<link rel="alternate" hreflang="x-default" href="${SITE_URL}${path}">`;
@@ -119,19 +129,25 @@ function layout({ lang, path, title, description, body, image = "/img/og.jpg", j
 ${alternates}
 <meta property="og:site_name" content="${esc(settings.name)}">
 <meta property="og:locale" content="${LOCALES[lang] || lang}">
+${LANGS.filter(l => l !== lang).map(l => `<meta property="og:locale:alternate" content="${LOCALES[l] || l}">`).join("\n")}
 <meta property="og:title" content="${esc(full)}">
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${SITE_URL}${L(lang, path)}">
 <meta property="og:image" content="${SITE_URL}${image}">
-<meta property="og:type" content="website">
+<meta property="og:image:alt" content="${esc(title)}">
+<meta property="og:type" content="${ogType}">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0e1b4d">
+${noindex ? `<meta name="robots" content="noindex">` : `<meta name="robots" content="index, follow, max-image-preview:large">`}
 <link rel="icon" href="/img/logo.png">
+<link rel="apple-touch-icon" href="/img/logo.png">
+${preload ? `<link rel="preload" as="image" href="${preload}" fetchpriority="high">` : ""}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700&family=Questrial&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css?v=${BUILD}">
 <script src="/assets/site.js?v=${BUILD}" defer></script>
-${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ""}
+${ld.map(j => `<script type="application/ld+json">${JSON.stringify(j).replace(/</g, "\\u003c")}</script>`).join("\n")}
 </head>
 <body>
 <a class="skip" href="#main">${esc(S("skip", lang))}</a>
@@ -211,26 +227,48 @@ const contactBlock = lang => `<div class="contact-grid">
 const hero = (img, inner, small = false) =>
   `<section class="hero${small ? " hero-sm" : ""}" style="background-image:linear-gradient(rgba(14,27,77,.35),rgba(14,27,77,.55)),url('${img}')"><div class="hero-inner">${inner}</div></section>`;
 
-const openDays = settings.hours.filter(d => !d.closed).map(d => `${d.day[0].toUpperCase()}${d.day[1]} ${d.open}-${d.close}`);
-const orgLd = {
-  "@context": "https://schema.org", "@type": ["Store", "FoodEstablishment"], name: settings.name, url: SITE_URL,
-  image: SITE_URL + "/img/og.jpg", logo: SITE_URL + "/img/logo.png", telephone: tel, email: settings.email,
+// ---------- structured data (schema.org) ----------
+const DAY_NAMES = { mon: "Monday", tue: "Tuesday", wed: "Wednesday", thu: "Thursday", fri: "Friday", sat: "Saturday", sun: "Sunday" };
+const BIZ_ID = `${SITE_URL}/#business`;
+const allPrices = products.flatMap(p => (p.variants?.length ? p.variants.map(v => +v.price) : [+p.price])).filter(n => n > 0);
+const orgLd = lang => ({
+  "@context": "https://schema.org", "@type": ["Store", "FoodEstablishment"], "@id": BIZ_ID,
+  name: settings.name, legalName: settings.legal_name, url: SITE_URL + L(lang, "/"), description: P("home", "description", lang),
+  image: [SITE_URL + "/img/og.jpg", SITE_URL + "/img/hero.jpg", SITE_URL + "/img/shop-1.jpg"], logo: SITE_URL + "/img/logo.png",
+  telephone: tel, email: settings.email, servesCuisine: "Italian", priceRange: "$$", currenciesAccepted: "USD",
   address: { "@type": "PostalAddress", streetAddress: settings.street, addressLocality: settings.city, addressRegion: settings.state, postalCode: settings.zip, addressCountry: "US" },
-  openingHours: openDays, sameAs: [settings.instagram, settings.facebook].filter(Boolean)
-};
+  hasMap: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${settings.street}, ${cityLine}`)}`,
+  areaServed: ["Basalt, CO", "Aspen, CO", "Carbondale, CO", "Glenwood Springs, CO", "Snowmass Village, CO", "Roaring Fork Valley"],
+  openingHoursSpecification: settings.hours.filter(d => !d.closed).map(d => ({ "@type": "OpeningHoursSpecification", dayOfWeek: `https://schema.org/${DAY_NAMES[d.day]}`, opens: d.open, closes: d.close })),
+  sameAs: [settings.instagram, settings.facebook].filter(Boolean),
+  ...(allPrices.length ? { makesOffer: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: Math.min(...allPrices).toFixed(2), highPrice: Math.max(...allPrices).toFixed(2) } } : {})
+});
+const siteLd = lang => ({ "@context": "https://schema.org", "@type": "WebSite", "@id": `${SITE_URL}/#website`, name: settings.name, url: SITE_URL + L(lang, "/"), inLanguage: lang, publisher: { "@id": BIZ_ID } });
+const crumbsLd = (lang, items) => ({ "@context": "https://schema.org", "@type": "BreadcrumbList",
+  itemListElement: items.map(([name, path], i) => ({ "@type": "ListItem", position: i + 1, name, item: SITE_URL + L(lang, path) })) });
+function productLd(p, lang, title, desc) {
+  const url = `${SITE_URL}${L(lang, `/products/${p.handle}/`)}`;
+  const prices = p.variants?.length ? p.variants.map(v => +v.price) : [+p.price];
+  const base = { priceCurrency: "USD", availability: "https://schema.org/InStoreOnly", url, seller: { "@id": BIZ_ID } };
+  const offers = prices.length > 1
+    ? { "@type": "AggregateOffer", lowPrice: Math.min(...prices).toFixed(2), highPrice: Math.max(...prices).toFixed(2), offerCount: prices.length, ...base }
+    : { "@type": "Offer", price: prices[0].toFixed(2), itemCondition: "https://schema.org/NewCondition", ...base };
+  return { "@context": "https://schema.org", "@type": "Product", name: title, image: SITE_URL + imgOf(p), description: plain(desc) || title, url, inLanguage: lang,
+    brand: { "@type": "Brand", name: settings.name }, offers };
+}
 
 // ---------- pages per language ----------
 for (const lang of LANGS) {
-  const add = (path, opts) => write(L(lang, path), layout({ lang, path, ...opts }));
+  const add = (path, opts) => write(L(lang, path), layout({ lang, path, ...opts }), { base: path });
 
   // Home
   const tiles = shopCols.slice(0, 3).map(c => {
     const first = colProducts(c)[0];
-    return `<a class="tile" href="${L(lang, `/collections/${c.handle}/`)}"><img src="${first ? imgOf(first) : "/img/logo.png"}" alt="" loading="lazy"><span>${esc(tr(c.title, lang))}</span></a>`;
+    return `<a class="tile" href="${L(lang, `/collections/${c.handle}/`)}"><img src="${first ? imgOf(first) : "/img/logo.png"}" alt="${esc(tr(c.title, lang))}" loading="lazy"><span>${esc(tr(c.title, lang))}</span></a>`;
   }).join("");
   const reviews = [1, 2, 3].map(i => P("home", `review_${i}`, lang) ? `<blockquote>“${esc(P("home", `review_${i}`, lang))}”<cite>${esc(pagesTxt.home[`review_${i}_author`] || "")}</cite></blockquote>` : "").join("");
   add("/", {
-    home: true, title: P("home", "title", lang), jsonld: orgLd,
+    home: true, title: P("home", "title", lang), jsonld: [orgLd(lang), siteLd(lang)], preload: "/img/hero.jpg",
     body: `${hero("/img/hero.jpg", `<h1>${esc(P("home", "hero_title", lang))}</h1>
     <div class="actions"><a class="pill pill-light" href="${L(lang, "/collections/all/")}">${esc(P("home", "hero_button", lang))}</a><a class="pill pill-ghost" href="${L(lang, "/pages/contact-us/")}">${esc(P("home", "hero_button_2", lang))}</a></div>`)}
 <section class="section"><div class="wrap">
@@ -239,14 +277,14 @@ for (const lang of LANGS) {
   <p class="center"><a class="pill" href="${L(lang, "/collections/all/")}">${esc(P("home", "shop_all", lang))}</a></p>
 </div></section>
 <section class="section band"><div class="wrap split">
-  <img src="/img/pasta-hands.jpg" alt="" loading="lazy">
+  <img src="/img/pasta-hands.jpg" alt="${esc(P("home", "story_title", lang))}" loading="lazy">
   <div><h2>${esc(P("home", "story_title", lang))}</h2><div class="rte">${P("home", "story_html", lang)}</div>
   <a class="pill pill-light" href="${L(lang, "/pages/about-us/")}">${esc(P("home", "story_button", lang))}</a></div>
 </div></section>
 <section class="section"><div class="wrap three">
-  <a class="feature" href="${L(lang, "/pages/book-master-class-1/")}"><img src="/img/pasta-room.jpg" alt="" loading="lazy"><h3>${esc(P("home", "classes_title", lang))}</h3><p>${esc(P("home", "classes_text", lang))}</p></a>
-  <a class="feature" href="${L(lang, "/pages/caterings-1/")}"><img src="/img/marco.jpg" alt="" loading="lazy"><h3>${esc(P("home", "catering_title", lang))}</h3><p>${esc(P("home", "catering_text", lang))}</p></a>
-  <a class="feature" href="${L(lang, "/pages/meal-kits/")}"><img src="/img/shop-counter.jpg" alt="" loading="lazy"><h3>${esc(P("home", "mealkits_title", lang))}</h3><p>${esc(P("home", "mealkits_text", lang))}</p></a>
+  <a class="feature" href="${L(lang, "/pages/book-master-class-1/")}"><img src="/img/pasta-room.jpg" alt="${esc(P("home", "classes_title", lang))}" loading="lazy"><h3>${esc(P("home", "classes_title", lang))}</h3><p>${esc(P("home", "classes_text", lang))}</p></a>
+  <a class="feature" href="${L(lang, "/pages/caterings-1/")}"><img src="/img/marco.jpg" alt="${esc(P("home", "catering_title", lang))}" loading="lazy"><h3>${esc(P("home", "catering_title", lang))}</h3><p>${esc(P("home", "catering_text", lang))}</p></a>
+  <a class="feature" href="${L(lang, "/pages/meal-kits/")}"><img src="/img/shop-counter.jpg" alt="${esc(P("home", "mealkits_title", lang))}" loading="lazy"><h3>${esc(P("home", "mealkits_title", lang))}</h3><p>${esc(P("home", "mealkits_text", lang))}</p></a>
 </div></section>
 <section class="section band-light"><div class="wrap split">
   <div><h2>${esc(P("home", "visit_title", lang))}</h2><p>${esc(settings.street)}, ${esc(cityLine)}<br><a href="tel:${tel}">${esc(settings.phone)}</a></p>${hoursTable(lang)}</div>
@@ -258,7 +296,7 @@ for (const lang of LANGS) {
   const inShop = new Set(shopCols.flatMap(c => c.products));
   const rest = products.filter(p => !inShop.has(p.handle) && p.handle !== "fresh-pasta-making-class");
   add("/collections/all/", {
-    title: P("shop", "title", lang), description: P("shop", "description", lang),
+    title: P("shop", "title", lang), description: P("shop", "description", lang), jsonld: crumbsLd(lang, [[settings.name, "/"], [P("shop", "title", lang), "/collections/all/"]]),
     body: `<section class="section"><div class="wrap">
   <h1 class="page-title">${esc(P("shop", "title", lang))}</h1>
   ${orderBox(S("order_list_placeholder", lang), lang)}
@@ -271,7 +309,8 @@ for (const lang of LANGS) {
   // Collections
   for (const c of catalog.collections) {
     add(`/collections/${c.handle}/`, {
-      title: tr(c.title, lang), description: plain(tr(c.description_html, lang)).slice(0, 160) || undefined,
+      title: `${tr(c.title, lang)} · ${S("seo_place", lang)}`, description: seoDesc(tr(c.title, lang), tr(c.description_html, lang), lang, "seo_collection"),
+      jsonld: crumbsLd(lang, [[settings.name, "/"], [P("shop", "title", lang), "/collections/all/"], [tr(c.title, lang), `/collections/${c.handle}/`]]),
       body: `<section class="section"><div class="wrap">
   <p class="crumbs"><a href="${L(lang, "/collections/all/")}">${esc(P("shop", "title", lang))}</a> / ${esc(tr(c.title, lang))}</p>
   <h1 class="page-title">${esc(tr(c.title, lang))}</h1>
@@ -291,10 +330,10 @@ for (const lang of LANGS) {
     const variants = p.variants?.length > 1 ? `<table class="variants"><caption>${esc(S("options", lang))}</caption>${p.variants.map(v => `<tr><th scope="row">${esc(tr(v.name, lang))}</th><td>${money(v.price)}</td></tr>`).join("")}</table>` : "";
     const isClass = p.handle === "fresh-pasta-making-class";
     add(`/products/${p.handle}/`, {
-      title, image: imgOf(p), description: plain(desc).slice(0, 160),
-      jsonld: { "@context": "https://schema.org", "@type": "Product", name: title, image: SITE_URL + imgOf(p), description: plain(desc),
-        brand: { "@type": "Brand", name: settings.name },
-        offers: { "@type": "Offer", price: Number(p.price).toFixed(2), priceCurrency: "USD", url: `${SITE_URL}${L(lang, `/products/${p.handle}/`)}` } },
+      title: firstCol && (title + tr(firstCol.title, lang)).length < 46 ? `${title} · ${tr(firstCol.title, lang)}` : title,
+      image: imgOf(p), ogType: "product", description: seoDesc(title, desc, lang, isClass ? "seo_class" : "seo_product"),
+      jsonld: [productLd(p, lang, title, desc), crumbsLd(lang, [[settings.name, "/"], [P("shop", "title", lang), "/collections/all/"],
+        ...(firstCol ? [[tr(firstCol.title, lang), `/collections/${firstCol.handle}/`]] : []), [title, `/products/${p.handle}/`]])],
       body: `<section class="section"><div class="wrap">
   <p class="crumbs"><a href="${L(lang, "/collections/all/")}">${esc(P("shop", "title", lang))}</a>${firstCol ? ` / <a href="${L(lang, `/collections/${firstCol.handle}/`)}">${esc(tr(firstCol.title, lang))}</a>` : ""}</p>
   <div class="product">
@@ -315,7 +354,7 @@ for (const lang of LANGS) {
 
   // Contact
   add("/pages/contact-us/", {
-    title: P("contact", "title", lang), description: P("contact", "description", lang),
+    title: P("contact", "title", lang), description: P("contact", "description", lang), jsonld: orgLd(lang),
     body: `<section class="section"><div class="wrap narrow">
   <h1 class="page-title">${esc(P("contact", "title", lang))}</h1>
   <p class="lead">${esc(P("contact", "lead", lang))}</p>
@@ -347,7 +386,7 @@ for (const lang of LANGS) {
   // Classes
   const classProduct = prod("fresh-pasta-making-class");
   add("/pages/book-master-class-1/", {
-    title: P("classes", "title", lang), description: P("classes", "description", lang), image: "/img/pasta-room.jpg",
+    title: P("classes", "title", lang), description: P("classes", "description", lang), image: "/img/pasta-room.jpg", preload: "/img/pasta-room.jpg",
     body: `${hero("/img/pasta-room.jpg", `<h1>${esc(P("classes", "heading", lang))}</h1>`, true)}
 <section class="section"><div class="wrap narrow">
   <p class="lead">${esc(P("classes", "lead", lang))}</p>
@@ -400,12 +439,18 @@ for (const lang of LANGS) {
 }
 
 // ---------- 404 (served for any missing path, so links stay absolute) ----------
-const nf = layout({ lang: DEFAULT, path: "/404.html", title: P("not_found", "title", DEFAULT),
+const nf = layout({ lang: DEFAULT, path: "/404.html", title: P("not_found", "title", DEFAULT), noindex: true,
   body: `<section class="section"><div class="wrap narrow center"><h1 class="page-title">${esc(P("not_found", "title", DEFAULT))}</h1><p class="lead">${esc(P("not_found", "lead", DEFAULT))}</p><div class="actions center">${LANGS.map(l => `<a class="pill${l === DEFAULT ? "" : " pill-outline"}" href="${L(l, "/")}">${esc(S("home", l))} · ${l.toUpperCase()}</a>`).join("")}</div></div></section>` });
 writeFileSync(join(OUT, "404.html"), nf);
 
 writeFileSync(join(OUT, "robots.txt"), `User-agent: *\nAllow: /\nDisallow: /admin/\nSitemap: ${SITE_URL}/sitemap.xml\n`);
-writeFileSync(join(OUT, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${written.map(p => `  <url><loc>${SITE_URL}${p}</loc></url>`).join("\n")}\n</urlset>\n`);
+// Sitemap with hreflang alternates for every language version of each page.
+const smEntry = ({ path, base }) => {
+  const alts = base ? LANGS.map(l => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE_URL}${L(l, base)}"/>`).join("") +
+    `<xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${base}"/>` : "";
+  return `  <url><loc>${SITE_URL}${path}</loc>${alts}</url>`;
+};
+writeFileSync(join(OUT, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${written.map(smEntry).join("\n")}\n</urlset>\n`);
 writeFileSync(join(OUT, "CNAME"), "lapastaiola.co\n");
 writeFileSync(join(OUT, ".nojekyll"), "");
 console.log(`built ${written.length} pages in ${LANGS.length} languages into ${OUT}`);
