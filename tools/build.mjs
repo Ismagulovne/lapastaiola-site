@@ -90,6 +90,10 @@ const NAV = [
 ];
 const GLOBE = `<svg class="globe" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4M12 2.8c2.6 2.6 3.9 5.6 3.9 9.2s-1.3 6.6-3.9 9.2M12 2.8C9.4 5.4 8.1 8.4 8.1 12s1.3 6.6 3.9 9.2"/></svg>`;
 
+// Brand glyphs for the footer social links (simple single-path marks, drawn in currentColor).
+const ICON_INSTAGRAM = `<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>`;
+const ICON_FACEBOOK = `<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M13.6 21v-7.4h2.5l.4-2.9h-2.9V8.9c0-.8.2-1.4 1.4-1.4h1.6V4.9c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.1H8v2.9h2.5V21h3.1z"/></svg>`;
+
 function langSwitcher(lang, path) {
   if (path.endsWith(".html")) path = "/"; // 404 page: offer each language's home
   return `<details class="lang">
@@ -158,9 +162,9 @@ ${body}
     </div>
     <div><h2>${esc(S("footer_hours", lang))}</h2>${hoursTable(lang)}</div>
     <div><h2>${esc(S("footer_explore", lang))}</h2><ul class="plain">${NAV.map(([h, k]) => `<li><a href="${L(lang, h)}">${esc(S(k, lang))}</a></li>`).join("")}</ul></div>
-    <div><h2>${esc(S("footer_follow", lang))}</h2><ul class="plain">
-      ${settings.instagram ? `<li><a href="${esc(settings.instagram)}" rel="noopener" target="_blank">Instagram</a></li>` : ""}
-      ${settings.facebook ? `<li><a href="${esc(settings.facebook)}" rel="noopener" target="_blank">Facebook</a></li>` : ""}
+    <div><h2>${esc(S("footer_follow", lang))}</h2><ul class="social">
+      ${settings.instagram ? `<li><a href="${esc(settings.instagram)}" rel="noopener" target="_blank" aria-label="Instagram" title="Instagram">${ICON_INSTAGRAM}</a></li>` : ""}
+      ${settings.facebook ? `<li><a href="${esc(settings.facebook)}" rel="noopener" target="_blank" aria-label="Facebook" title="Facebook">${ICON_FACEBOOK}</a></li>` : ""}
     </ul></div>
   </div>
   <div class="wrap legal">© ${new Date().getFullYear()} ${esc(settings.name)} · ${esc(settings.legal_name)}</div>
