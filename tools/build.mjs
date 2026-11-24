@@ -283,7 +283,7 @@ for (const lang of LANGS) {
   }).join("");
   const reviews = [1, 2, 3].map(i => P("home", `review_${i}`, lang) ? `<blockquote>“${esc(P("home", `review_${i}`, lang))}”<cite>${esc(pagesTxt.home[`review_${i}_author`] || "")}</cite></blockquote>` : "").join("");
   add("/", {
-    home: true, title: P("home", "title", lang), jsonld: [orgLd(lang), siteLd(lang)], preload: "/img/hero.jpg",
+    home: true, title: P("home", "title", lang), jsonld: [orgLd(lang), siteLd(lang)],
     body: `${hero("/img/hero.jpg", `<h1>${esc(P("home", "hero_title", lang))}</h1>
     <div class="actions"><a class="pill pill-light" href="${L(lang, "/collections/all/")}">${esc(P("home", "hero_button", lang))}</a><a class="pill pill-ghost" href="${L(lang, "/pages/contact-us/")}">${esc(P("home", "hero_button_2", lang))}</a></div>`)}
 <section class="section"><div class="wrap">
@@ -401,7 +401,7 @@ for (const lang of LANGS) {
   // Classes
   const classProduct = prod("fresh-pasta-making-class");
   add("/pages/book-master-class-1/", {
-    title: P("classes", "title", lang), description: P("classes", "description", lang), image: "/img/pasta-room.jpg", preload: "/img/pasta-room.jpg",
+    title: P("classes", "title", lang), description: P("classes", "description", lang), image: "/img/pasta-room.jpg",
     body: `${hero("/img/pasta-room.jpg", `<h1>${esc(P("classes", "heading", lang))}</h1>`, true)}
 <section class="section"><div class="wrap narrow">
   <p class="lead">${esc(P("classes", "lead", lang))}</p>
