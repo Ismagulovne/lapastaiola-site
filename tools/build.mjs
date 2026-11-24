@@ -11,6 +11,7 @@
 import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { selfHostFonts, minifyCss, optimizeImages } from "./perf.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = join(ROOT, "dist");
@@ -30,6 +31,9 @@ const tr = (v, lang) => (v && typeof v === "object") ? (v[lang] || v[DEFAULT] ||
 const S = (key, lang) => tr(strings[key], lang) || key;
 const P = (page, field, lang) => tr(pagesTxt[page]?.[field], lang);
 const money = n => "$" + Number(n).toFixed(2);
+// Valid positive price or null (bad or empty values from the admin are hidden instead of showing "$NaN").
+const num = v => { if (v === "" || v === null || v === undefined) return null; const n = Number(v); return Number.isFinite(n) && n > 0 ? n : null; };
+const pricesOf = p => (p.variants?.length ? p.variants.map(v => num(v.price)) : [num(p.price)]).filter(n => n !== null);
 const plain = html => String(html).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
 const prefix = lang => (lang === DEFAULT ? "" : `/${lang}`);
 const L = (lang, path) => prefix(lang) + path;
@@ -42,7 +46,8 @@ const col = h => catalog.collections.find(c => c.handle === h);
 const shopCols = catalog.collections.filter(c => c.show_in_shop);
 const imgOf = p => (p.image ? `/img/p/${p.image}` : "/img/logo.png");
 const priceLabel = (p, lang) => {
-  const prices = p.variants?.length ? p.variants.map(v => +v.price) : [+p.price];
+  const prices = pricesOf(p);
+  if (!prices.length) return "";
   const lo = Math.min(...prices), hi = Math.max(...prices);
   return lo === hi ? money(lo) : `${S("price_from", lang)} ${money(lo)}`;
 };
@@ -58,19 +63,31 @@ const seoDesc = (name, text, lang, key = "seo_product") => clip(`${name}: ${S(ke
 const mailto = (subject, body = "") =>
   `mailto:${settings.email}?subject=${encodeURIComponent(subject)}${body ? "&body=" + encodeURIComponent(body) : ""}`;
 
+const validTime = t => /^d{1,2}:d{2}$/.test(String(t || ""));
 function fmtTime(hhmm, lang) {
+  if (!validTime(hhmm)) return "";
   const [h, m] = hhmm.split(":").map(Number);
   if (lang !== "en") return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}`;
   const ap = h < 12 ? "am" : "pm", h12 = h % 12 || 12;
   return m ? `${h12}:${String(m).padStart(2, "0")} ${ap}` : `${h12} ${ap}`;
 }
 const hoursTable = lang => `<table class="hours">${settings.hours.map(d =>
-  `<tr><th scope="row">${esc(S("day_" + d.day, lang))}</th><td>${d.closed ? esc(S("closed", lang)) : `${fmtTime(d.open, lang)} – ${fmtTime(d.close, lang)}`}</td></tr>`).join("")}</table>`;
+  `<tr><th scope="row">${esc(S("day_" + d.day, lang))}</th><td>${d.closed ? esc(S("closed", lang)) : (validTime(d.open) && validTime(d.close) ? `${fmtTime(d.open, lang)} – ${fmtTime(d.close, lang)}` : "–")}</td></tr>`).join("")}</table>`;
 
 // ---------- output ----------
 rmSync(OUT, { recursive: true, force: true });
 mkdirSync(OUT, { recursive: true });
 cpSync(join(ROOT, "static"), OUT, { recursive: true });
+// Speed: fonts served from the site itself (in CI), CSS inlined and minified into every page.
+const FONTS = await selfHostFonts(OUT);
+const CSS = minifyCss((FONTS ? FONTS.css : "") + readFileSync(join(ROOT, "static", "assets", "style.css"), "utf8"));
+const HEAD_ASSETS = FONTS
+  ? FONTS.preloads.map(u => `<link rel="preload" as="font" type="font/woff2" href="${u}" crossorigin>`).join("\n") + `
+<style>${CSS}</style>`
+  : `<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700&family=Questrial&display=swap" rel="stylesheet">
+<style>${CSS}</style>`;
 const written = [];
 
 // Root-relative links become page-relative so the site also works under a sub-path.
@@ -142,10 +159,7 @@ ${noindex ? `<meta name="robots" content="noindex">` : `<meta name="robots" cont
 <link rel="icon" href="/img/logo.png">
 <link rel="apple-touch-icon" href="/img/logo.png">
 ${preload ? `<link rel="preload" as="image" href="${preload}" fetchpriority="high">` : ""}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700&family=Questrial&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=${BUILD}">
+${HEAD_ASSETS}
 <script src="/assets/site.js?v=${BUILD}" defer></script>
 ${ld.map(j => `<script type="application/ld+json">${JSON.stringify(j).replace(/</g, "\\u003c")}</script>`).join("\n")}
 </head>
@@ -158,7 +172,7 @@ ${ld.map(j => `<script type="application/ld+json">${JSON.stringify(j).replace(/<
       <summary aria-label="${esc(S("menu", lang))}"><span></span><span></span><span></span></summary>
       <nav class="menu-panel">${nav}</nav>
     </details>
-    <a class="brand" href="${L(lang, "/")}"><img src="/img/logo.png" alt="${esc(settings.name)}" width="180" height="90"></a>
+    <a class="brand" href="${L(lang, "/")}"><img src="/img/logo.png" alt="${esc(settings.name)}" width="180" height="90" sizes="180px"></a>
     <div class="header-actions">
       ${langSwitcher(lang, path)}
       <a class="pill pill-sm header-cta" href="${L(lang, "/pages/contact-us/")}">${esc(S("order", lang))}</a>
@@ -191,7 +205,7 @@ ${body}
 }
 
 const card = (p, lang) => `<a class="card" href="${L(lang, `/products/${p.handle}/`)}">
-  <div class="card-media"><img src="${imgOf(p)}" alt="${esc(tr(p.title, lang))}" loading="lazy" width="450" height="450"></div>
+  <div class="card-media"><img src="${imgOf(p)}" alt="${esc(tr(p.title, lang))}" loading="lazy" decoding="async" width="450" height="450" sizes="(max-width: 719px) 46vw, (max-width: 1039px) 31vw, 280px"></div>
   <div class="card-body"><h3>${esc(tr(p.title, lang))}</h3><p class="price">${priceLabel(p, lang)}</p></div>
 </a>`;
 const grid = (list, lang) => `<div class="grid">${list.map(p => card(p, lang)).join("")}</div>`;
@@ -224,13 +238,14 @@ const contactBlock = lang => `<div class="contact-grid">
   <div class="panel"><h2>${esc(S("contact_visit", lang))}</h2><p>${esc(settings.street)}<br>${esc(cityLine)}</p><p><a href="https://www.google.com/maps/search/?api=1&amp;query=${encodeURIComponent(settings.street + ", " + cityLine)}" target="_blank" rel="noopener">${esc(S("open_maps", lang))}</a></p></div>
   <div class="panel"><h2>${esc(S("contact_hours", lang))}</h2>${hoursTable(lang)}</div>
 </div>`;
+// Hero photo is a real <img> (not a CSS background) so it gets responsive WebP sizes and loads first.
 const hero = (img, inner, small = false) =>
-  `<section class="hero${small ? " hero-sm" : ""}" style="background-image:linear-gradient(rgba(14,27,77,.35),rgba(14,27,77,.55)),url('${img}')"><div class="hero-inner">${inner}</div></section>`;
+  `<section class="hero${small ? " hero-sm" : ""}"><img class="hero-img" src="${img}" alt="" width="1600" height="1067" fetchpriority="high" sizes="100vw"><div class="hero-inner">${inner}</div></section>`;
 
 // ---------- structured data (schema.org) ----------
 const DAY_NAMES = { mon: "Monday", tue: "Tuesday", wed: "Wednesday", thu: "Thursday", fri: "Friday", sat: "Saturday", sun: "Sunday" };
 const BIZ_ID = `${SITE_URL}/#business`;
-const allPrices = products.flatMap(p => (p.variants?.length ? p.variants.map(v => +v.price) : [+p.price])).filter(n => n > 0);
+const allPrices = products.flatMap(pricesOf);
 const orgLd = lang => ({
   "@context": "https://schema.org", "@type": ["Store", "FoodEstablishment"], "@id": BIZ_ID,
   name: settings.name, legalName: settings.legal_name, url: SITE_URL + L(lang, "/"), description: P("home", "description", lang),
@@ -239,7 +254,7 @@ const orgLd = lang => ({
   address: { "@type": "PostalAddress", streetAddress: settings.street, addressLocality: settings.city, addressRegion: settings.state, postalCode: settings.zip, addressCountry: "US" },
   hasMap: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${settings.street}, ${cityLine}`)}`,
   areaServed: ["Basalt, CO", "Aspen, CO", "Carbondale, CO", "Glenwood Springs, CO", "Snowmass Village, CO", "Roaring Fork Valley"],
-  openingHoursSpecification: settings.hours.filter(d => !d.closed).map(d => ({ "@type": "OpeningHoursSpecification", dayOfWeek: `https://schema.org/${DAY_NAMES[d.day]}`, opens: d.open, closes: d.close })),
+  openingHoursSpecification: settings.hours.filter(d => !d.closed && validTime(d.open) && validTime(d.close)).map(d => ({ "@type": "OpeningHoursSpecification", dayOfWeek: `https://schema.org/${DAY_NAMES[d.day]}`, opens: d.open, closes: d.close })),
   sameAs: [settings.instagram, settings.facebook].filter(Boolean),
   ...(allPrices.length ? { makesOffer: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: Math.min(...allPrices).toFixed(2), highPrice: Math.max(...allPrices).toFixed(2) } } : {})
 });
@@ -248,9 +263,9 @@ const crumbsLd = (lang, items) => ({ "@context": "https://schema.org", "@type": 
   itemListElement: items.map(([name, path], i) => ({ "@type": "ListItem", position: i + 1, name, item: SITE_URL + L(lang, path) })) });
 function productLd(p, lang, title, desc) {
   const url = `${SITE_URL}${L(lang, `/products/${p.handle}/`)}`;
-  const prices = p.variants?.length ? p.variants.map(v => +v.price) : [+p.price];
+  const prices = pricesOf(p);
   const base = { priceCurrency: "USD", availability: "https://schema.org/InStoreOnly", url, seller: { "@id": BIZ_ID } };
-  const offers = prices.length > 1
+  const offers = !prices.length ? undefined : prices.length > 1
     ? { "@type": "AggregateOffer", lowPrice: Math.min(...prices).toFixed(2), highPrice: Math.max(...prices).toFixed(2), offerCount: prices.length, ...base }
     : { "@type": "Offer", price: prices[0].toFixed(2), itemCondition: "https://schema.org/NewCondition", ...base };
   return { "@context": "https://schema.org", "@type": "Product", name: title, image: SITE_URL + imgOf(p), description: plain(desc) || title, url, inLanguage: lang,
@@ -264,7 +279,7 @@ for (const lang of LANGS) {
   // Home
   const tiles = shopCols.slice(0, 3).map(c => {
     const first = colProducts(c)[0];
-    return `<a class="tile" href="${L(lang, `/collections/${c.handle}/`)}"><img src="${first ? imgOf(first) : "/img/logo.png"}" alt="${esc(tr(c.title, lang))}" loading="lazy"><span>${esc(tr(c.title, lang))}</span></a>`;
+    return `<a class="tile" href="${L(lang, `/collections/${c.handle}/`)}"><img src="${first ? imgOf(first) : "/img/logo.png"}" alt="${esc(tr(c.title, lang))}" loading="lazy" decoding="async" width="450" height="450" sizes="(max-width: 600px) 92vw, 380px"><span>${esc(tr(c.title, lang))}</span></a>`;
   }).join("");
   const reviews = [1, 2, 3].map(i => P("home", `review_${i}`, lang) ? `<blockquote>“${esc(P("home", `review_${i}`, lang))}”<cite>${esc(pagesTxt.home[`review_${i}_author`] || "")}</cite></blockquote>` : "").join("");
   add("/", {
@@ -277,14 +292,14 @@ for (const lang of LANGS) {
   <p class="center"><a class="pill" href="${L(lang, "/collections/all/")}">${esc(P("home", "shop_all", lang))}</a></p>
 </div></section>
 <section class="section band"><div class="wrap split">
-  <img src="/img/pasta-hands.jpg" alt="${esc(P("home", "story_title", lang))}" loading="lazy">
+  <img src="/img/pasta-hands.jpg" alt="${esc(P("home", "story_title", lang))}" loading="lazy" decoding="async" width="1200" height="900" sizes="(max-width: 819px) 92vw, 560px">
   <div><h2>${esc(P("home", "story_title", lang))}</h2><div class="rte">${P("home", "story_html", lang)}</div>
   <a class="pill pill-light" href="${L(lang, "/pages/about-us/")}">${esc(P("home", "story_button", lang))}</a></div>
 </div></section>
 <section class="section"><div class="wrap three">
-  <a class="feature" href="${L(lang, "/pages/book-master-class-1/")}"><img src="/img/pasta-room.jpg" alt="${esc(P("home", "classes_title", lang))}" loading="lazy"><h3>${esc(P("home", "classes_title", lang))}</h3><p>${esc(P("home", "classes_text", lang))}</p></a>
-  <a class="feature" href="${L(lang, "/pages/caterings-1/")}"><img src="/img/marco.jpg" alt="${esc(P("home", "catering_title", lang))}" loading="lazy"><h3>${esc(P("home", "catering_title", lang))}</h3><p>${esc(P("home", "catering_text", lang))}</p></a>
-  <a class="feature" href="${L(lang, "/pages/meal-kits/")}"><img src="/img/shop-counter.jpg" alt="${esc(P("home", "mealkits_title", lang))}" loading="lazy"><h3>${esc(P("home", "mealkits_title", lang))}</h3><p>${esc(P("home", "mealkits_text", lang))}</p></a>
+  <a class="feature" href="${L(lang, "/pages/book-master-class-1/")}"><img src="/img/pasta-room.jpg" alt="${esc(P("home", "classes_title", lang))}" loading="lazy" decoding="async" width="1200" height="900" sizes="(max-width: 600px) 92vw, 380px"><h3>${esc(P("home", "classes_title", lang))}</h3><p>${esc(P("home", "classes_text", lang))}</p></a>
+  <a class="feature" href="${L(lang, "/pages/caterings-1/")}"><img src="/img/marco.jpg" alt="${esc(P("home", "catering_title", lang))}" loading="lazy" decoding="async" width="1200" height="900" sizes="(max-width: 600px) 92vw, 380px"><h3>${esc(P("home", "catering_title", lang))}</h3><p>${esc(P("home", "catering_text", lang))}</p></a>
+  <a class="feature" href="${L(lang, "/pages/meal-kits/")}"><img src="/img/shop-counter.jpg" alt="${esc(P("home", "mealkits_title", lang))}" loading="lazy" decoding="async" width="1200" height="900" sizes="(max-width: 600px) 92vw, 380px"><h3>${esc(P("home", "mealkits_title", lang))}</h3><p>${esc(P("home", "mealkits_text", lang))}</p></a>
 </div></section>
 <section class="section band-light"><div class="wrap split">
   <div><h2>${esc(P("home", "visit_title", lang))}</h2><p>${esc(settings.street)}, ${esc(cityLine)}<br><a href="tel:${tel}">${esc(settings.phone)}</a></p>${hoursTable(lang)}</div>
@@ -327,7 +342,7 @@ for (const lang of LANGS) {
     const firstCol = cols.find(c => c.show_in_shop) || cols[0];
     const related = products.filter(x => x !== p && x.handle !== "fresh-pasta-making-class" && cols.some(c => c.products.includes(x.handle))).slice(0, 4);
     const title = tr(p.title, lang), desc = tr(p.description_html, lang);
-    const variants = p.variants?.length > 1 ? `<table class="variants"><caption>${esc(S("options", lang))}</caption>${p.variants.map(v => `<tr><th scope="row">${esc(tr(v.name, lang))}</th><td>${money(v.price)}</td></tr>`).join("")}</table>` : "";
+    const variants = p.variants?.length > 1 ? `<table class="variants"><caption>${esc(S("options", lang))}</caption>${p.variants.map(v => `<tr><th scope="row">${esc(tr(v.name, lang))}</th><td>${num(v.price) === null ? "" : money(v.price)}</td></tr>`).join("")}</table>` : "";
     const isClass = p.handle === "fresh-pasta-making-class";
     add(`/products/${p.handle}/`, {
       title: firstCol && (title + tr(firstCol.title, lang)).length < 46 ? `${title} · ${tr(firstCol.title, lang)}` : title,
@@ -337,7 +352,7 @@ for (const lang of LANGS) {
       body: `<section class="section"><div class="wrap">
   <p class="crumbs"><a href="${L(lang, "/collections/all/")}">${esc(P("shop", "title", lang))}</a>${firstCol ? ` / <a href="${L(lang, `/collections/${firstCol.handle}/`)}">${esc(tr(firstCol.title, lang))}</a>` : ""}</p>
   <div class="product">
-    <div class="product-media"><img src="${imgOf(p)}" alt="${esc(title)}" width="700" height="700"></div>
+    <div class="product-media"><img src="${imgOf(p)}" alt="${esc(title)}" width="700" height="700" sizes="(max-width: 859px) 92vw, 600px"></div>
     <div class="product-info">
       <h1>${esc(title)}</h1>
       <p class="price price-lg">${priceLabel(p, lang)}</p>
@@ -368,7 +383,7 @@ for (const lang of LANGS) {
     body: `<section class="section"><div class="wrap narrow">
   <h1 class="page-title">${esc(P("about", "heading", lang))}</h1>
   <p class="lead">${esc(P("about", "lead", lang))}</p>
-  <div class="gallery">${["about-1", "about-2", "about-3", "about-4"].filter(n => existsSync(join(OUT, "img", n + ".jpg"))).map(n => `<img src="/img/${n}.jpg" alt="" loading="lazy">`).join("")}</div>
+  <div class="gallery">${["about-1", "about-2", "about-3", "about-4"].filter(n => existsSync(join(OUT, "img", n + ".jpg"))).map(n => `<img src="/img/${n}.jpg" alt="" loading="lazy" decoding="async" width="900" height="900" sizes="(max-width: 719px) 46vw, 200px">`).join("")}</div>
   <div class="rte">${P("about", "body_html", lang)}</div>
 </div></section>`
   });
@@ -377,7 +392,7 @@ for (const lang of LANGS) {
   add("/pages/our-shop/", {
     title: P("our_shop", "title", lang), description: P("our_shop", "description", lang), image: "/img/shop-1.jpg",
     body: `<section class="section"><div class="wrap split">
-  <img src="/img/shop-1.jpg" alt="" loading="lazy">
+  <img src="/img/shop-1.jpg" alt="" loading="lazy" decoding="async" width="1200" height="900" sizes="(max-width: 819px) 92vw, 560px">
   <div><h1 class="page-title">${esc(P("our_shop", "heading", lang))}</h1><p class="lead">${esc(P("our_shop", "lead", lang))}</p><div class="rte">${P("our_shop", "body_html", lang)}</div></div>
 </div></section>
 <section class="section band-light"><div class="wrap">${contactBlock(lang)}<p class="center"><a class="pill" href="${L(lang, "/collections/all/")}">${esc(P("our_shop", "button", lang))}</a></p></div></section>`
@@ -396,7 +411,7 @@ for (const lang of LANGS) {
   </div>
   <div class="rte">${P("classes", "body_html", lang)}</div>
   <div class="split split-tight">
-    <img src="/img/kids-class.jpg" alt="" loading="lazy">
+    <img src="/img/kids-class.jpg" alt="" loading="lazy" decoding="async" width="1000" height="750" sizes="(max-width: 819px) 92vw, 380px">
     <div><h2>${esc(P("classes", "kids_title", lang))}</h2><div class="rte">${P("classes", "kids_html", lang)}</div><p><a href="mailto:${settings.email}">${esc(settings.email)}</a></p></div>
   </div>
 </div></section>`
@@ -406,7 +421,7 @@ for (const lang of LANGS) {
   add("/pages/caterings-1/", {
     title: P("catering", "title", lang), description: P("catering", "description", lang), image: "/img/marco.jpg",
     body: `<section class="section"><div class="wrap split">
-  <img src="/img/marco.jpg" alt="" loading="lazy">
+  <img src="/img/marco.jpg" alt="" loading="lazy" decoding="async" width="1000" height="750" sizes="(max-width: 819px) 92vw, 560px">
   <div><h1 class="page-title">${esc(P("catering", "heading", lang))}</h1><p class="lead">${esc(P("catering", "lead", lang))}</p><p>${esc(P("catering", "text", lang))}</p></div>
 </div></section>
 <section class="section band-light"><div class="wrap narrow"><h2>${esc(P("catering", "form_title", lang))}</h2>${requestForm(P("catering", "form_subject", lang), lang)}</div></section>`
@@ -443,6 +458,7 @@ const nf = layout({ lang: DEFAULT, path: "/404.html", title: P("not_found", "tit
   body: `<section class="section"><div class="wrap narrow center"><h1 class="page-title">${esc(P("not_found", "title", DEFAULT))}</h1><p class="lead">${esc(P("not_found", "lead", DEFAULT))}</p><div class="actions center">${LANGS.map(l => `<a class="pill${l === DEFAULT ? "" : " pill-outline"}" href="${L(l, "/")}">${esc(S("home", l))} · ${l.toUpperCase()}</a>`).join("")}</div></div></section>` });
 writeFileSync(join(OUT, "404.html"), nf);
 
+await optimizeImages(OUT);
 writeFileSync(join(OUT, "robots.txt"), `User-agent: *\nAllow: /\nDisallow: /admin/\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 // Sitemap with hreflang alternates for every language version of each page.
 const smEntry = ({ path, base }) => {

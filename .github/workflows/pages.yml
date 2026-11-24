@@ -27,7 +27,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Install image optimizer (cloud only)
+        run: npm install --no-save --no-audit --no-fund sharp@0.33.5
       - name: Build
+        env:
+          SELFHOST_FONTS: "1"
         run: node tools/build.mjs
       - name: Check internal links
         run: node tools/check-links.mjs
