@@ -1,6 +1,6 @@
 # Content issues found during translation (2026-11-18)
 
-**2026-11-26:** typos and broken text fixed (capers "Sicaly"/"wounderful"; 8-yr balsamic stray "NA", repeated opening, split "IGP" in EN/IT; eggplant ravioli comma). Items below marked *open* still need the client's confirmation.
+**2026-11-26:** typos and broken text fixed (capers "Sicaly"/"wounderful"; 8-yr balsamic stray "NA", repeated opening, split "IGP" in EN/IT; eggplant ravioli comma). The other items below still need the client's confirmation.
 
 The English product texts were recovered from the old Shopify store. While translating them into Italian and Spanish, these problems in the English source were found. They can be fixed in the admin panel (Products).
 
