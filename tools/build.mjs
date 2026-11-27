@@ -63,7 +63,7 @@ const seoDesc = (name, text, lang, key = "seo_product") => clip(`${name}: ${S(ke
 const mailto = (subject, body = "") =>
   `mailto:${settings.email}?subject=${encodeURIComponent(subject)}${body ? "&body=" + encodeURIComponent(body) : ""}`;
 
-const validTime = t => /^d{1,2}:d{2}$/.test(String(t || ""));
+const validTime = t => /^([01]?\d|2[0-3]):[0-5]\d$/.test(String(t || ""));
 function fmtTime(hhmm, lang) {
   if (!validTime(hhmm)) return "";
   const [h, m] = hhmm.split(":").map(Number);
@@ -254,7 +254,7 @@ const orgLd = lang => ({
   address: { "@type": "PostalAddress", streetAddress: settings.street, addressLocality: settings.city, addressRegion: settings.state, postalCode: settings.zip, addressCountry: "US" },
   hasMap: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${settings.street}, ${cityLine}`)}`,
   areaServed: ["Basalt, CO", "Aspen, CO", "Carbondale, CO", "Glenwood Springs, CO", "Snowmass Village, CO", "Roaring Fork Valley"],
-  openingHoursSpecification: settings.hours.filter(d => !d.closed && validTime(d.open) && validTime(d.close)).map(d => ({ "@type": "OpeningHoursSpecification", dayOfWeek: `https://schema.org/${DAY_NAMES[d.day]}`, opens: d.open, closes: d.close })),
+  openingHoursSpecification: settings.hours.filter(d => !d.closed && validTime(d.open) && validTime(d.close)).map(d => ({ "@type": "OpeningHoursSpecification", dayOfWeek: `https://schema.org/${DAY_NAMES[d.day]}`, opens: fmtTime(d.open, "24h"), closes: fmtTime(d.close, "24h") })),
   sameAs: [settings.instagram, settings.facebook].filter(Boolean),
   ...(allPrices.length ? { makesOffer: { "@type": "AggregateOffer", priceCurrency: "USD", lowPrice: Math.min(...allPrices).toFixed(2), highPrice: Math.max(...allPrices).toFixed(2) } } : {})
 });
