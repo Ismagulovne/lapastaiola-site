@@ -1,14 +1,10 @@
-# Handoff: lapastaiola-site (server session)
+# Server handoff: lapastaiola-site (2026-11-27)
 
-Last update: 2026-11-27.
+Main docs: README.md. Laptop session archived; final handoff: ~/projects/handoffs/LaPastaiola-laptop-2026-11-27.md.
 
-## State
-- Live at https://lapastaiola.co (GitHub Pages, deploy on push to `main`), admin at /admin/.
-- 2026-11-27: fixed opening hours missing on all pages since 2026-11-24 (broken time regex in `tools/build.mjs`); crash test (empty/invalid/edge times) and gentle prod stress test (200 req, 5 parallel, all 200, p95 0.39 s) passed.
-- Re-running an old failed deploy run fails with "No artifacts named github-pages" — push a new commit or use workflow_dispatch instead of "Re-run".
-
-## Waiting for the client (via the owner)
-See `reference-data/content-issues.md`: balsamic aging years (6 yr / 8 yr texts), Peranzana "Provence", Panettone "2024", mushroom tapenade duplicate, pasta ingredients wording, Sicilia oil "From Apulia" ending; prices; catering and meal kits still offered; native review of IT/ES.
-
-## Optional next step (needs owner OK: DNS)
-Move hosting to Cloudflare Pages for long cache and Brotli (GitHub Pages cache is fixed 10 min).
+- Live: https://lapastaiola.co (GitHub Pages, Actions build on push to main). Content edits only (texts, images) need no stress test (vault rule 11); code changes do.
+- 2026-11-26: typo fixes in product texts (cbcb2b6). Remaining items in reference-data/content-issues.md need the client.
+- IT/ES are machine translations; a native speaker should review.
+- Owner: first admin login with a real token failed at token creation ("You signed in with another tab"), retry; add client owners as collaborators.
+- Keep google0a5f954fc0ccb57a.html (Search Console). Do not touch MX/TXT mail records at GoDaddy. DNS changes only with the owner's OK; browser steps go through My Projects.
+- Optional: Cloudflare Pages for long cache/Brotli (DNS change, owner's OK).
