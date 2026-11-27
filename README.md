@@ -56,5 +56,5 @@ See `../reference/godaddy/dns-plan.md` in the project folder. `lapastaiola.co` p
 
 ## To confirm with the owner
 
-- Address and hours (72 Sunset Dr, Unit B, Basalt; Tue–Fri 11 am–6 pm), prices, and whether classes, catering and meal kits are still offered.
-- Italian and Spanish texts were machine-assisted; a native speaker should review them. Some archived English product descriptions contain errors (see the project's handover notes).
+- Address (355 Gold Rivers Court, Ste 2, Basalt, CO 81621) and hours (Mon–Sat 10 am–7 pm, Sunday closed) were set by the owner in Nov 2026. Still to confirm with the client: prices, and whether catering and meal kits are still offered.
+- Italian and Spanish texts were machine-assisted; a native speaker should review them. Open questions about product texts are listed in `reference-data/content-issues.md`.
